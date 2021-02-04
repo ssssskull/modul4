@@ -1,0 +1,17 @@
+// 640px, 1024px, 1400px
+$breakpoints-up: ("ipad": "40em", "computer": "64em", "largeComputer": "87.5em");
+
+// 639px, 1023px, 1399px
+$breakpoints-down: ("iphone": "39.9375em", "ipad": "63.9375em", "computer": "87.4375em");
+
+@mixin breakpoint-up($size){
+  @media (min-width: map-get($breakpoints-up, $size)){
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size){
+  @media (max-width: map-get($breakpoints-down, $size)){
+    @content;
+  }
+}
