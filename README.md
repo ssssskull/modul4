@@ -9,5 +9,3 @@ Formålet med modulet er at du kan designe og programmere komplekse digitale lø
 - [Simone Ravn Nielsen](https://github.com/sravn93)
 - [Daniel Janos Papp](https://github.com/ssssskull)
 - [Sara Gylden Busch](https://github.com/saragylden)
-
-##HEJ
