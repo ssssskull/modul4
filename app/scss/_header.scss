@@ -3,7 +3,25 @@
 
     // Hamburger Open Styles
     &.open {
+        //TODO fix transition on opening
+        nav {
+            background-color: $white;
+
+            .header__logo {
+                visibility: visible;
+                margin-bottom: 5rem;
+            }
+            
+        }
+
+        .header__mobile-logo {
+            visibility: hidden;
+        }
         
+        .header__menu {
+            visibility: visible;
+            transform: translateY(0px) translateZ(0px);
+        }
         .header__burger {
             > span{
                 background-color: transparent;
@@ -12,22 +30,115 @@
             > span::before {
                 transform: rotate(45deg);
                 top: 0;
+                background-color: $darkblue;
             }
             
             > span::after {
                 transform: rotate(-45deg);
                 top: 0;
+                background-color: $darkblue;
             }
-            // Mobile navigation when hamburger is clicked
-            // nav {
-            //     visibility: visible;
-            // }
         }
     }
     
     nav {
-        display: none;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        padding: 3rem 2rem;
+        transition: $transition-200ms;
+        
+        @include breakpoint-up(computer) {
+            position: fixed;
+            height: unset;
+            width: 240px;
+            right: 4rem;
+
+            .header__menu > li {
+                color: $white;
+
+                > a:hover {
+                    color: $gold;
+                    
+                    &::after {
+                        color: $gold;
+                    }
+                }
+            }
+
+            .active-menu {
+                > a {
+                    color: $gold;
+                }
+                &::before {
+                    color: $gold;
+                }
+            }
+        }
+
+        .header__logo {
+            visibility: hidden;
+            display: block;
+            width: 97px;
+            height: 54px;
+            background-image: url("../../images/logo-color.svg");
+            background-repeat: no-repeat;
+            will-change: visibility;
+
+            @include breakpoint-up(computer) {
+                visibility: visible;   
+                background-image: url("../../images/logo-grey.svg");
+                margin-bottom: 5rem;
+                margin-left: 3rem;
+            }
+        }
     }
+
+    &__menu {
+       @include breakpoint-down(ipad) {
+            visibility: hidden;
+            transform: translateY(-50px) translateZ(0px);
+            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            //TODO make fade-in fade-out keyframes where the transform is removed on fade out
+       }
+        
+        > li {
+            font-size: $font-med-fallback;
+            font-size: $font-med;
+            margin-bottom: 2.5rem;
+            color: $darkblue;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &.active-menu {
+                color: $lightblue;
+            }
+            > a {
+                color: inherit;
+                font-weight: 700;
+                transition: $transition-200ms;
+
+                &:hover, &:focus {
+                    color: $lightblue;
+                }
+            }
+
+            &:first-of-type > a::after {
+                content: "()";
+                display: inline;
+                color: $gray;
+            }
+            &:last-of-type > a::after {
+                content: ";";
+                display: inline;
+                color: $gray;
+            }
+        }
+        
+    }
+
 
     &__mobile-logo {
         position: absolute;
@@ -37,42 +148,54 @@
         width: 97px;
         height: 54px;
         background-image: url("../../images/logo-grey.svg");
+        margin-bottom: 5rem;
+        @include breakpoint-up(computer) {
+            visibility: hidden;
+        }
     }
 
     &__toggle {
-        position: fixed;
-        top: 30px;
-        right: 40px;
-        z-index: 3;
-        display: block;
-        // Hamburger lines
-        
-        .header__burger {
-
-            > span, > span::before, > span::after {
-                width: 26px;
-                height: 4px;
-                background-color: #fff;
-                transition: $transition-200ms;
-            }
+        @include breakpoint-down(ipad) {
+            display: block;
+            height: 24px;
+            position: fixed;
+            z-index: 3;
+            top: 30px;
+            right: 40px;
+            // Hamburger lines
             
-            > span {
-                display: block;
-                position: relative;
-                
-                &::before, &::after {
-                    content: "";
-                    position: absolute;
+            .header__burger {  
+                &:focus {
+                    outline: none;
+                    box-shadow: none;}
+
+                > span, > span::before, > span::after {
+                    width: 26px;
+                    height: 4px;
+                    background-color: $white;
+                    transition: $transition-200ms;
+                    will-change: transform, background-color;
                 }
-                &::before  {
-                    top: -10px;
-                }
                 
-                &::after  {
-                    top: 10px;
+                > span {
+                    display: block;
+                    position: relative;
+                    
+                    &::before, &::after {
+                        content: "";
+                        position: absolute;
+                    }
+                    &::before  {
+                        top: -10px;
+                    }
+                    
+                    &::after  {
+                        top: 10px;
+                    }
                 }
             }
         }
+        
     }
 }
 .mobile-lines {
@@ -82,7 +205,7 @@
     
     div {
         height: 4px;
-        background-color: #fff;
+        background-color: $white;
         position: absolute;
     }
     

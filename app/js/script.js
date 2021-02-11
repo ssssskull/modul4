@@ -1,4 +1,4 @@
-const btnHamburger = document.querySelector("#btnHamburger");
+const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector('.header');
 
 btnHamburger.addEventListener('click', function () {
