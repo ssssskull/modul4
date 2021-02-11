@@ -10,8 +10,10 @@ body {
     padding: 0;
     font-weight: 400;
     line-height: 1.3;
-    background-color: black;
     counter-reset: item;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
 }
 
 // List styles
@@ -72,16 +74,16 @@ a, a:visited, a:hover {
 
 // Typography
 p {
-    font-size: $font-med-fallback;
-    font-size: $font-med;
+    font-size: $font-sm-fallback;
+    font-size: $font-sm;
 }
 
 h1 {
-    font-size:  $font-xl-fallback;
-    font-size:  $font-xl;
+    font-size:  $font-l-fallback;
+    font-size:  $font-l;
 }
 
 h2 {
-    font-size: $font-l-fallback;
-    font-size: $font-l;
+    font-size: $font-med-fallback;
+    font-size: $font-med;
 }

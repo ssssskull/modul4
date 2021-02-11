@@ -1,11 +1,17 @@
 .header {
-    position: relative;
+    position: absolute;
+    @include breakpoint-up(computer) {
+        .mobile-lines {
+            display: none;
+        }
+    }
 
     // Hamburger Open Styles
     &.open {
         //TODO fix transition on opening
         nav {
             background-color: $white;
+            position: fixed;
 
             .header__logo {
                 visibility: visible;
@@ -47,24 +53,43 @@
         flex-direction: column;
         padding: 3rem 2rem;
         transition: $transition-200ms;
+        z-index: 2;
+        position: fixed;
+        pointer-events: none;
+
+        ul {
+            pointer-events: auto;
+        }
+
+        @include breakpoint-up(computer) {
+            padding: 5rem 2rem;
+        }
+        
         
         @include breakpoint-up(computer) {
-            position: fixed;
             height: unset;
             width: 240px;
-            right: 4rem;
+            right: 2rem;
 
-            .header__menu > li {
-                color: $white;
+            ul {
+                width: 160px;
 
-                > a:hover {
-                    color: $gold;
-                    
-                    &::after {
+                li {
+                    color: $white;
+
+                    a:hover {
                         color: $gold;
+                        //TODO fix transition, the after lags compared to text
+
+                        &::after {
+                            color: $gold;
+                        }
                     }
                 }
             }
+                
+
+
 
             .active-menu {
                 > a {
@@ -97,7 +122,7 @@
     &__menu {
        @include breakpoint-down(ipad) {
             visibility: hidden;
-            transform: translateY(-50px) translateZ(0px);
+            transform: translateY(-10px) translateZ(0px);
             transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
             //TODO make fade-in fade-out keyframes where the transform is removed on fade out
        }
@@ -144,7 +169,7 @@
         position: absolute;
         top: 30px;
         left: 20px;
-        z-index: 1;
+        z-index: 2;
         width: 97px;
         height: 54px;
         background-image: url("../../images/logo-grey.svg");

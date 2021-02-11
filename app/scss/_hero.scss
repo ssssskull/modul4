@@ -1,0 +1,23 @@
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: url("../../images/hero-bg.jpg");
+    background-size: cover;
+    position: relative;
+
+    &__wrapper {
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        background-color: transparentize($black, 0.6);
+    }
+
+    &__text > h1 {
+        color: $white;
+        @include breakpoint-up(ipad) {
+            font-size: $font-xl-fallback;
+            font-size: $font-xl;
+        }
+    }
+}
