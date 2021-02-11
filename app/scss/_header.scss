@@ -1,20 +1,54 @@
 .header {
-    padding: 3rem 4rem 3rem 2rem;
+    position: relative;
 
-    // Mobile menu
-    .fixed-toggle { //call this class "active" and then add all the classes and animations under it, also make the house of code lines invisible when actvive is active
-        position: fixed;
-        top: 4rem;
-        right: 4rem;
-        display: none;
-
-        label > span, label > span:before, label > span::after {
-            background-color: red;
+    // Hamburger Open Styles
+    &.open {
+        
+        .header__burger {
+            > span{
+                background-color: transparent;
+            }
+            
+            > span::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+            
+            > span::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+            // Mobile navigation when hamburger is clicked
+            // nav {
+            //     visibility: visible;
+            // }
         }
     }
-    .toggle/*, .fixed-toggle*/ {
+    
+    nav {
+        display: none;
+    }
+
+    &__mobile-logo {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        z-index: 1;
+        width: 97px;
+        height: 54px;
+        background-image: url("../../images/logo-grey.svg");
+    }
+
+    &__toggle {
+        position: fixed;
+        top: 30px;
+        right: 40px;
+        z-index: 3;
         display: block;
-        &__burger {
+        // Hamburger lines
+        
+        .header__burger {
+
             > span, > span::before, > span::after {
                 width: 26px;
                 height: 4px;
@@ -39,35 +73,8 @@
                 }
             }
         }
-        
-        // Hamburger Open Styles
-        &__checkbox {
-            display: none;
-            
-            &:checked {
-                ~ .toggle__burger span{
-                    background-color: transparent;
-                }
-                
-                ~ .toggle__burger span::before {
-                    transform: rotate(45deg);
-                    top: 0;
-                }
-                
-                ~ .toggle__burger span::after {
-                    transform: rotate(-45deg);
-                    top: 0;
-                }
-                // Mobile navigation when hamburger is clicked
-                ~ .header__menu {
-                    visibility: visible;
-                }
-            }
-        }
     }
 }
-
-// Hamburger lines
 .mobile-lines {
     position: relative;
     transition: 200ms;

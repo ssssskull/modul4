@@ -67,25 +67,48 @@ h2 {
 }
 
 .header {
-  padding: 3rem 4rem 3rem 2rem;
+  position: relative;
 }
 
-.header .fixed-toggle {
-  position: fixed;
-  top: 4rem;
-  right: 4rem;
+.header.open .header__burger > span {
+  background-color: transparent;
+}
+
+.header.open .header__burger > span::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.header.open .header__burger > span::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.header nav {
   display: none;
 }
 
-.header .fixed-toggle label > span, .header .fixed-toggle label > span:before, .header .fixed-toggle label > span::after {
-  background-color: red;
+.header__mobile-logo {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+  width: 97px;
+  height: 54px;
+  background-image: url("../../images/logo-grey.svg");
 }
 
-.header .toggle {
+.header__toggle {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  z-index: 3;
   display: block;
 }
 
-.header .toggle__burger > span, .header .toggle__burger > span::before, .header .toggle__burger > span::after {
+.header__toggle .header__burger > span, .header__toggle .header__burger > span::before, .header__toggle .header__burger > span::after {
   width: 26px;
   height: 4px;
   background-color: #fff;
@@ -93,46 +116,22 @@ h2 {
   transition: all 0.2s ease-in-out;
 }
 
-.header .toggle__burger > span {
+.header__toggle .header__burger > span {
   display: block;
   position: relative;
 }
 
-.header .toggle__burger > span::before, .header .toggle__burger > span::after {
+.header__toggle .header__burger > span::before, .header__toggle .header__burger > span::after {
   content: "";
   position: absolute;
 }
 
-.header .toggle__burger > span::before {
+.header__toggle .header__burger > span::before {
   top: -10px;
 }
 
-.header .toggle__burger > span::after {
+.header__toggle .header__burger > span::after {
   top: 10px;
-}
-
-.header .toggle__checkbox {
-  display: none;
-}
-
-.header .toggle__checkbox:checked ~ .toggle__burger span {
-  background-color: transparent;
-}
-
-.header .toggle__checkbox:checked ~ .toggle__burger span::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 0;
-}
-
-.header .toggle__checkbox:checked ~ .toggle__burger span::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: 0;
-}
-
-.header .toggle__checkbox:checked ~ .header__menu {
-  visibility: visible;
 }
 
 .mobile-lines {

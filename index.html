@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,19 @@
 </head>
 
 <body>
-    <header class="header flex flex-jc-e flex-ai-c">
-        <div class="toggle">
+    <header class="header">
+        <nav class="flex flex-jc-e flex-ai-c">
+            <a href=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+            </ul>
+        </nav>
+        <a id="mobileLogo" class="header__mobile-logo"></a>
+        <div class="header__toggle">
             <div class="mobile-lines">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -19,15 +30,9 @@
                 <div class="line5"></div>
                 <div class="line6"></div>
             </div>
-            <input id="hamburger" type="checkbox" class="toggle__checkbox">
-            <label for="hamburger" class="toggle__burger hide-for-desktop">
+            <a id="btnHamburger" href="#" class="header__burger">
                 <span></span>
-            </label>
-        </div>
-        <div class="fixed-toggle">
-            <label for="hamburger" class="toggle__burger hide-for-desktop">
-                <span></span>
-            </label>
+            </a>
         </div>
     </header>
     <script src="app/js/script.js" async></script>
