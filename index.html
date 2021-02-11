@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/css/style.css">
     <title>Forside</title>
 </head>
+
 <body>
-    <h1>Hello world!</h1>
-    <p>Branch!</p>
+    <header class="header flex flex-jc-e flex-ai-c">
+        <div class="toggle">
+            <div class="mobile-lines">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
+            </div>
+            <input id="hamburger" type="checkbox" class="toggle__checkbox">
+            <label for="hamburger" class="toggle__burger hide-for-desktop">
+                <span></span>
+            </label>
+        </div>
+        <div class="fixed-toggle">
+            <label for="hamburger" class="toggle__burger hide-for-desktop">
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <script src="app/js/script.js" async></script>
 </body>
+
 </html>

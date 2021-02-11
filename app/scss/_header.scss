@@ -1,0 +1,116 @@
+.header {
+    padding: 3rem 4rem 3rem 2rem;
+
+    // Mobile menu
+    .fixed-toggle { //call this class "active" and then add all the classes and animations under it, also make the house of code lines invisible when actvive is active
+        position: fixed;
+        top: 4rem;
+        right: 4rem;
+        display: none;
+
+        label > span, label > span:before, label > span::after {
+            background-color: red;
+        }
+    }
+    .toggle/*, .fixed-toggle*/ {
+        display: block;
+        &__burger {
+            > span, > span::before, > span::after {
+                width: 26px;
+                height: 4px;
+                background-color: #fff;
+                transition: $transition-200ms;
+            }
+            
+            > span {
+                display: block;
+                position: relative;
+                
+                &::before, &::after {
+                    content: "";
+                    position: absolute;
+                }
+                &::before  {
+                    top: -10px;
+                }
+                
+                &::after  {
+                    top: 10px;
+                }
+            }
+        }
+        
+        // Hamburger Open Styles
+        &__checkbox {
+            display: none;
+            
+            &:checked {
+                ~ .toggle__burger span{
+                    background-color: transparent;
+                }
+                
+                ~ .toggle__burger span::before {
+                    transform: rotate(45deg);
+                    top: 0;
+                }
+                
+                ~ .toggle__burger span::after {
+                    transform: rotate(-45deg);
+                    top: 0;
+                }
+                // Mobile navigation when hamburger is clicked
+                ~ .header__menu {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+// Hamburger lines
+.mobile-lines {
+    position: relative;
+    transition: 200ms;
+    margin-bottom: 1rem;
+    
+    div {
+        height: 4px;
+        background-color: #fff;
+        position: absolute;
+    }
+    
+    .line1 {
+        width: 7px;
+        left: -11px;
+    }
+    
+    .line2 {
+        width: 9px;
+        top: 10px;
+        left: -13px;
+    }
+    
+    .line3 {
+        width: 9px;
+        top: 0;
+        right: -13px;
+    }
+    
+    .line4 {
+        width: 4px;
+        top: 10px;
+        right: -8px;
+    }
+    
+    .line5 {
+        width: 8px;
+        top: 10px;
+        right: -20px;
+    }
+    
+    .line6 {
+        width: 10px;
+        top: 20px;
+        right: -14px;
+    }
+}
