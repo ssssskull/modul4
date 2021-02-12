@@ -35,7 +35,6 @@ li::before {
     width: 2em;
     float: left;
     font-weight: 400;
-    height: 25px;
 }
 
 // Links
@@ -49,7 +48,7 @@ a, a:visited, a:hover {
 // Flexbox
 .flex {
     display: flex;
-    
+
     &-jc-sb {
         justify-content: space-between;
     }
@@ -86,4 +85,14 @@ h1 {
 h2 {
     font-size: $font-med-fallback;
     font-size: $font-med;
+}
+
+// Spacing
+.container {
+    margin: 0 auto;
+    max-width: 69.375rem;
+
+    &--pall {
+        padding: 6rem 2rem;
+    }
 }

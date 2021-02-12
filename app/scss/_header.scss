@@ -17,13 +17,13 @@
                 visibility: visible;
                 margin-bottom: 5rem;
             }
-            
+
         }
 
         .header__mobile-logo {
             visibility: hidden;
         }
-        
+
         .header__menu {
             visibility: visible;
             transform: translateY(0px) translateZ(0px);
@@ -32,13 +32,13 @@
             > span{
                 background-color: transparent;
             }
-            
+
             > span::before {
                 transform: rotate(45deg);
                 top: 0;
                 background-color: $darkblue;
             }
-            
+
             > span::after {
                 transform: rotate(-45deg);
                 top: 0;
@@ -46,7 +46,7 @@
             }
         }
     }
-    
+
     nav {
         height: 100vh;
         width: 100vw;
@@ -64,8 +64,8 @@
         @include breakpoint-up(computer) {
             padding: 5rem 2rem;
         }
-        
-        
+
+
         @include breakpoint-up(computer) {
             height: unset;
             width: 240px;
@@ -87,7 +87,7 @@
                     }
                 }
             }
-                
+
 
 
 
@@ -111,7 +111,7 @@
             will-change: visibility;
 
             @include breakpoint-up(computer) {
-                visibility: visible;   
+                visibility: visible;
                 background-image: url("../../images/logo-grey.svg");
                 margin-bottom: 5rem;
                 margin-left: 3rem;
@@ -126,7 +126,7 @@
             transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
             //TODO make fade-in fade-out keyframes where the transform is removed on fade out
        }
-        
+
         > li {
             font-size: $font-med-fallback;
             font-size: $font-med;
@@ -141,6 +141,8 @@
                 color: $lightblue;
             }
             > a {
+                display: block;
+                overflow: hidden;
                 color: inherit;
                 font-weight: 700;
                 transition: $transition-200ms;
@@ -161,7 +163,7 @@
                 color: $gray;
             }
         }
-        
+
     }
 
 
@@ -188,8 +190,8 @@
             top: 30px;
             right: 40px;
             // Hamburger lines
-            
-            .header__burger {  
+
+            .header__burger {
                 &:focus {
                     outline: none;
                     box-shadow: none;}
@@ -201,11 +203,11 @@
                     transition: $transition-200ms;
                     will-change: transform, background-color;
                 }
-                
+
                 > span {
                     display: block;
                     position: relative;
-                    
+
                     &::before, &::after {
                         content: "";
                         position: absolute;
@@ -213,56 +215,56 @@
                     &::before  {
                         top: -10px;
                     }
-                    
+
                     &::after  {
                         top: 10px;
                     }
                 }
             }
         }
-        
+
     }
 }
 .mobile-lines {
     position: relative;
     transition: 200ms;
     margin-bottom: 1rem;
-    
+
     div {
         height: 4px;
         background-color: $white;
         position: absolute;
     }
-    
+
     .line1 {
         width: 7px;
         left: -11px;
     }
-    
+
     .line2 {
         width: 9px;
         top: 10px;
         left: -13px;
     }
-    
+
     .line3 {
         width: 9px;
         top: 0;
         right: -13px;
     }
-    
+
     .line4 {
         width: 4px;
         top: 10px;
         right: -8px;
     }
-    
+
     .line5 {
         width: 8px;
         top: 10px;
         right: -20px;
     }
-    
+
     .line6 {
         width: 10px;
         top: 20px;

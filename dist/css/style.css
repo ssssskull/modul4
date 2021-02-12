@@ -44,7 +44,6 @@ li::before {
   width: 2em;
   float: left;
   font-weight: 400;
-  height: 25px;
 }
 
 a, a:visited, a:hover {
@@ -110,6 +109,15 @@ h1 {
 h2 {
   font-size: 22px;
   font-size: 2.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 69.375rem;
+}
+
+.container--pall {
+  padding: 6rem 2rem;
 }
 
 /*@keyframes fly-down {
@@ -266,6 +274,8 @@ h2 {
 }
 
 .header__menu > li > a {
+  display: block;
+  overflow: hidden;
   color: inherit;
   font-weight: 700;
   -webkit-transition: all 0.2s ease-in-out;
@@ -396,6 +406,7 @@ h2 {
   width: 100vw;
   background: url("../../images/hero-bg.jpg");
   background-size: cover;
+  background-position: center center;
   position: relative;
 }
 
@@ -407,14 +418,27 @@ h2 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.hero__text > h1 {
+.hero__text {
+  display: block;
   color: #fff;
+  margin: 0 auto;
 }
 
 @media (min-width: 40em) {
-  .hero__text > h1 {
+  .hero__text {
     font-size: 50px;
     font-size: 5rem;
+  }
+}
+
+.hero__text p {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 64em) {
+  .hero__text p {
+    font-size: 4rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@
     width: 100vw;
     background: url("../../images/hero-bg.jpg");
     background-size: cover;
+    background-position: center center;
     position: relative;
 
     &__wrapper {
@@ -13,11 +14,23 @@
         background-color: transparentize($black, 0.6);
     }
 
-    &__text > h1 {
+    &__text {
+        display: block;
         color: $white;
+        margin: 0 auto;
+
         @include breakpoint-up(ipad) {
             font-size: $font-xl-fallback;
             font-size: $font-xl;
         }
+
+        p {
+            font-weight: 400;
+            font-size: 2.5rem;
+            @include breakpoint-up(computer) {
+                font-size: 4rem;
+            }
+        }
     }
+
 }
