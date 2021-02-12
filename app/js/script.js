@@ -17,13 +17,8 @@ LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
   actions: [
-    {// stopping the animatio until 25% of the container is visible
-      visibility: [0, 0.1],
-      type: "stop",
-      frames: [0]
-    },
     {
-      visibility: [0.1, 1],
+      visibility: [0, 1],
       type: "seek",
       frames: [0, 49]
     }

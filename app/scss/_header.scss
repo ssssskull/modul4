@@ -74,7 +74,7 @@
 
             ul {
                 width: 160px;
-
+                
                 li {
                     color: $white;
 
@@ -129,8 +129,8 @@
        }
 
         > li {
-            font-size: $font-med-fallback;
-            font-size: $font-med;
+            font-size: 18px;
+            font-size: 1.8rem;
             margin-bottom: 2.5rem;
             color: $darkblue;
 
