@@ -1,3 +1,4 @@
+// ToDO FIX MENU SELECTOR
 .header {
     position: absolute;
     @include breakpoint-up(computer) {
@@ -114,7 +115,7 @@
                 visibility: visible;
                 background-image: url("../../images/logo-grey.svg");
                 margin-bottom: 5rem;
-                margin-left: 3rem;
+                margin-left: 4.6rem;
             }
         }
     }

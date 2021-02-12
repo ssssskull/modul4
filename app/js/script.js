@@ -10,4 +10,17 @@ btnHamburger.addEventListener('click', function () {
     else { // Open Hamburger Menu
         header.classList.add('open');
     }
-});  
+});
+
+// Lottie animation
+LottieInteractivity.create({
+    mode: 'scroll',
+    player: '#firstLottie',
+    actions: [
+      {
+        visibility: [0,1],
+        type: 'seek',
+        frames: [0, 100],
+      },
+    ],
+  });
