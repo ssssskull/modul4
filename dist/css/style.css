@@ -463,13 +463,39 @@ h2 {
   color: #515f6d;
 }
 
+.main__wrapper {
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
 .main h2 {
   font-weight: 400;
   margin-bottom: 2rem;
 }
 
-.main p {
-  color: #000;
-  margin-bottom: 1.7rem;
+.main__figure #firstLottie {
+  width: 500px;
+}
+
+@media (max-width: 63.9375em) {
+  .main__figure #firstLottie {
+    width: 100%;
+  }
+}
+
+.main__bodytext {
+  margin-top: 1.7rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main__keywords {
+  color: #d7734a;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.main__keywords ~ .main__bodytext {
+  margin-top: .7rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,7 @@ btnHamburger.addEventListener('click', function () {
 LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
+  container: "#lottieContainerFirst",
   actions: [
     {
       visibility: [0, 1],
@@ -24,7 +25,6 @@ LottieInteractivity.create({
     }
   ],
 });
-
 // Offsetting:
 /*
     {// stopping the animatio until 25% of the container is visible

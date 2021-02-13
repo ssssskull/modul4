@@ -1,11 +1,40 @@
 .main {
     color: $darkblue;
+    
+    &__wrapper {
+        max-width: 69.375rem;
+        margin: 0 auto;
+    }
+
     h2 {
         font-weight: 400;
         margin-bottom: 2rem;
     }
-    p {
-        color: $black;
-        margin-bottom: 1.7rem;
+
+    &__figure {
+        #firstLottie {
+            width: 500px;
+            @include breakpoint-down(ipad) {
+                width: 100%;
+            }
+        }
     }
+
+    &__bodytext {
+        margin-top: 1.7rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__keywords {
+        color: $orange;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 500;
+        margin-bottom: 1rem;
+
+        ~ .main__bodytext { // If its sibling is bodytext then give it 1.7rem margin
+            margin-top: .7rem;
+        }
+
+    }
+    
 }
