@@ -296,7 +296,6 @@ h2 {
   overflow: hidden;
   color: inherit;
   font-weight: 700;
-  line-height: normal;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -450,7 +449,7 @@ h2 {
   z-index: 1;
   height: 100vh;
   width: 100%;
-  background-color: rgba(47, 72, 88, 0.71);
+  background-color: rgba(5, 3, 19, 0.81);
 }
 
 .hero__text {
@@ -463,7 +462,7 @@ h2 {
           flex-direction: column;
   color: #fff;
   width: 100%;
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
   margin-top: auto;
 }
 
@@ -518,8 +517,8 @@ h2 {
 }
 
 .hero__scroll {
-  position: relative;
-  margin-top: auto;
+  display: block;
+  margin: auto;
   text-align: center;
   padding-bottom: 2rem;
   color: #d8a55a;
@@ -530,7 +529,9 @@ h2 {
 }
 
 .hero__scroll span {
+  display: inline-block;
   color: #c0bcbb;
+  padding-bottom: 0.5rem;
 }
 
 .hero__scroll::after {
@@ -541,7 +542,6 @@ h2 {
   border-right: 3px solid currentColor;
   border-bottom: 3px solid currentColor;
   position: absolute;
-  bottom: 0;
   left: 50%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -577,7 +577,7 @@ h2 {
 }
 
 .main__keywords {
-  color: #d7734a;
+  color: #b53500;
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   margin-bottom: 1rem;

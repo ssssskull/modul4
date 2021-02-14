@@ -41,5 +41,6 @@ LottieInteractivity.create({
 /*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
 
 // Smooth Scroll Safari
+
 let scrollToContent = document.getElementById("#scrollToContent");
 let mainContainer = document.getElementById("#mainContainer");
