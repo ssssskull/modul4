@@ -39,3 +39,21 @@ LottieInteractivity.create({
     }
 */
 /*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
+
+// Smooth Scroll Safari
+let scrollToContent = document.getElementById("#scrollToContent");
+let mainContainer = document.getElementById("#mainContainer");
+
+
+//function that returns element's y position
+var gety = function (a, y) { y = 0; do { y += a.offsetTop } while (a = a.offsetParent); return y };
+
+$("a[href*=#]").each(function (h) {
+
+  if (h = this.hash)
+    this.onclick = function () {
+      $(document.body).animate({ scrollTop: gety(document.getElementById(h.substring(1))) }, 400, function () { location.hash = h });
+      return !1;
+    };
+
+});

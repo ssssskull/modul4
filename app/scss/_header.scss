@@ -70,7 +70,7 @@
         @include breakpoint-up(computer) {
             height: unset;
             width: 240px;
-            right: 2rem;
+            right: 0;
 
             ul {
                 width: 160px;
@@ -115,7 +115,7 @@
                 visibility: visible;
                 background-image: url("../../images/logo-grey.svg");
                 margin-bottom: 5rem;
-                margin-left: 4.6rem;
+                margin-left: 3.5rem;
             }
         }
     }
@@ -146,6 +146,7 @@
                 overflow: hidden;
                 color: inherit;
                 font-weight: 700;
+                line-height: normal;
                 transition: $transition-200ms;
 
                 &:hover, &:focus {
@@ -157,11 +158,13 @@
                 content: "()";
                 display: inline;
                 color: $gray;
+                transition: $transition-200ms;
             }
             &:last-of-type > a::after {
                 content: ";";
                 display: inline;
                 color: $gray;
+                transition: $transition-200ms;
             }
         }
 

@@ -17,26 +17,81 @@
         z-index: 1;
         height: 100vh;
         width: 100%;
-        background-color: transparentize($black, 0.6);
+        //background-color: transparentize($black, 0.6);
+        background-color: rgba(47, 72, 88, 0.71);// Komplimentær farve til teksten
     }
 
     &__text {
-        display: block;
+        display: flex;
+        flex-direction: column;
         color: $white;
-        margin: 0 auto;
+        width: 100%;
+        padding: 2rem 2rem;
+        margin-top: auto;
 
         @include breakpoint-up(ipad) {
+            padding: 5rem 6rem;
+        };
+
+        @include breakpoint-up(computer) {
+            padding: 10rem;
+        }
+
+        h1, p {
+            line-height: normal;
+
+            @include breakpoint-up(ipad) {
             font-size: $font-xl-fallback;
             font-size: $font-xl;
+            }
+
+            @include breakpoint-up(largeComputer) {
+                padding: 0rem 16rem;
+            }
         }
 
         p {
             font-weight: 400;
             font-size: 2.5rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            @include breakpoint-up(ipad) {
+                margin-bottom: 3rem;
+            }
             @include breakpoint-up(computer) {
+                font-size: 40px;
                 font-size: 4rem;
+                margin-bottom: 4rem;
             }
         }
     }
 
+    &__scroll {
+        position: relative;
+        margin-top: auto;
+        text-align: center;
+        padding-bottom: 2rem;
+        color: $gold;
+        font-size: $font-sm-fallback;
+        font-size: $font-sm;
+        cursor: pointer;
+        font-weight: bold;
+
+        span {
+            color: $gray;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 13px;
+            height: 13px;
+            border-right: 3px solid currentColor;
+            border-bottom: 3px solid currentColor;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: rotate(45deg);
+        }
+    }
 }
