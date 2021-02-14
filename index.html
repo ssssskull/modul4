@@ -8,7 +8,6 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <!-- Decide what fonts to use and remember to combine them so you dont call them multiple times -->
@@ -77,7 +76,16 @@
                 excepturi voluptates amet, labore facere! Ea odit quis obcaecati? Non eius odio optio.</p>
         </div>
     </main>
-    <section class="partners"></section>
+    <section class="partners">
+        <figure>
+            <picture>
+                <source type="image/avif" srcset="/images/energifyn-logo-254w.avif 254w" sizes="254px" />
+                <source type="image/webp" srcset="/images/energifyn-logo-254w.webp 254w" sizes="254px" />
+                <img src="/images/energifyn-logo.png" alt="EnergiFyn" loading="lazy" decoding="async" width="254"
+                    height="143" />
+            </picture>
+        </figure>
+    </section>
     <footer></footer>
     <script src="app/js/script.js" async></script>
 </body>
