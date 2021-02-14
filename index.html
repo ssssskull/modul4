@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
     <!-- Decide what fonts to use and remember to combine them so you dont call them multiple times -->
     <title>Start dit projekt</title>
 </head>
@@ -88,8 +90,46 @@
             </picture>
         </figure>
     </section>
-    <footer>
-
+    <footer class="footer flex">
+        <div class="footer__container">
+            <h4>House of Code</h4>
+            <p>Edisonsvej 2</p>
+            <p>5000 Odense C</p>
+            <p>Mejlgade 27, 1. t.h.</p>
+            <a href="#" title="Privatlivspolitik">Privatlivspolitik</a>
+        </div>
+        <div class="footer__container">
+            <h4>Start dit projekt</h4>
+            <a href="#" title="Skriv til os">info@houseofcode.io</a>
+            <a href="#" title="Ring til os">+45 70 84 85 39</a>
+        </div>
+        <div class="footer__container">
+            <h4>Socialisér</h4>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer__container">
+            <figure>
+                <picture>
+                    <source type="image/avif" srcset="/images/gazelle-negativ-2020-160w.avif 160w" sizes="160px" />
+                    <source type="image/webp" srcset="/images/gazelle-negativ-2020-160w.webp 160w" sizes="160px" />
+                    <img src="/images/gazelle-negativ-2020-160w.png" alt="Børsen Gazelle vinder 2020" loading="lazy"
+                        decoding="async" width="160" height="66" />
+                </picture>
+            </figure>
+            <figure>
+                <picture>
+                    <source type="image/avif" srcset="/images/gazelle-negativ-160w.avif 160w" sizes="160px" />
+                    <source type="image/webp" srcset="/images/gazelle-negativ-160w.webp 160w" sizes="160px" />
+                    <img src="/images/gazelle-negativ-160w.png" alt="Børsen Gazelle vinder 2019" loading="lazy"
+                        decoding="async" width="160" height="66" />
+                </picture>
+            </figure>
+        </div>
     </footer>
     <script src="app/js/script.js" async></script>
 </body>

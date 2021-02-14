@@ -133,6 +133,21 @@
             font-size: 1.8rem;
             margin-bottom: 2.5rem;
             color: $darkblue;
+            
+            &::marker {
+                font-size: $font-med-fallback;
+                font-size: $font-med;
+            }
+            
+            &::before {
+                font-family: 'Roboto Mono', monospace;
+                color: $gray;
+                content: "0" counter(item);
+                counter-increment: item;
+                width: 2em;
+                float: left;
+                font-weight: 400;
+            }
 
             &:last-of-type {
                 margin-bottom: 0;

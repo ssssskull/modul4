@@ -38,25 +38,15 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-li::marker {
-  font-size: 22px;
-  font-size: 2.2rem;
-}
-
-li::before {
-  font-family: 'Roboto Mono', monospace;
-  color: #c0bcbb;
-  content: "0" counter(item);
-  counter-increment: item;
-  width: 2em;
-  float: left;
-  font-weight: 400;
 }
 
 a, a:visited, a:hover {
@@ -109,7 +99,7 @@ a, a:visited, a:hover {
           align-items: start;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
@@ -281,6 +271,21 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 2.5rem;
   color: #515f6d;
+}
+
+.header__menu > li::marker {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+
+.header__menu > li::before {
+  font-family: 'Roboto Mono', monospace;
+  color: #c0bcbb;
+  content: "0" counter(item);
+  counter-increment: item;
+  width: 2em;
+  float: left;
+  font-weight: 400;
 }
 
 .header__menu > li:last-of-type {
@@ -585,5 +590,30 @@ h2 {
 
 .main__keywords ~ .main__bodytext {
   margin-top: .7rem;
+}
+
+.footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 6rem 2rem;
+  background-color: #515f6d;
+  color: #fff;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.footer__container:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.footer__container p:last-of-type {
+  margin-bottom: 1.7rem;
+}
+
+.footer a {
+  color: inherit;
+  font-size: inherit;
 }
 /*# sourceMappingURL=style.css.map */

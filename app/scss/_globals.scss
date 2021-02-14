@@ -23,27 +23,17 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+figure {
+    margin: 0;
+    padding: 0;
+}
+
 // List styles
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
-li::marker {
-    font-size: $font-med-fallback;
-    font-size: $font-med;
-}
-li::before {
-    font-family: 'Roboto Mono', monospace;
-    color: $gray;
-    content: "0" counter(item);
-    counter-increment: item;
-    width: 2em;
-    float: left;
-    font-weight: 400;
-}
-
 // Links
 a, a:visited, a:hover {
     text-decoration: none;
@@ -79,7 +69,7 @@ a, a:visited, a:hover {
 }
 
 // Typography
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
