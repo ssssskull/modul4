@@ -77,8 +77,8 @@ p, h1, h2, h3, h4 {
     padding: 0;
 }
 p {
-    font-size: $font-sm-fallback;
-    font-size: $font-sm;
+    font-size: $font-xs-fallback;
+    font-size: $font-xs;
 }
 
 h1 {
@@ -89,6 +89,10 @@ h1 {
 h2 {
     font-size: $font-med-fallback;
     font-size: $font-med;
+}
+h3 {
+    font-size: $font-sm-fallback;
+    font-size: $font-sm;
 }
 
 // Spacing

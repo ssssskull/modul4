@@ -3,8 +3,8 @@
     padding: 6rem 2rem;
     background-color: $darkblue;
     color: $white;
-    font-size: $font-sm-fallback;
-    font-size: $font-sm;
+    font-size: $font-xs-fallback;
+    font-size: $font-xs;
 
     &__container {
         &:not(:first-child) {

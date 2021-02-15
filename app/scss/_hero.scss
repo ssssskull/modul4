@@ -54,6 +54,7 @@
 
         p {
             font-weight: 400;
+            font-size: 25px;
             font-size: 2.5rem;
             margin-top: 1rem;
             margin-bottom: 2rem;
@@ -74,8 +75,8 @@
         text-align: center;
         padding-bottom: 2rem;
         color: $gold;
-        font-size: $font-sm-fallback;
-        font-size: $font-sm;
+        font-size: $font-xs-fallback;
+        font-size: $font-xs;
         cursor: pointer;
         font-weight: bold;
 

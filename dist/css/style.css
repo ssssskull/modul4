@@ -122,6 +122,11 @@ h2 {
   font-size: 2.2rem;
 }
 
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
 .container {
   margin: 0 auto;
   max-width: 69.375rem;
@@ -508,6 +513,7 @@ h2 {
 
 .hero__text p {
   font-weight: 400;
+  font-size: 25px;
   font-size: 2.5rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
