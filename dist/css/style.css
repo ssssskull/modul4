@@ -433,6 +433,8 @@ h2 {
 
 .hero {
   height: 100vh;
+  /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   background-image: url("../../images/hero-bg-1024w.jpg");
   background-size: cover;
