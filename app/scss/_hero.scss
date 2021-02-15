@@ -17,6 +17,7 @@
         position: absolute;
         z-index: 1;
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         width: 100%;
         //background-color: transparentize($black, 0.6);
         background-color: rgba(5, 3, 19, 0.81);// Komplimentær farve til teksten
