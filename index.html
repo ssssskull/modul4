@@ -90,9 +90,9 @@
     <section class="partners">
         <figure>
             <picture>
-                <source type="image/avif" srcset="/images/energifyn-logo-254w.avif 254w" sizes="254px" />
-                <source type="image/webp" srcset="/images/energifyn-logo-254w.webp 254w" sizes="254px" />
-                <img src="/images/energifyn-logo.png" alt="EnergiFyn" loading="lazy" decoding="async" width="254"
+                <source type="image/avif" srcset="images/energifyn-logo-254w.avif 254w" sizes="254px" />
+                <source type="image/webp" srcset="images/energifyn-logo-254w.webp 254w" sizes="254px" />
+                <img src="images/energifyn-logo.png" alt="EnergiFyn" loading="lazy" decoding="async" width="254"
                     height="143" />
             </picture>
         </figure>
@@ -122,18 +122,23 @@
         <div class="footer__container">
             <figure>
                 <picture>
-                    <source type="image/avif" srcset="/images/gazelle-negativ-2020-160w.avif 160w" sizes="160px" />
-                    <source type="image/webp" srcset="/images/gazelle-negativ-2020-160w.webp 160w" sizes="160px" />
-                    <img src="/images/gazelle-negativ-2020-160w.png" alt="Børsen Gazelle vinder 2020" loading="lazy"
+                    <source type="image/avif" srcset="images/gazelle-negativ-2020-160w.avif 160w" />
+                    <source type="image/webp" srcset="images/gazelle-negativ-2020-160w.webp 160w" />
+                    <img src="images/gazelle-negativ-2020-160w.png" alt="Børsen Gazelle vinder 2020" loading="lazy"
                         decoding="async" width="160" height="66" />
                 </picture>
             </figure>
             <figure>
                 <picture>
-                    <source type="image/avif" srcset="/images/gazelle-negativ-160w.avif 160w" sizes="160px" />
-                    <source type="image/webp" srcset="/images/gazelle-negativ-160w.webp 160w" sizes="160px" />
-                    <img src="/images/gazelle-negativ-160w.png" alt="Børsen Gazelle vinder 2019" loading="lazy"
-                        decoding="async" width="160" height="66" />
+                    <!-- Here, we declare the widths our different files have: 380px, 640px and 960px -->
+                    <source type="image/avif" srcset="
+                    images/gazelle-negativ-160w.avif 160w
+                    " />
+                    <source type="image/webp" srcset="
+                    images/gazelle-negativ-160w.webp 160w
+                    " />
+                    <img src="images/gazelle-negativ-160w.png" alt="A test image" loading="lazy" decoding="async"
+                        width="160" height="66" />
                 </picture>
             </figure>
         </div>
