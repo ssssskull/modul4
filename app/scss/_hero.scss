@@ -78,7 +78,7 @@
         display: block;
         margin-top: 0 auto;
         text-align: center;
-        padding: 4rem 2rem;
+        margin: 4rem 2rem;
         color: $gold;
         font-size: $font-xs-fallback;
         font-size: $font-xs;
@@ -86,17 +86,17 @@
         font-weight: bold;
 
         @include breakpoint-up(ipad) {
-            padding: 5rem 6rem;
+            margin: 5rem 6rem;
         };
 
         @include breakpoint-up(computer) {
-            padding: 10rem;
+            margin: 10rem;
         }
 
         span {
             display: inline-block;
             color: $gray;
-            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
         }
 
         &::after {

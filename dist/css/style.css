@@ -130,13 +130,13 @@ h2 {
 }
 
 h3 {
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .container {
@@ -287,8 +287,8 @@ h3 {
 }
 
 .header__menu > li {
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   margin-bottom: 2.5rem;
   color: #515f6d;
 }
@@ -538,8 +538,8 @@ h3 {
   border: 3px solid #a6bb75;
   background: none;
   color: #a6bb75;
-  font-size: 17px;
-  font-size: 1.7rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   padding: 1.2rem;
   cursor: pointer;
   width: -webkit-max-content;
