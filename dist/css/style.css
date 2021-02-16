@@ -604,6 +604,15 @@ h2 {
   font-size: 1.5rem;
 }
 
+@media (min-width: 40em) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .footer__container:not(:first-child) {
   margin-top: 3rem;
 }

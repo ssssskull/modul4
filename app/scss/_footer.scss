@@ -6,6 +6,9 @@
     font-size: $font-sm-fallback;
     font-size: $font-sm;
 
+    @include breakpoint-up(ipad) {
+        flex-direction: row;
+    }
     &__container {
         &:not(:first-child) {
             margin-top: 3rem;
