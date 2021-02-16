@@ -129,8 +129,8 @@
        }
 
         > li {
-            font-size: 18px;
-            font-size: 1.8rem;
+            font-size: $font-sm-fallback;
+            font-size: $font-sm;
             margin-bottom: 2.5rem;
             color: $darkblue;
             
