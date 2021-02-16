@@ -1,6 +1,8 @@
 // Font
-$font-sm-fallback: 15px;
-$font-sm: 1.5rem;
+$font-xs-fallback: 15px;
+$font-xs: 1.5rem;
+$font-sm-fallback: 17px;
+$font-sm: 1.7rem;
 $font-med-fallback: 22px;
 $font-med: 2.2rem;
 $font-l-fallback: 30px;
@@ -16,6 +18,7 @@ $darkblue: #515f6d;
 $lightblue: #6696ac;
 $gold: #d8a55a;
 $orange: #d7734a;
+$green: #a6bb75;
 
 // Transitions
 $transition-200ms: all .2s ease-in-out;
