@@ -3,7 +3,6 @@
 }
 
 html {
-    height: -webkit-fill-available;
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -22,8 +21,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Mono', monospace;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
 }
 
 figure {
@@ -92,10 +89,6 @@ h1 {
 h2 {
     font-size: $font-med-fallback;
     font-size: $font-med;
-}
-h3 {
-    font-size: $font-sm-fallback;
-    font-size: $font-sm;
 }
 
 h3 {

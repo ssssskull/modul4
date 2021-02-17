@@ -38,16 +38,12 @@ footer {
             }
         }
 
-        h4 ~ p:nth-of-type(3) {
-            margin-top: 1.7rem;
-        }
-
         p:last-of-type {
             margin-bottom: 1.7rem;
         }
 
         a {
-            display: inline-block;
+            display: block;
             text-decoration: underline;
             color: inherit;
             font-size: inherit;
