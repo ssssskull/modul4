@@ -26,10 +26,18 @@
         flex-direction: column;
         color: $white;
         width: 100%;
+        padding: 4rem 2rem;
         margin-top: auto;
 
+        @include breakpoint-up(ipad) {
+            padding: 5rem 6rem;
+        };
 
-        h1, p:first-of-type {/*Rework this and add the button and text*/
+        @include breakpoint-up(computer) {
+            padding: 10rem;
+        }
+
+        h1, p {
             line-height: normal;
 
             @include breakpoint-up(ipad) {
@@ -42,54 +50,32 @@
             }
         }
 
-        p:first-of-type {
+        p {
             font-weight: 400;
-            font-size: 25px;
             font-size: 2.5rem;
             margin-top: 1rem;
-            margin-bottom: 5rem;
+            margin-bottom: 2rem;
             @include breakpoint-up(ipad) {
-                margin-bottom: 7rem;
+                margin-bottom: 3rem;
             }
             @include breakpoint-up(computer) {
                 font-size: 40px;
                 font-size: 4rem;
-                margin-bottom: 10rem;
+                margin-bottom: 4rem;
             }
         }
     }
 
-    &__button {
-        outline: none;
-        border: 3px solid $green;
-        background: none;
-        color: $green;
-        font-size: $font-sm-fallback;
-        font-size: $font-sm;
-        padding: 1.2rem;
-        cursor: pointer;
-        width: max-content;
-        margin: 1rem 0 0 0;
-    }
-
     &__scroll {
         display: block;
-        margin-top: 0 auto;
+        margin: auto;
         text-align: center;
-        padding: 4rem 2rem;
+        padding-bottom: 2rem;
         color: $gold;
-        font-size: $font-xs-fallback;
-        font-size: $font-xs;
+        font-size: $font-sm-fallback;
+        font-size: $font-sm;
         cursor: pointer;
         font-weight: bold;
-
-        @include breakpoint-up(ipad) {
-            padding: 5rem 6rem;
-        };
-
-        @include breakpoint-up(computer) {
-            padding: 10rem;
-        }
 
         span {
             display: inline-block;

@@ -1,66 +1,25 @@
-footer {
-    background-color: $darkblue;
-
-}
 .footer {
-    max-width: 1200px;
     flex-direction: column;
-    color: $white;
-    font-size: $font-xs-fallback;
-    font-size: $font-xs;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    position: relative;
     padding: 6rem 2rem;
+    background-color: $darkblue;
+    color: $white;
+    font-size: $font-sm-fallback;
+    font-size: $font-sm;
 
     @include breakpoint-up(ipad) {
         flex-direction: row;
-        justify-content: start;
-        flex-wrap: wrap;
-        padding: 5rem;
-    }
-
-    @include breakpoint-up(computer) {
-        padding: 15rem 10rem;
     }
     &__container {
-        &:first-child {
-            p:last-of-type {
-                margin-top: 1.7rem;
-            }
-        }
-
         &:not(:first-child) {
             margin-top: 3rem;
-            @include breakpoint-up(ipad) {
-                margin-top: 0;
-            }
         }
 
         p:last-of-type {
             margin-bottom: 1.7rem;
         }
-
-        a {
-            display: block;
-            text-decoration: underline;
-            color: inherit;
-            font-size: inherit;
-        }
-
-        figure {
-            margin-bottom: 1.7rem;
-        }
-
-        @include breakpoint-up(ipad) {
-            &:not(:last-child) {
-                margin-bottom: 5.5rem;
-                margin-right: 6rem;
-            }
-            h4 {
-                margin-bottom: 1.7rem;
-            }
-        }
+    }
+    a {
+        color: inherit;
+        font-size: inherit;
     }
 }
