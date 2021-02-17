@@ -11,6 +11,7 @@
 }
 
 html {
+  height: -webkit-fill-available;
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -36,6 +37,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'Roboto Mono', monospace;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 figure {
@@ -61,6 +64,13 @@ a, a:visited, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.flex-dr-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex-jc-sb {
@@ -117,6 +127,16 @@ h1 {
 h2 {
   font-size: 22px;
   font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .container {
@@ -527,8 +547,8 @@ h2 {
   text-align: center;
   padding-bottom: 2rem;
   color: #d8a55a;
-  font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   cursor: pointer;
   font-weight: bold;
 }
@@ -592,16 +612,24 @@ h2 {
   margin-top: .7rem;
 }
 
+footer {
+  background-color: #515f6d;
+}
+
 .footer {
+  max-width: 1200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 6rem 2rem;
-  background-color: #515f6d;
   color: #fff;
   font-size: 15px;
   font-size: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  padding: 6rem 2rem;
 }
 
 @media (min-width: 40em) {
@@ -610,19 +638,61 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 5rem;
   }
+}
+
+@media (min-width: 64em) {
+  .footer {
+    padding: 15rem 10rem;
+  }
+}
+
+.footer__container:first-child p:last-of-type {
+  margin-top: 1.7rem;
 }
 
 .footer__container:not(:first-child) {
   margin-top: 3rem;
 }
 
+@media (min-width: 40em) {
+  .footer__container:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
+.footer__container h4 ~ p:nth-of-type(3) {
+  margin-top: 1.7rem;
+}
+
 .footer__container p:last-of-type {
   margin-bottom: 1.7rem;
 }
 
-.footer a {
+.footer__container a {
+  display: inline-block;
+  text-decoration: underline;
   color: inherit;
   font-size: inherit;
+}
+
+.footer__container figure {
+  margin-bottom: 1.7rem;
+}
+
+@media (min-width: 40em) {
+  .footer__container:not(:last-child) {
+    margin-bottom: 5.5rem;
+    margin-right: 6rem;
+  }
+  .footer__container h4 {
+    margin-bottom: 1.7rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
