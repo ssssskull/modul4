@@ -3,27 +3,18 @@ footer {
 
 }
 .footer {
-    max-width: 1200px;
-    flex-direction: column;
     color: $white;
     font-size: $font-xs-fallback;
     font-size: $font-xs;
-    margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
     position: relative;
-    padding: 6rem 2rem;
 
     @include breakpoint-up(ipad) {
         flex-direction: row;
         justify-content: start;
         flex-wrap: wrap;
-        padding: 5rem;
     }
 
-    @include breakpoint-up(computer) {
-        padding: 15rem 10rem;
-    }
     &__container {
         &:first-child {
             p:last-of-type {

@@ -22,20 +22,9 @@
     }
 
     &__text {
-        display: flex;
-        flex-direction: column;
         color: $white;
         width: 100%;
-        padding: 4rem 2rem;
         margin-top: auto;
-
-        @include breakpoint-up(ipad) {
-            padding: 5rem 6rem;
-        };
-
-        @include breakpoint-up(computer) {
-            padding: 10rem;
-        }
 
         // Todo: turn these paddings into a helper class and reuse them
 
@@ -45,10 +34,6 @@
             @include breakpoint-up(ipad) {
             font-size: $font-xl-fallback;
             font-size: $font-xl;
-            }
-
-            @include breakpoint-up(largeComputer) {
-                padding: 0rem 16rem;
             }
         }
 
