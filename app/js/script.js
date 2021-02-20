@@ -14,7 +14,7 @@ btnHamburger.addEventListener('click', function () {
 LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
-  container: "#lottieContainerFirst",
+  //TODO fix trigger mobile/desktop container: "#lottieTriggerFirst",
   actions: [
     {
       visibility: [0, 1],

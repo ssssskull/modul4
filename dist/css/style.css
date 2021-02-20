@@ -155,7 +155,7 @@ h3 {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 87.5em) {
   .container--plr {
     padding-left: 26rem;
     padding-right: 26rem;
@@ -600,21 +600,12 @@ h3 {
 
 .main {
   color: #515f6d;
+  max-width: 38rem;
 }
 
 .main h2 {
   font-weight: 400;
   margin-bottom: 2rem;
-}
-
-.main__figure #firstLottie {
-  width: 500px;
-}
-
-@media (max-width: 63.9375em) {
-  .main__figure #firstLottie {
-    width: 100%;
-  }
 }
 
 .main__bodytext {
@@ -631,6 +622,23 @@ h3 {
 
 .main__keywords ~ .main__bodytext {
   margin-top: .7rem;
+}
+
+.aside__figure #firstLottie {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 64em) {
+  .aside__figure #firstLottie {
+    width: 30vw;
+    min-width: 200px;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+  }
 }
 
 footer {
