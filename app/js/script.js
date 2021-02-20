@@ -2,8 +2,6 @@ const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector('.header');
 
 btnHamburger.addEventListener('click', function () {
-  console.log('click hamburger');
-
   if (header.classList.contains('open')) { // Close Hamburger Menu
     header.classList.remove('open');
   }
