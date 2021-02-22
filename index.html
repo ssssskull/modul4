@@ -57,10 +57,15 @@
             <div class="hero__text container--pall">
                 <h1>Kom godt fra start</h1>
                 <p>med vores afklaringsforløb</p>
-                <a id="scrollToContent" class="hero__scroll" href="#mainContainer"
-                    title="Scroll to main content">scroll<span>View.</span></a>
+                <a href="#" id="scrollToContent" class="hero__scroll" title="Scroll to main content" onclick="return false;" onmousedown="autoScrollTo('mainContainer');" 
+                    >scroll<span>View.</span></a>
                 <!-- Tekst der ser ud som kode som på forsiden? -->
             </div>
+
+            
+                
+
+
         </div>
     </section>
     <main class="main container--pall" id="mainContainer">
@@ -143,6 +148,7 @@
         </div>
     </footer>
     <script src="app/js/script.js" async></script>
+    <script src="autoscroll.js"></script>
 </body>
 
 </html>
