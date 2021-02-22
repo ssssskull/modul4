@@ -16,14 +16,14 @@ btnHamburger.addEventListener('click', function () {
 // Smoth scroll 
 let scrollY = 0;
 let distance = 40;
-let speed = 24;
+let speed = 15;
 
 function autoScrollTo(el) {
   let currentY = window.pageYOffset;
   let targetY = document.getElementById(el).offsetTop;
   let bodyHeight = document.body.offsetHeight;
   let yPos = currentY + window.innerHeight;
-  let animator = setTimeout('autoScrollTo(\'' + el + '\')', 24);
+  let animator = setTimeout('autoScrollTo(\'' + el + '\')', speed);
 
   if (yPos > bodyHeight) {
     clearTimeout(animator);
