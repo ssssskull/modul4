@@ -6,9 +6,9 @@ html {
     height: -webkit-fill-available;
     font-size: 62.5%;
     box-sizing: border-box;
-    @supports (scroll-behavior: smooth) {
+    /*@supports (scroll-behavior: smooth) {
         scroll-behavior: smooth;
-    }
+    }*/
 }
 *, *::before, *::after {
     box-sizing: inherit;
