@@ -1,3 +1,5 @@
+
+// Hamburger toggle
 const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector('.header');
 
@@ -11,26 +13,32 @@ btnHamburger.addEventListener('click', function () {
 });
 
 
-//smoth scroll 
-var scrollY = 0;
-var distance = 40;
-var speed = 24;
+// Smoth scroll 
+let scrollY = 0;
+let distance = 40;
+let speed = 24;
+
 function autoScrollTo(el) {
-	var currentY = window.pageYOffset;
-	var targetY = document.getElementById(el).offsetTop;
-	var bodyHeight = document.body.offsetHeight;
-	var yPos = currentY + window.innerHeight;
-	var animator = setTimeout('autoScrollTo(\''+el+'\')',24);
-	if(yPos > bodyHeight){
-		clearTimeout(animator);
-	} else {
-		if(currentY < targetY-distance){
-		    scrollY = currentY+distance;
-		    window.scroll(0, scrollY);
-	    } else {
-		    clearTimeout(animator);
-	    }
-	}
+  let currentY = window.pageYOffset;
+  let targetY = document.getElementById(el).offsetTop;
+  let bodyHeight = document.body.offsetHeight;
+  let yPos = currentY + window.innerHeight;
+  let animator = setTimeout('autoScrollTo(\'' + el + '\')', 24);
+
+  if (yPos > bodyHeight) {
+    clearTimeout(animator);
+  }
+
+  else {
+    if (currentY < targetY - distance) {
+      scrollY = currentY + distance;
+      window.scroll(0, scrollY);
+    }
+
+    else {
+      clearTimeout(animator);
+    }
+  }
 }
 
 
@@ -49,16 +57,16 @@ LottieInteractivity.create({
 });
 // Offsetting:
 /*
-    {// stopping the animatio until 25% of the container is visible
-      visibility: [0, 0.25],
-      type: "stop",
-      frames: [0]
-    },
-    {// Start playing after 25% of the container is visible
-      visibility: [0.25, 1],
-      type: "seek",
-      frames: [0, 100]
-    }
+{// stopping the animatio until 25% of the container is visible
+  visibility: [0, 0.25],
+  type: "stop",
+  frames: [0]
+},
+{// Start playing after 25% of the container is visible
+  visibility: [0.25, 1],
+  type: "seek",
+  frames: [0, 100]
+}
 */
 /*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
 
