@@ -1,6 +1,20 @@
 .main {
     color: $darkblue;
-    max-width: 38rem;
+
+    @include breakpoint-up(computer) {
+        display: grid;
+        grid-template-columns: 65rem 35rem;
+        grid-auto-flow: dense;
+        //TODO fix placeringer
+        max-width: 38rem;
+
+        &__col1 {
+        @include breakpoint-up(computer) {
+            grid-column: 1/2;
+        }
+    }
+    }
+
 
     h2 {
         font-weight: 400;
@@ -24,24 +38,19 @@
         }
 
     }
-    
-}
 
-.aside {
-    &__figure {
-        #firstLottie {
+    &__col2 {
+        /*#firstLottie*/img {
             width: 100%;
             margin: 0 auto;
 
             @include breakpoint-up(computer) {
+                grid-column: 2/3;
                 width: 30vw;
                 min-width: 200px;
                 max-width: 500px;
-                position: fixed;
-                top: 50%;
-                right: 0;
-                z-index: -1;
             }
         }
     }
+
 }

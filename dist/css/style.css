@@ -1,3 +1,11 @@
+@-ms-viewport {
+  orientation: portrait;
+}
+
+@-o-viewport {
+  orientation: portrait;
+}
+
 @viewport {
   orientation: portrait;
 }
@@ -5,11 +13,13 @@
 html {
   height: -webkit-fill-available;
   font-size: 62.5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -18,8 +28,13 @@ body {
   font-weight: 400;
   line-height: 1.7;
   counter-reset: item;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: 'Roboto Mono', monospace;
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -40,39 +55,57 @@ a, a:visited, a:hover {
   text-decoration: none;
   font-family: 'Roboto Mono', monospace;
   letter-spacing: -0.013em;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .flex-dr-col {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex-jc-sb {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .flex-jc-c {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex-jc-e {
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .flex-ai-c {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flex-jc-st {
-  justify-content: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .flex-ai-st {
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 p, h1, h2, h3, h4 {
@@ -200,7 +233,8 @@ h3 {
 
 .header.open .header__menu {
   visibility: visible;
-  transform: translateY(0px) translateZ(0px);
+  -webkit-transform: translateY(0px) translateZ(0px);
+          transform: translateY(0px) translateZ(0px);
 }
 
 .header.open .header__burger > span {
@@ -208,13 +242,15 @@ h3 {
 }
 
 .header.open .header__burger > span::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 0;
   background-color: #515f6d;
 }
 
 .header.open .header__burger > span::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 0;
   background-color: #515f6d;
 }
@@ -222,8 +258,8 @@ h3 {
 .header nav {
   height: 100vh;
   width: 100vw;
-  flex-direction: column;
   padding: 3rem 2rem;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 2;
   position: fixed;
@@ -288,8 +324,12 @@ h3 {
 @media (max-width: 63.9375em) {
   .header__menu {
     visibility: hidden;
-    transform: translateY(-10px) translateZ(0px);
+    -webkit-transform: translateY(-10px) translateZ(0px);
+            transform: translateY(-10px) translateZ(0px);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   }
 }
 
@@ -328,6 +368,7 @@ h3 {
   overflow: hidden;
   color: inherit;
   font-weight: 700;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -339,6 +380,7 @@ h3 {
   content: "()";
   display: inline;
   color: #c0bcbb;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -346,6 +388,7 @@ h3 {
   content: ";";
   display: inline;
   color: #c0bcbb;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -377,12 +420,14 @@ h3 {
   }
   .header__toggle .header__burger:focus {
     outline: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .header__toggle .header__burger > span, .header__toggle .header__burger > span::before, .header__toggle .header__burger > span::after {
     width: 26px;
     height: 4px;
     background-color: #fff;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     will-change: transform, background-color;
   }
@@ -404,6 +449,7 @@ h3 {
 
 .mobile-lines {
   position: relative;
+  -webkit-transition: 200ms;
   transition: 200ms;
   margin-bottom: 1rem;
 }
@@ -543,12 +589,31 @@ h3 {
   border-bottom: 3px solid currentColor;
   position: absolute;
   left: 50%;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .main {
   color: #515f6d;
-  max-width: 38rem;
+}
+
+@media (min-width: 64em) {
+  .main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 65rem 35rem;
+        grid-template-columns: 65rem 35rem;
+    grid-auto-flow: dense;
+    max-width: 38rem;
+  }
+}
+
+@media (min-width: 64em) and (min-width: 64em) {
+  .main__col1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
 }
 
 .main h2 {
@@ -572,20 +637,23 @@ h3 {
   margin-top: .7rem;
 }
 
-.aside__figure #firstLottie {
+.main__col2 {
+  /*#firstLottie*/
+}
+
+.main__col2 img {
   width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: 64em) {
-  .aside__figure #firstLottie {
+  .main__col2 img {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
     width: 30vw;
     min-width: 200px;
     max-width: 500px;
-    position: fixed;
-    top: 50%;
-    right: 0;
-    z-index: -1;
   }
 }
 
@@ -603,9 +671,15 @@ footer {
 
 @media (min-width: 40em) {
   .footer {
-    flex-direction: row;
-    justify-content: start;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
