@@ -51,7 +51,6 @@
     nav {
         height: 100vh;
         width: 100vw;
-        flex-direction: column;
         padding: 3rem 2rem;
         transition: $transition-200ms;
         z-index: 2;
@@ -74,7 +73,7 @@
 
             ul {
                 width: 160px;
-                
+
                 li {
                     color: $white;
 
@@ -133,12 +132,12 @@
             font-size: 1.8rem;
             margin-bottom: 2.5rem;
             color: $darkblue;
-            
+
             &::marker {
                 font-size: $font-med-fallback;
                 font-size: $font-med;
             }
-            
+
             &::before {
                 font-family: 'Roboto Mono', monospace;
                 color: $gray;
