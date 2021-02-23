@@ -10,7 +10,8 @@
         "../../app/scss/_header.scss",
         "../../app/scss/_hero.scss",
         "../../app/scss/_main.scss",
-        "../../app/scss/_footer.scss"
+        "../../app/scss/_footer.scss",
+        "../../app/scss/_femfaser.scss"
     ],
     "names": [],
     "file": "style.css"
