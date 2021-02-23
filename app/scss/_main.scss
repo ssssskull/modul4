@@ -19,7 +19,7 @@
         font-weight: 500;
         margin-bottom: 1rem;
 
-        ~ .main__bodytext { // If its sibling is bodytext then give it 1.7rem margin
+        ~ .main__bodytext { // If its sibling is bodytext then give it 1.7rem margin!
             margin-top: .7rem;
         }
 
