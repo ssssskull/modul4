@@ -552,13 +552,6 @@ h3 {
   font-weight: 400;
   font-size: 2.5rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 40em) {
-  .hero__text p {
-    margin-bottom: 3rem;
-  }
 }
 
 @media (min-width: 64em) {
@@ -571,7 +564,6 @@ h3 {
 
 .hero__scroll {
   display: block;
-  margin: auto;
   text-align: center;
   padding-bottom: 2rem;
   color: #d8a55a;
@@ -579,6 +571,19 @@ h3 {
   font-size: 1.8rem;
   cursor: pointer;
   font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 40em) {
+  .hero__scroll {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__scroll {
+    margin-bottom: 4rem;
+  }
 }
 
 .hero__scroll span {
