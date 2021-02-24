@@ -724,7 +724,7 @@ h3 {
   }
 }
 
-.main__col2 img {
+.main__col2 #firstLottie, .main__col2 img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -734,13 +734,9 @@ h3 {
 }
 
 @media (min-width: 40em) {
-  .main__col2 img {
+  .main__col2 #firstLottie, .main__col2 img {
     width: 100%;
     height: unset;
-    /*#firstLottie {
-                    width: 100%;
-                    margin: 0 auto;
-                }*/
   }
 }
 
