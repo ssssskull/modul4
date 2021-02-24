@@ -139,26 +139,33 @@ h3 {
 }
 
 .container {
-  max-width: 75rem;
-}
-
-.container--plr {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
 @media (min-width: 40em) {
-  .container--plr {
+  .container {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 
-@media (min-width: 87.5em) {
-  .container--plr {
-    padding-left: 26rem;
-    padding-right: 26rem;
+@media (min-width: 64em) {
+  .container {
+    padding-right: 24rem;
   }
+}
+
+@media (min-width: 87.5em) {
+  .container {
+    padding-left: 10rem;
+  }
+}
+
+.container__elem {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .container--ptb {
@@ -594,9 +601,9 @@ h3 {
 }
 
 .main {
-  color: #515f6d;
   display: -ms-grid;
   display: grid;
+  color: #515f6d;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -606,8 +613,6 @@ h3 {
   .main {
     -ms-grid-columns: 1.5fr 1fr;
         grid-template-columns: 1.5fr 1fr;
-    -webkit-column-gap: 0.5rem;
-            column-gap: 0.5rem;
     row-gap: 6rem;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
@@ -617,16 +622,7 @@ h3 {
 
 @media (min-width: 64em) {
   .main {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 0.2rem;
-            column-gap: 0.2rem;
     row-gap: 20rem;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .main {
     -ms-grid-columns: 380px 350px;
         grid-template-columns: 380px 350px;
   }
@@ -653,10 +649,6 @@ h3 {
   margin-top: .7rem;
 }
 
-.main__col1:first-of-type h2:nth-of-type(2) {
-  margin-top: 6rem;
-}
-
 @media (min-width: 64em) {
   .main__col1 {
     -ms-grid-column: 1;
@@ -676,6 +668,7 @@ h3 {
   height: 20rem;
   outline: 1px solid red;
   width: 100%;
+  max-width: 350px;
 }
 
 @media (min-width: 40em) {
@@ -685,29 +678,13 @@ h3 {
   }
 }
 
-@media (min-width: 64em) {
-  .main__col2 {
-    padding-right: 240px;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .main__col2 {
-    padding-right: 0px;
-    margin-right: 240px;
-  }
-}
-
-.main__col2:not(:first-of-type) img {
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-}
-
 .main__col2 img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (min-width: 40em) {
@@ -729,7 +706,6 @@ footer {
   color: #fff;
   font-size: 15px;
   font-size: 1.5rem;
-  width: 100%;
   position: relative;
 }
 
