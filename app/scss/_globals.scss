@@ -100,6 +100,38 @@ h3 {
     font-size: $font-sm-fallback;
     font-size: $font-sm;
 }
+// Buttons
+
+.button {
+    width: max-content;
+    color: $lightblue;
+    font-size: $font-xs-fallback;
+    font-size: $font-xs;
+    text-decoration: underline;
+    font-weight: 700;
+    position: relative;
+    transition: $transition-200ms;
+    
+    &::after {
+        display: inline;
+        padding-left: 1rem;
+        position: absolute;
+        top: 0;
+        line-height: normal;
+        content: ">";
+        transition: $transition-200ms;
+        font-size: $font-xs-fallback;
+        font-size: $font-xs;
+    }
+
+    &:hover {
+        color: $green;
+        
+        &::after {
+            padding-left: 2rem;
+        }
+    }
+}
 
 // Spacing
 .container {

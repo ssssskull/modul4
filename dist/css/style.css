@@ -138,6 +138,41 @@ h3 {
   font-size: 1.8rem;
 }
 
+.button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #6696ac;
+  font-size: 15px;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: 700;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.button::after {
+  display: inline;
+  padding-left: 1rem;
+  position: absolute;
+  top: 0;
+  line-height: normal;
+  content: ">";
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  color: #a6bb75;
+}
+
+.button:hover::after {
+  padding-left: 2rem;
+}
+
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -654,6 +689,10 @@ h3 {
 
 .main__keywords ~ .main__bodytext {
   margin-top: .7rem;
+}
+
+.main__col1 p:last-of-type {
+  margin-bottom: 1.7rem;
 }
 
 @media (min-width: 64em) {
