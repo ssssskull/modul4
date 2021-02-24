@@ -6,7 +6,6 @@ footer {
     color: $white;
     font-size: $font-xs-fallback;
     font-size: $font-xs;
-    width: 100%;
     position: relative;
 
     @include breakpoint-up(ipad) {

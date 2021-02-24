@@ -25,16 +25,16 @@
 <body>
     <header class="header">
         <nav class="flex flex-jc-st flex-ai-st flex-dr-col">
-            <a id="logoHome" class="header__logo" href="#"></a>
+            <a id="logoHome" class="header__logo" href="#" tabindex="0"></a>
             <ul class="header__menu">
-                <li><a href="#">Projekter</a></li>
-                <li><a href="#">Det vi tilbyder</a></li>
-                <li><a href="#">At arbejde med os</a></li>
-                <li class="active-menu"><a href="#">Start dit projekt</a></li>
-                <li><a href="#">Lær os at kende</a></li>
-                <li><a href="#">Jobs i huset</a></li>
-                <li><a href="#">Blog & Nyheder</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#" tabindex="0">Projekter</a></li>
+                <li><a href="#" tabindex="0">Det vi tilbyder</a></li>
+                <li><a href="#" tabindex="0">At arbejde med os</a></li>
+                <li class="active-menu"><a href="#" tabindex="0">Start dit projekt</a></li>
+                <li><a href="#" tabindex="0">Lær os at kende</a></li>
+                <li><a href="#" tabindex="0">Jobs i huset</a></li>
+                <li><a href="#" tabindex="0">Blog & Nyheder</a></li>
+                <li><a href="#" tabindex="0">Kontakt</a></li>
             </ul>
         </nav>
         <a id="mobileLogo" class="header__mobile-logo" href="#" title="House of Code"></a>
@@ -53,45 +53,65 @@
         </div>
     </header>
     <section class="hero">
-        <div class="hero__wrapper flex flex-jc-c flex-ai-c">
-            <div class="hero__text flex flex-dr-col container--ptb container--plr">
+        <div class="hero__wrapper flex flex-jc-c flex-ai-c flex-dr-col">
+            <div class="container__elem hero__text flex flex-dr-col container--ptb">
                 <h1>Kom godt fra start</h1>
                 <p>med vores afklaringsforløb</p>
-                <a href="#" id="scrollToContent" class="hero__scroll" title="Scroll to main content" onclick="return false;" onmousedown="autoScrollTo('mainContainer');"
-                    >scroll<span>View.</span></a>
-                <!-- Tekst der ser ud som kode som på forsiden? -->
             </div>
-
-
-
-
-
+            <a href="#" id="scrollToContent" class="hero__scroll" title="Scroll to main content" onclick="return false;"
+                onmousedown="autoScrollTo('mainContainer');">scroll<span>View.</span>
+            </a>
         </div>
     </section>
-    <main class="container--plr container--ptb" id="mainContainer">
-        <div class="container main">
-            <h2>Kom i gang med dit projekt</h2>
-            <p class="main__bodytext">Står du og skal i gang med at udvikle en digital løsning, er du havnet det rette
-                sted. Vi anbefaler altid
-                at starte processen med et afklaringsforløb, hvor vi afdækker rammerne for projektet og validerer
-                løsningen.</p>
-            <h2 id="lottieTriggerFirst">Kom i gang med dit projekt</h2>
-            <p class="main__keywords">// Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="main__keywords">// Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos natus vel minus.
-            </p>
-            <p class="main__keywords">// Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis.</p>
-            <p class="main__bodytext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae dicta tempora
-                voluptatum ut incidunt
-                quo. Pariatur expedita suscipit veniam, harum cupiditate consequatur reprehenderit aspernatur voluptatum
-                explicabo cum est repudiandae ad ratione rem similique perspiciatis accusamus deleniti deserunt
-                excepturi voluptates amet, labore facere! Ea odit quis obcaecati? Non eius odio optio.</p>
-        </div>
-        <aside class="aside">
-            <figure class="aside__figure">
-                <lottie-player id="firstLottie" src="https://assets8.lottiefiles.com/packages/lf20_4nLQ1E.json">
+    <main class="container" id="mainContainer">
+        <div class="container__elem main container--ptb">
+            <div class="main__col1">
+                <h2>Hvad er et afklaringsforløb?</h2>
+                <p class="main__keywords">// Afdækker din løsning fra A-Z </p>
+                <p class="main__keywords">// Kom godt fra start </p>
+                <p class="main__keywords">// Spar penge i det lange løb, ved at være afklaret</p>
+                <p class="main__bodytext" id="lottieTriggerFirst">Står du og skal i gang med at udvikle en digital
+                    løsning, er du havnet det rette sted. Vi anbefaler altid at starte processen med et
+                    afklaringsforløb, hvor vi afdækker rammerne for projektet og validerer løsningen.
+                    Afklaringsforløbet er bygget op omkring fem faser, som fra start til slut danner rammerne for vores
+                    indsigter i et færdigt overblik til dig.</p>
+                <p class="main__bodytext">Til hver af de fem faser, som din løsning gennemgår, hører der et konkret
+                    udbytte med betydning for udformningen af den endelige løsning. Faserne leder frem til hver sin type
+                    udbytte, men det mest værdifulde udbytte er summen af alle faserne: en gennemarbejdet løsning med et
+                    solidt grundlag for den videre design- og udviklingsproces.</p>
+                <a href="#" tabindex="0" class="button" type="button">Mere om de fem faser</a>
+            </div>
+            <figure class="main__col2">
+                <lottie-player id="firstLottie" src="https://assets1.lottiefiles.com/packages/lf20_okph4ekx.json">
                 </lottie-player>
             </figure>
-        </aside>
+            <div class="main__col1">
+                <h2>Hvorfor et afklaringsforløb?</h2>
+                <p class="main__bodytext">IT-projekter er komplekse og følger sjældent den samme skabelon. Med et
+                    afklaringsforløb hos os tager vi hånd om den gode proces. Vi afdækker din løsning fra A til Z, inden
+                    den designes og udvikles. Det er vigtigt at komme godt fra start, da det er meget nemmere at
+                    tilpasse produktet i afklaringsfasen end midt i udviklingsfasen. Og det er ikke bare nemmere, det er
+                    også langt billigere! Faktisk er der en meget simpel tommelfingerregel, som siger 1:10:100. Hvad der
+                    koster 1 kr. i afklaringsfasen, koster 10 kr. i designfasen og 100 kr. i udviklingsfasen. Det
+                    betyder med andre ord, at det kan koste dig 100 kr. i udviklingsfasen for hver krone du skærer i
+                    designfasen.</p>
+            </div>
+            <figure class="main__col2">
+                <img src="images/placeholder1_new.svg">
+            </figure>
+            <div class="main__col1">
+                <h2>Hvordan foregår det?</h2>
+                <p class="main__bodytext">I House of Code arbejder vi agilt. Det betyder at vi tilrettelægger processen
+                    ud fra dine eksakte behov, og dit projekt. Vi løser aldrig bare en opgave fra den ene ende til
+                    anden. Alt foregår i iterationer, så vi løbende kan udvikle og vurdere løsningen i samarbejde med
+                    dig. For hver fase gennemgår vi feedback-loops, der sikrer at løsningen udvikles i fuld
+                    overensstemmelse med både dine, brugernes og forretningens behov. Det er billigere at rette
+                    løsningen til i starten end at kode den om, når brugerne står med det færdige produkt i hånden.</p>
+            </div>
+            <figure class="main__col2">
+                <img src="images/placeholder1_new.svg">
+            </figure>
+        </div>
     </main>
     <section class="partners container container--plr">
         <figure>
@@ -103,8 +123,8 @@
             </picture>
         </figure>
     </section>
-    <footer>
-        <div class="footer flex container--ptbfooter container--plr flex-dr-col">
+    <footer class="container">
+        <div class="container__elem footer flex container--ptbfooter flex-dr-col">
             <div class="footer__container">
                 <h4>House of Code</h4>
                 <p>Edisonsvej 2</p>
