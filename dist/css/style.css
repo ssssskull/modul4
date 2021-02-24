@@ -659,11 +659,13 @@ html {
   --line-border-fill: #e0e0e0;
 }
 
-.pfemfaser, .h1femfaser, .h2femfaser, .h3femfaser {
-  text-align: center;
+.femfaser {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.h1femfaser, .h2femfaser {
+.pfemfaser, .h1femfaser, .h2femfaser {
+  text-align: center;
   color: white;
 }
 
@@ -675,15 +677,20 @@ html {
   width: 90%;
 }
 
+.femfasercontainer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .femfaserprogess-container::before {
   content: '';
   position: absolute;
   background-color: var(--line-border-fill);
   top: 50%;
-  left: 15%;
+  left: 23%;
   transform: translateY(-50%);
-  height: 5%;
-  width: 85%;
+  height: 15%;
+  width: 65%;
   z-index: -1;
 }
 
@@ -709,20 +716,26 @@ html {
   transition: .4s ease;
 }
 
-femfasercircle.active {
-  border-color: var(--line-border-fill);
+a.femfasercircle.active {
+  background-color: #A5BA74;
 }
 
 .arrowleft {
   float: left;
-  background: white;
   color: #515f6d;
+  font-size: 700%;
+  margin-top: -6%;
+  background-color: white;
+  border: none;
 }
 
 .arrowright {
   float: right;
-  background: white;
   color: #515f6d;
+  font-size: 700%;
+  margin-top: -6%;
+  background-color: white;
+  border: none;
 }
 
 .h1femfaser {
@@ -730,11 +743,35 @@ femfasercircle.active {
   width: 20%;
   padding: 3%;
   background: #A5BA74;
-  margin-left: 40%;
+  margin-left: 42.5%;
+  z-index: -1;
+  margin-bottom: -5%;
 }
 
 .h2femfaser {
   background: #A5BA74;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 10%;
+  margin-left: 17%;
+  margin-right: 17%;
   /* Fix margin left/right */
+}
+
+.tlf {
+  background: #A5BA74;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 2%;
+  margin-bottom: 7%;
+  margin-top: 15%;
+}
+
+.mail {
+  background: #A5BA74;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 2%;
+  margin-bottom: 20%;
 }
 /*# sourceMappingURL=style.css.map */
