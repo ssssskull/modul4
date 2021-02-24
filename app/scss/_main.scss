@@ -2,21 +2,20 @@
     display: grid;
     color: $darkblue;
     justify-content: space-between;
-    //TODO check if u have to remove paddings and redo them on the elements instead so the grid doesnt fuck up
-
+    row-gap: 6rem;
+    
     @include breakpoint-up(ipad) {
         grid-template-columns: 1.5fr 1fr;
-        row-gap: 6rem;
         grid-template-rows: auto auto auto;
         grid-auto-flow: dense;
+        column-gap: 5rem;
         //TODO fix placeringer
     }
     @include breakpoint-up(computer) {
         row-gap: 20rem;
         grid-template-columns: 380px 350px;
     }
-    @include breakpoint-up(largeComputer) {
-    }
+
 
 
     h2 {
