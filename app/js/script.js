@@ -15,8 +15,13 @@ btnHamburger.addEventListener('click', function () {
 
 // Smoth scroll 
 let scrollY = 0;
-let distance = 40;
-let speed = 15;
+let distance = 10;
+let speed = 0.4;
+
+let i;
+for (i = 0; i < 4; i++) { 
+  console.log("Smoth scroll er lavet af Simone")
+}
 
 function autoScrollTo(el) {
   let currentY = window.pageYOffset;
