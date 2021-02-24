@@ -654,4 +654,87 @@ footer {
     margin-bottom: 1.7rem;
   }
 }
+
+html {
+  --line-border-fill: #e0e0e0;
+}
+
+.pfemfaser, .h1femfaser, .h2femfaser, .h3femfaser {
+  text-align: center;
+}
+
+.h1femfaser, .h2femfaser {
+  color: white;
+}
+
+.femfaserprogess-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  max-width: 100%;
+  width: 90%;
+}
+
+.femfaserprogess-container::before {
+  content: '';
+  position: absolute;
+  background-color: var(--line-border-fill);
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  height: 5%;
+  width: 85%;
+  z-index: -1;
+}
+
+.femfaserprogess {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: .4s ease;
+}
+
+.femfasercircle {
+  background-color: var(--line-border-fill);
+  border-radius: 50%;
+  height: auto;
+  width: 5%;
+  padding-top: 5%;
+  display: flex;
+  transition: .4s ease;
+}
+
+femfasercircle.active {
+  border-color: var(--line-border-fill);
+}
+
+.arrowleft {
+  float: left;
+  background: white;
+  color: #515f6d;
+}
+
+.arrowright {
+  float: right;
+  background: white;
+  color: #515f6d;
+}
+
+.h1femfaser {
+  border-radius: 50%;
+  width: 20%;
+  padding: 3%;
+  background: #A5BA74;
+  margin-left: 40%;
+}
+
+.h2femfaser {
+  background: #A5BA74;
+  /* Fix margin left/right */
+}
 /*# sourceMappingURL=style.css.map */
