@@ -88,11 +88,17 @@ window.addEventListener('resize', () => {
 });
 
 // Fem faser js
-function changeBackcolor(color) {
-  document.getElementById("circle2").style.background = color;
-  document.getElementById("h1femfaser").style.background = color;
-  document.getElementById("h2femfaser").style.background = color;
+let nummer = document.querySelector("#h1femfaser").value;
+console.log(typeof nummer)
+nummer.padStart(2, '0')
+
+
+function incrementNummer() {
+  document.querySelector("#h1femfaser").value = nummer += 2;
 }
+
+let button = document.querySelector("button");
+button.addEventListener("click", incrementNummer)
 
 /*function changeBackcolor(color) {
   document.getElementById("circle3").style.background = "#AA82AD";
