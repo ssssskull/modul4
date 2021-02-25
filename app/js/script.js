@@ -19,7 +19,7 @@ let distance = 10;
 let speed = 0.4;
 
 let i;
-for (i = 0; i < 4; i++) { 
+for (i = 0; i < 4; i++) {
   console.log("Smoth scroll er lavet af Simone")
 }
 
@@ -52,11 +52,45 @@ LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
   //TODO fix trigger mobile/desktop container: "#lottieTriggerFirst",
+  actions: [ //TODO how to control where and when the scroll iniates with the
+    {
+      visibility: [0, 1],
+      type: "seek",
+      frames: [0]
+    },
+    {
+      visibility: [1, 1],
+      type: "stop",
+      frames: [0, 49]
+    },
+    {
+      visibility: [0, 1],
+      type: "seek",
+      frames: [0]
+    }
+  ],
+});
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#secondLottie',
+  //TODO fix trigger mobile/desktop container: "#lottieTriggerFirst",
   actions: [
     {
       visibility: [0, 1],
       type: "seek",
-      frames: [0, 49]
+      frames: [0, 37]
+    }
+  ],
+});
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#thirdLottie',
+  //TODO fix trigger mobile/desktop container: "#lottieTriggerFirst",
+  actions: [
+    {
+      visibility: [0, 1],
+      type: "seek",
+      frames: [0, 48]
     }
   ],
 });
