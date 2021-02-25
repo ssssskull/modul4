@@ -1,3 +1,10 @@
+main {
+    &:first-of-type {
+        p:last-of-type {
+            margin-bottom: 1.7rem;
+        }
+    }
+}
 .main {
     display: grid;
     color: $darkblue;
@@ -42,9 +49,6 @@
     }
 
     &__col1 {
-        p:last-of-type {
-            margin-bottom: 1.7rem;
-        }
         @include breakpoint-up(computer) {
             grid-column: 1/2;
 

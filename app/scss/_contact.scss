@@ -1,32 +1,30 @@
 .contact {
-    background: blue;
+    background: $lightblue;
     min-height: 400px;
-    color: red;
+    color: $white;
+    margin-top: 4rem;
 
+    @include breakpoint-down(iphone) {
+        height: 100vh;
+    }
+
+    &__info {
+
+    }
+    
     &__button {
-        width: 5rem;
-        height: 5rem;
+        display: block;
         background-size: 100% 100%;
         background-position: center center;
         background-repeat: no-repeat;
-        background-image: url("../../images/icons/phone-icon.svg");
-        outline: none;
-        border: none;
-        box-shadow: none;
-        background-color: transparent;
-        cursor: pointer;
-        position: relative;
-        fill: currentColor;
-        padding: 0;
-        margin: 0;
+        width: 3rem;
+        height: 3rem;
 
-        &::after {
-            position: absolute;
-            content: attr(value);
-            display: inline-block;
-            width: max-content;
-            color: inherit;
-            pointer-events: none;
+        &:first-of-type {
+            background-image: url("../../images/icons/phone-icon.svg");
+        }
+        &:last-of-type {
+            background-image: url("../../images/icons/mail-icon.svg");
         }
     }
 }
