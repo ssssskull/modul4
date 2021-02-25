@@ -739,6 +739,42 @@ h3 {
   }
 }
 
+.contact {
+  background: blue;
+  min-height: 400px;
+  color: red;
+}
+
+.contact__button {
+  width: 5rem;
+  height: 5rem;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/icons/phone-icon.svg");
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  fill: currentColor;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__button::after {
+  position: absolute;
+  content: attr(value);
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: inherit;
+  pointer-events: none;
+}
+
 footer {
   background-color: #515f6d;
 }

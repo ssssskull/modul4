@@ -1,0 +1,32 @@
+.contact {
+    background: blue;
+    min-height: 400px;
+    color: red;
+
+    &__button {
+        width: 5rem;
+        height: 5rem;
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("../../images/icons/phone-icon.svg");
+        outline: none;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        cursor: pointer;
+        position: relative;
+        fill: currentColor;
+        padding: 0;
+        margin: 0;
+
+        &::after {
+            position: absolute;
+            content: attr(value);
+            display: inline-block;
+            width: max-content;
+            color: inherit;
+            pointer-events: none;
+        }
+    }
+}
