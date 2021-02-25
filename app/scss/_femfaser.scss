@@ -33,7 +33,7 @@
 .pfemfaser, #h1femfaser, #h2femfaser {
     text-align: center;
     color: white;
-    transition: .4s ease;
+    transition: .2s ease;
 }
 
 .femfaserprogess-container {
@@ -70,7 +70,7 @@
     height: 4px;
     width: 0%;
     z-index: -1;
-    transition: .4s ease;
+    transition: .2s ease;
 }
 
 .femfasercircle {
@@ -80,7 +80,7 @@
     width: 5%;
     padding-top: 5%;
     display: flex;
-    transition: .4s ease;
+    transition: .2s ease;
 }
 
 a.femfasercircle.active {
@@ -113,6 +113,7 @@ a.femfasercircle.active {
     padding: 2%;
     margin-bottom: 7%;
     margin-top: 15%;
+    transition: .2s ease;
 }
 
 .mail {
@@ -121,4 +122,5 @@ a.femfasercircle.active {
     margin-right: 20%;
     padding: 2%;
     margin-bottom: 20%;
+    transition: .2s ease;
 }
