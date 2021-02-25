@@ -802,6 +802,10 @@ a.femfasercircle.active {
   transition: .2s ease;
 }
 
+.arrowleft {
+  opacity: 0%;
+}
+
 footer {
   background-color: #515f6d;
 }

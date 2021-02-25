@@ -77,25 +77,6 @@ LottieInteractivity.create({
 
 // Fem faser js
 
-
-let button = document.querySelector(".arrowright");
-button.addEventListener("click", incrementNummer)
-
-
-function incrementNummer() {
-  console.log("helloooooo");
-  //Vi starter med en string -- når vi trykker på knappen skal vi så konvertere værdien til et nummer --> increment --> lav om til string --> tilføj 0 foran
-  let input = document.querySelector("#h1femfaser").innerHTML;
-  input = parseFloat(input);
-  input = input++;
-  console.log(typeof input);
-  input = String(input);
-  console.log(typeof input);
-  //input.value = ++input;
-
-  //console.log(input.padStart(2, '0'));
-}
-
 let faser = Array.from(document.querySelectorAll(".femfasercircle")); //En array skabes udfra alle elementer i HTML, der har class .femfasercircle, og lagres som en let
 let faseFarver = document.querySelector(".femfaser__heading");
 let faseNavnFarve = document.querySelector("#h2femfaser");
@@ -126,6 +107,8 @@ const handleClick = (e) => {
     faseNavnFarve.innerHTML = "#BeCurious";
     tlf.style.background = "#A5BA74";
     mail.style.background = "#A5BA74";
+    buttonRight.style.opacity = "100";
+    buttonLeft.style.opacity = "0";
   }
 
   else if (faser[1].classList.contains("active")) {
@@ -142,6 +125,8 @@ const handleClick = (e) => {
     faseNavnFarve.innerHTML = "#BeCreative";
     tlf.style.background = "#D8A55B";
     mail.style.background = "#D8A55B";
+    buttonLeft.style.opacity = "100";
+    buttonRight.style.opacity = "100";
   }
 
   else if (faser[2].classList.contains("active")) {
@@ -158,6 +143,8 @@ const handleClick = (e) => {
     faseNavnFarve.innerHTML = "#BeTechnical";
     tlf.style.background = "#AA82AD";
     mail.style.background = "#AA82AD";
+    buttonLeft.style.opacity = "100";
+    buttonRight.style.opacity = "100";
   }
 
   else if (faser[3].classList.contains("active")) {
@@ -174,6 +161,8 @@ const handleClick = (e) => {
     faseNavnFarve.innerHTML = "BeSpecific";
     tlf.style.background = "#6696AD";
     mail.style.background = "#6696AD";
+    buttonLeft.style.opacity = "100";
+    buttonRight.style.opacity = "100";
   }
 
   else if (faser[4].classList.contains("active")) {
@@ -190,13 +179,29 @@ const handleClick = (e) => {
     faseNavnFarve.innerHTML = "#BeAwesome"
     tlf.style.background = "#D67249";
     mail.style.background = "#D67249";
+    buttonLeft.style.opacity = "100";
+    buttonRight.style.opacity = "0";
 
   }
 }
-
+ 
   faser.forEach(node => {
     node.addEventListener('click', handleClick);
   });
+
+
+// Button click
+
+function buttonClick() {
+  
+}
+
+let buttonRight = document.querySelector(".arrowright");
+let buttonLeft = document.querySelector(".arrowleft");
+
+buttonRight.addEventListener("click", buttonClick);
+
+  
 
 
 
@@ -253,4 +258,10 @@ const handleClick = (e) => {
     // We execute the same script as before
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
+  })
+
+/* document.addEventListener('scroll', function(event) {
+    let csik = document.getElementById("csik").getBoundingClientRect()
+    document.querySelector(".nav.takaro").style = "clip: rect("+csik.y+"px, 200px, "+(csik.y+csik.height)+"px, 0px);"
+}) */
+// TODO add block to onload to fix color change
