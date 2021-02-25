@@ -1,10 +1,3 @@
-main {
-    &:first-of-type {
-        p:last-of-type {
-            margin-bottom: 1.7rem;
-        }
-    }
-}
 .main {
     display: grid;
     color: $darkblue;
@@ -18,40 +11,41 @@ main {
         column-gap: 5rem;
         //TODO fix placeringer
     }
-
+    
     @include breakpoint-up(computer) {
         row-gap: 20rem;
         grid-template-columns: 380px 350px;
     }
-
+    
     h2 {
         font-weight: 400;
         margin-bottom: 2rem;
     }
-
+    
     &__bodytext {
         margin-top: 1.7rem;
         font-family: 'Roboto', sans-serif;
     }
-
+    
     &__keywords {
         //color: $orange;
         color: /*TODO change color, issa temporary*/#b53500;
         font-family: 'Roboto Mono', monospace;
         font-weight: 500;
         margin-bottom: 1rem;
-
-
+        
+        
         ~ .main__bodytext { // If its sibling is bodytext then give it 1.7rem margin!
             margin-top: .7rem;
         }
-
+        
     }
-
+    
     &__col1 {
+        
         @include breakpoint-up(computer) {
             grid-column: 1/2;
-
+            
             &:first-of-type {
                 h2:nth-of-type(2) {
                     margin-top: 20rem;
@@ -59,7 +53,7 @@ main {
             }
         }
     }
-
+    
     &__col2 {
         display: grid;
         justify-self: center;
@@ -71,18 +65,23 @@ main {
             width: 100%;
             height: 100%;
         }
-
+        
         #firstLottie, img {// TODO Victor --> img tag skal slettes når du er færdig med animationerne
             width: 100%;
             height: 100%;
             margin: 0 auto;
             align-self: center;
-
+            
             @include breakpoint-up(ipad) {
                 width: 100%;
                 height: unset;
             }
         }
     }
-
+    
+}
+main > .main > .main__col1:first-of-type {
+    p:last-of-type {
+        margin-bottom: 1.7rem;
+    }
 }

@@ -241,14 +241,6 @@ h3 {
   }
 }
 
-/*@keyframes fly-down {
-    0% {
-        margin-bottom: 0rem;
-    }
-    100% {
-        margin-bottom: 5rem;
-    }
-}*/
 .header {
   position: absolute;
 }
@@ -640,10 +632,6 @@ h3 {
           transform: rotate(45deg);
 }
 
-main:first-of-type p:last-of-type {
-  margin-bottom: 1.7rem;
-}
-
 .main {
   display: -ms-grid;
   display: grid;
@@ -739,6 +727,10 @@ main:first-of-type p:last-of-type {
   }
 }
 
+main > .main > .main__col1:first-of-type p:last-of-type {
+  margin-bottom: 1.7rem;
+}
+
 .contact {
   background: #6696ac;
   min-height: 400px;
@@ -746,27 +738,54 @@ main:first-of-type p:last-of-type {
   margin-top: 4rem;
 }
 
-@media (max-width: 39.9375em) {
-  .contact {
-    height: 100vh;
-  }
+.contact .container > p {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
 }
 
-.contact__button {
+.contact__cta {
+  margin-bottom: 1.7rem;
+}
+
+.contact__cta a {
   display: block;
+  color: #fff;
+  font-size: 15px;
+  font-size: 1.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact__cta a:hover {
+  text-decoration: underline;
+}
+
+.contact__cta a::before {
+  content: "";
+  display: inline-block;
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
   width: 3rem;
   height: 3rem;
+  margin-right: 1.7rem;
+  vertical-align: -40%;
 }
 
-.contact__button:first-of-type {
+.contact__cta:last-of-type {
+  margin-bottom: 6rem;
+}
+
+.contact__cta:last-of-type a:before {
+  background-image: url("../../images/icons/mail-icon.svg");
+}
+
+.contact__cta:first-of-type > a:before {
   background-image: url("../../images/icons/phone-icon.svg");
 }
 
-.contact__button:last-of-type {
-  background-image: url("../../images/icons/mail-icon.svg");
+.contact .button {
+  color: #fff;
 }
 
 footer {
@@ -821,6 +840,12 @@ footer {
   text-decoration: underline;
   color: inherit;
   font-size: inherit;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__container a:hover {
+  color: #d8a55a;
 }
 
 .footer__container figure {

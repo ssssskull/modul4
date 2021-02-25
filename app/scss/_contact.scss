@@ -3,28 +3,53 @@
     min-height: 400px;
     color: $white;
     margin-top: 4rem;
-
-    @include breakpoint-down(iphone) {
-        height: 100vh;
-    }
-
-    &__info {
-
-    }
     
-    &__button {
-        display: block;
-        background-size: 100% 100%;
-        background-position: center center;
-        background-repeat: no-repeat;
-        width: 3rem;
-        height: 3rem;
+    .container > p {
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
 
-        &:first-of-type {
-            background-image: url("../../images/icons/phone-icon.svg");
+    &__cta {
+        margin-bottom: 1.7rem;
+
+        a {
+            display: block;
+            color: $white;
+            font-size: $font-xs-fallback;
+            font-size: $font-xs;
+            transition: $transition-200ms;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &::before {
+                content: "";
+                display: inline-block;
+                background-size: 100% 100%;
+                background-position: center center;
+                background-repeat: no-repeat;
+                width: 3rem;
+                height: 3rem;
+                margin-right: 1.7rem;
+                vertical-align: -40%;
+            }
         }
+
         &:last-of-type {
-            background-image: url("../../images/icons/mail-icon.svg");
-        }
+            margin-bottom: 6rem;
+            
+            a:before {
+             background-image: url("../../images/icons/mail-icon.svg");
+             }
+         }
+ 
+         &:first-of-type > a:before {
+             background-image: url("../../images/icons/phone-icon.svg");
+         }
+    }
+
+    .button {
+        color: $white;
     }
 }
