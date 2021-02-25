@@ -668,7 +668,6 @@ h3 {
 }
 
 .main__bodytext {
-  margin-top: 1.7rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -679,8 +678,8 @@ h3 {
   margin-bottom: 1rem;
 }
 
-.main__keywords ~ .main__bodytext {
-  margin-top: .7rem;
+.main__keywords:last-of-type {
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 64em) {
@@ -738,9 +737,20 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   margin-top: 4rem;
 }
 
-.contact .container > p {
+.contact .container__elem > .main__col1 > p {
   margin-top: 1rem;
   margin-bottom: 6rem;
+}
+
+.contact__columns .col__2 img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+@media (max-width: 39.9375em) {
+  .contact__columns .col__2 {
+    display: none;
+  }
 }
 
 .contact__cta {

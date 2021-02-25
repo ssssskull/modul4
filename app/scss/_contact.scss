@@ -4,9 +4,21 @@
     color: $white;
     margin-top: 4rem;
     
-    .container > p {
+    .container__elem > .main__col1 > p {
         margin-top: 1rem;
         margin-bottom: 6rem;
+    }
+
+    &__columns {
+        .col__2 {
+            img {
+                border-radius: 50%;
+                border: 5px solid $white;
+            }
+            @include breakpoint-down(iphone) {
+                display: none;
+            }
+        }
     }
 
     &__cta {

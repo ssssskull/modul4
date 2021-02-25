@@ -23,7 +23,6 @@
     }
     
     &__bodytext {
-        margin-top: 1.7rem;
         font-family: 'Roboto', sans-serif;
     }
     
@@ -34,11 +33,9 @@
         font-weight: 500;
         margin-bottom: 1rem;
         
-        
-        ~ .main__bodytext { // If its sibling is bodytext then give it 1.7rem margin!
-            margin-top: .7rem;
+        &:last-of-type {
+            margin-bottom: 2rem;
         }
-        
     }
     
     &__col1 {
