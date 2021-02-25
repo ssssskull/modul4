@@ -418,22 +418,6 @@ h3 {
   color: #6696ac;
 }
 
-.header__menu > li:first-of-type > a::after {
-  content: "()";
-  display: inline;
-  color: #c0bcbb;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.header__menu > li:last-of-type > a::after {
-  content: ";";
-  display: inline;
-  color: #c0bcbb;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
 .header__mobile-logo {
   position: absolute;
   top: 30px;

@@ -166,19 +166,6 @@
                     color: $lightblue;
                 }
             }
-
-            &:first-of-type > a::after {
-                content: "()";
-                display: inline;
-                color: $gray;
-                transition: $transition-200ms;
-            }
-            &:last-of-type > a::after {
-                content: ";";
-                display: inline;
-                color: $gray;
-                transition: $transition-200ms;
-            }
         }
 
     }
