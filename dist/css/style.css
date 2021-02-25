@@ -133,9 +133,9 @@ h3 {
   font-size: 1.8rem;
 }
 
-h3 {
-  font-size: 18px;
-  font-size: 1.8rem;
+h4 {
+  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .button {
@@ -667,12 +667,18 @@ h3 {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 40em) {
+  .main h2 {
+    margin-bottom: 3.4rem;
+  }
+}
+
 .main__bodytext {
   font-family: 'Roboto', sans-serif;
 }
 
 .main__keywords {
-  color: #b53500;
+  color: #6696ac;
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -680,6 +686,12 @@ h3 {
 
 .main__keywords:last-of-type {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 40em) {
+  .main__keywords:last-of-type {
+    margin-bottom: 3.4rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -727,7 +739,13 @@ h3 {
 }
 
 main > .main > .main__col1:first-of-type p:last-of-type {
-  margin-bottom: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 40em) {
+  main > .main > .main__col1:first-of-type p:last-of-type {
+    margin-bottom: 3.4rem;
+  }
 }
 
 .contact {

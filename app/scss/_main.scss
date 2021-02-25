@@ -20,21 +20,29 @@
     h2 {
         font-weight: 400;
         margin-bottom: 2rem;
+
+        @include breakpoint-up(ipad) {
+            margin-bottom: 3.4rem;
+        }
     }
     
     &__bodytext {
         font-family: 'Roboto', sans-serif;
+
     }
     
     &__keywords {
-        //color: $orange;
-        color: /*TODO change color, issa temporary*/#b53500;
+        color: $lightblue;
         font-family: 'Roboto Mono', monospace;
         font-weight: 500;
         margin-bottom: 1rem;
-        
+
         &:last-of-type {
             margin-bottom: 2rem;
+            
+            @include breakpoint-up(ipad) {
+                margin-bottom: 3.4rem;
+            }
         }
     }
     
@@ -79,6 +87,10 @@
 }
 main > .main > .main__col1:first-of-type {
     p:last-of-type {
-        margin-bottom: 1.7rem;
+        margin-bottom: 2rem;
+
+        @include breakpoint-up(ipad) {
+            margin-bottom: 3.4rem;
+        }
     }
 }
