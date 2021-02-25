@@ -93,12 +93,12 @@ console.log(typeof nummer)
 nummer.padStart(2, '0')
 
 
-function incrementNummer() {
-  document.querySelector("#h1femfaser").value = nummer += 2;
-}
+// function incrementNummer() {
+//   document.querySelector("#h1femfaser").value = nummer += 2;
+// }
 
-let button = document.querySelector("button");
-button.addEventListener("click", incrementNummer)
+// let button = document.querySelector("button");
+// button.addEventListener("click", incrementNummer)
 
 /*function changeBackcolor(color) {
   document.getElementById("circle3").style.background = "#AA82AD";
