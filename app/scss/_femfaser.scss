@@ -8,6 +8,7 @@
         color: inherit;
         background: #A5BA74;
     }
+    
     h1 {
         border-radius: 50%;
         width: 20%;
@@ -32,6 +33,7 @@
 .pfemfaser, #h1femfaser, #h2femfaser {
     text-align: center;
     color: white;
+    transition: .4s ease;
 }
 
 .femfaserprogess-container {

@@ -711,6 +711,7 @@ h3 {
 .pfemfaser, #h1femfaser, #h2femfaser {
   text-align: center;
   color: white;
+  transition: .4s ease;
 }
 
 .femfaserprogess-container {

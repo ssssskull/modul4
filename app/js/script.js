@@ -79,7 +79,6 @@ LottieInteractivity.create({
 
 
 let button = document.querySelector(".arrowright");
-console.log(button);
 button.addEventListener("click", incrementNummer)
 
 
@@ -97,22 +96,25 @@ function incrementNummer() {
   //console.log(input.padStart(2, '0'));
 }
 
-let faser = Array.from(document.querySelectorAll('.femfasercircle'));
+let faser = Array.from(document.querySelectorAll(".femfasercircle")); //En array skabes udfra alle elementer i HTML, der har class .femfasercircle, og lagres som en let
+let faseFarver = document.querySelector(".femfaser__heading");
+let faseNavnFarve = document.querySelector("#h2femfaser");
 
 const handleClick = (e) => {
   e.preventDefault();
   faser.forEach(node => {
-    node.classList.remove('active');
+    node.classList.remove("active"); //Fjerner .active class fra alle elementer med class .femfasercircle
   });
-  e.currentTarget.classList.add('active');
+  e.currentTarget.classList.add("active"); // Tilføjer class .active til det element, der trykkes på
 
-  console.log(faser[0]);
   if (faser[0].classList.contains("active")) {
     faser[0].style.background = "#A5BA74";
     faser[1].style.background = "#e0e0e0";
     faser[2].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
+    faseFarver.style.background = "#A5BA74";
+    faseNavnFarve.style.background = "#A5BA74"
   }
 
   else if (faser[1].classList.contains("active")) {
@@ -121,6 +123,9 @@ const handleClick = (e) => {
     faser[2].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
+    faseFarver.style.background = "#D8A55B";
+    faseNavnFarve.style.background = "#D8A55B"
+
   }
 
   else if (faser[2].classList.contains("active")) {
@@ -129,6 +134,8 @@ const handleClick = (e) => {
     faser[1].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
+    faseFarver.style.background = "#AA82AD";
+    faseNavnFarve.style.background = "#AA82AD"
   }
 
   else if (faser[3].classList.contains("active")) {
@@ -137,6 +144,8 @@ const handleClick = (e) => {
     faser[1].style.background = "#e0e0e0";
     faser[2].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
+    faseFarver.style.background = "#6696AD";
+    faseNavnFarve.style.background = "#6696AD"
   }
 
   else if (faser[4].classList.contains("active")) {
@@ -145,12 +154,15 @@ const handleClick = (e) => {
     faser[1].style.background = "#e0e0e0";
     faser[2].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
+    faseFarver.style.background = "#D67249";
+    faseNavnFarve.style.background = "#D67249"
   }
 }
 
   faser.forEach(node => {
     node.addEventListener('click', handleClick);
   });
+
 
 
 
