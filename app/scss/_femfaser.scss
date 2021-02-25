@@ -7,7 +7,7 @@ html {
     padding-right: 2rem;
 }
 
-.pfemfaser, .h1femfaser, .h2femfaser {
+.pfemfaser, #h1femfaser, #h2femfaser {
     text-align: center;
     color: white;
 }
@@ -81,7 +81,7 @@ a.femfasercircle.active {
     border: none;
 }
 
-.h1femfaser {
+#h1femfaser {
     border-radius: 50%;
     width: 20%;
     padding: 3%;
@@ -91,7 +91,7 @@ a.femfasercircle.active {
     margin-bottom: -5%;
 }
 
-.h2femfaser {
+#h2femfaser {
     background: #A5BA74;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -117,4 +117,5 @@ a.femfasercircle.active {
     padding: 2%;
     margin-bottom: 20%;
 }
+
 

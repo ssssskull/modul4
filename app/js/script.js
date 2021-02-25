@@ -88,4 +88,12 @@ window.addEventListener('resize', () => {
 });
 
 // Fem faser js
+function changeBackcolor(color) {
+  document.getElementById("circle2").style.background = color;
+  document.getElementById("h1femfaser").style.background = color;
+  document.getElementById("h2femfaser").style.background = color;
+}
 
+/*function changeBackcolor(color) {
+  document.getElementById("circle3").style.background = "#AA82AD";
+}*/
