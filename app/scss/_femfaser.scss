@@ -1,0 +1,123 @@
+.femfaser {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: $white;
+
+    &__heading{
+        text-align: center;
+        color: inherit;
+        background: #A5BA74;
+    }
+    h1 {
+        border-radius: 50%;
+        width: 20%;
+        padding: 1rem;
+        padding: 3%;
+        margin-left: 42.5%;
+        margin-bottom: -5%;
+
+    }
+
+    h2 {
+
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 10%;
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+    p {
+        color: $black;
+    }
+}
+.pfemfaser, #h1femfaser, #h2femfaser {
+    text-align: center;
+    color: white;
+}
+
+.femfaserprogess-container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    max-width: 100%;
+    width: 90%;
+}
+
+.femfasercontainer {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.femfaserprogess-container::before {
+    content: '';
+    position: absolute;
+    background-color: var(--line-border-fill);
+    top: 50%;
+    left: 23%;
+    transform: translateY(-50%);
+    height: 15%;
+    width: 65%;
+    z-index: -1;
+}
+
+.femfaserprogess {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.femfasercircle {
+    background-color: var(--line-border-fill);
+    border-radius: 50%;
+    height: auto;
+    width: 5%;
+    padding-top: 5%;
+    display: flex;
+    transition: .4s ease;
+}
+
+a.femfasercircle.active {
+    background-color: #A5BA74;
+}
+
+.arrowleft {
+    float: left;
+    color: #515f6d;
+    font-size: 700%;
+    margin-top: -6%;
+    background-color: white;
+    border: none;
+}
+
+.arrowright {
+    float: right;
+    color: #515f6d;
+    font-size: 700%;
+    margin-top: -6%;
+    background-color: white;
+    border: none;
+}
+
+
+.tlf {
+    background: #A5BA74;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    margin-bottom: 7%;
+    margin-top: 15%;
+}
+
+.mail {
+    background: #A5BA74;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    margin-bottom: 20%;
+}

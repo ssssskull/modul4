@@ -6,6 +6,7 @@ html {
     height: -webkit-fill-available;
     font-size: 62.5%;
     box-sizing: border-box;
+    --line-border-fill: #e0e0e0;
 }
 *, *::before, *::after {
     box-sizing: inherit;

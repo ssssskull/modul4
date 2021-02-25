@@ -1,4 +1,5 @@
 
+console.log("hello");
 // Hamburger toggle
 const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector('.header');
@@ -19,7 +20,7 @@ let distance = 10;
 let speed = 0.4;
 
 let i;
-for (i = 0; i < 4; i++) { 
+for (i = 0; i < 4; i++) {
   console.log("Smoth scroll er lavet af Simone")
 }
 
@@ -47,7 +48,7 @@ function autoScrollTo(el) {
 }
 
 
-// Lottie animation
+/*// Lottie animation
 LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
@@ -74,6 +75,20 @@ LottieInteractivity.create({
 }
 */
 /*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
+
+// Fem faser js
+let nummer = document.querySelector("#h1femfaser").value;
+console.log(typeof nummer)
+nummer.padStart(2, '0')
+
+
+function incrementNummer() {
+  document.querySelector("#h1femfaser").value = nummer += 2;
+}
+
+let button = document.querySelector("button");
+button.addEventListener("click", incrementNummer)
+
 
 // Smooth Scroll Safari
 
