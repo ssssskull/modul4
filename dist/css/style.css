@@ -758,6 +758,7 @@ h4 {
 
 main > .main > .main__col1:first-of-type p:last-of-type {
   margin-bottom: 2rem;
+  margin-top: 1.7rem;
 }
 
 @media (min-width: 40em) {

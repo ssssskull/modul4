@@ -90,6 +90,7 @@
 main > .main > .main__col1:first-of-type {
     p:last-of-type {
         margin-bottom: 2rem;
+        margin-top: 1.7rem;
 
         @include breakpoint-up(ipad) {
             margin-bottom: 3.4rem;
