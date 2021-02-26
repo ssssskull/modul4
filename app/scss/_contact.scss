@@ -17,19 +17,22 @@
         @include breakpoint-up(computer) {
             column-gap: 10rem;
         }
-        
-        .main__col1 {
-            
-            @include breakpoint-up(computer) {
-                white-space: nowrap;
-            }
 
-            @include breakpoint-up(largeComputer) {
-                h1 {
+        .main__col1 {
+            h1 {
+                white-space: nowrap;
+                @include breakpoint-down(iphone) {
+                    font-size: $font-med-fallback;
+                    font-size: $font-med;
+                }
+
+                @include breakpoint-up(largeComputer) {
                     font-size: $font-xl-fallback;
                     font-size: $font-xl;
                 }
-    
+            }
+
+            @include breakpoint-up(largeComputer) {
                 p {
                     font-size: $font-sm-fallback;
                     font-size: $font-sm;

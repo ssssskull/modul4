@@ -13,7 +13,7 @@ btnHamburger.addEventListener('click', function () {
 });
 
 
-// Smoth scroll 
+// Smoth scroll
 let scrollY = 0;
 let distance = 10;
 let speed = 0.4;
@@ -196,7 +196,7 @@ function buttonClickTilbage(t) {
     node.classList.remove("active"); //Fjerner .active class fra alle elementer med class .femfasercircle
   });
   t.currentTarget.classList.add("active");
-  buttonLeft.setAttribute("pointer-events", "none")
+  buttonLeft.setAttribute("pointer-events", "none");
 
   if (faser[1].classList.contains("cirkel2")) {
     faser[0].style.background = "#A5BA74";
@@ -365,7 +365,7 @@ function buttonClickFrem(f) {
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "0";
     faser[3].classList.remove("cirkel4");
-    buttonRight.setAttribute("pointer-events", "none")
+    buttonRight.setAttribute("pointer-events", "none");
   }
 }
 
@@ -373,8 +373,8 @@ function buttonClickFrem(f) {
 /*faser.forEach(node => {
  node.addEventListener('click', handleClick);
 }); */
-buttonRight.addEventListener("click", buttonClickFrem)
-buttonLeft.addEventListener("click", buttonClickTilbage)
+buttonRight.addEventListener("click", buttonClickFrem);
+buttonLeft.addEventListener("click", buttonClickTilbage);
 
 
 
@@ -400,26 +400,26 @@ buttonLeft.addEventListener("click", buttonClickTilbage)
 
 
 /*input = parseFloat(input);
- 
- 
- 
+
+
+
 function next_id(input) {
   var output = parseInt(input, 10) + 1; // parse and increment
   output += ""; // convert to string
   while (output.length < 2) output = "0" + output; // prepend leading zeros
   return output;
 }
- 
+
 const id = "00";
 for (var increment = 0; increment < 20; increment++) {
   console.log(id);
   id = next_id(id);
 }
- 
+
 /*function incrementNummer() {
   document.querySelector("#h1femfaser").value = nummer += 2;
 }
- 
+
 let button = document.querySelector("button");
 button.addEventListener("click", incrementNummer)
 */

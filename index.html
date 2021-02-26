@@ -144,7 +144,7 @@
         </div>
     </section>
     <div class="container femfaser container--ptbfemfaser">
-        <div class="container__elem flex flex-dr-col">
+        <div class="container__elem">
             <div class="main__col1 femfaser">
                 <div class="femfaser__label">
                     <div class="femfaser__testest flex flex-dr-col flex-ai-c">
@@ -156,20 +156,20 @@
                         <button type="button" name="button" class="arrowright">&#8250;</button>
                     </div>
                 </div>
-                <div class="femfaser__container">
-                    <div class="femfaserprogress"></div>
+                <div class="femfaser__progress flex flex-jc-sb">
                     <div class="femfaser__circle cirkel1" id="circle1"></div>
                     <div class="femfaser__circle cirkel2" id="circle2"></div>
                     <div class="femfaser__circle cirkel3" id="circle3"></div>
                     <div class="femfaser__circle cirkel4" id="circle4"></div>
                     <div class="femfaser__circle cirkel5" id="circle5"></div>
                 </div>
-                <div class="ptransition">
+                <div class="femfaser__textcont">
                     <p id="beskrivelse" class="main__bodytext">#BeCurious handler om at forstå dit behov, men også om at
                         opnå indsigt i, hvorfra behovet udspringer. Vi dykker ned i, hvordan du mener en app- eller
                         webløsning vil tilgodese dit behov og afdækker, hvor langt du selv er i processen. Og med
                         udgangspunkt i vores ekspertviden udfordrer vi dit ståsted.</p>
-                    <h3 class="h3femfaser">Udbytte</h3>
+                    <h3>Udbytte</h3>
+                    <!--TODO fix udbytte-->
                     <p id="udbytte" class="main__bodytext">Udbyttet af #BeCurious er en række kerneindsigter, både om
                         din forretning og om løsningens behov, men også om brugskonteksten og brugernes behov.
                         Kerneindsigterne fra denne fase føres med videre ind i den næste fase, hvor vi starter
@@ -177,11 +177,15 @@
                 </div>
             </div>
             <div class="main__col2">
-                <div class="tlf">
-                    <p class="pfemfaser">+45 70 84 85 40</p>
+                <figure>
+                    <img src="images/man.svg">
+                </figure>
+                <!--TODO add bg color to button instead of div to make whole thing clickable not just text-->
+                <div class="femfaser__tlf">
+                    <a href="tel:4570848538" tabindex="0">+45 70 84 85 40</a>
                 </div>
-                <div class="mail">
-                    <p class="pfemfaser">info@houseofcode.io</p>
+                <div class="femfaser__mail">
+                    <a href="mailto:info@houseofcode.io" tabindex="0">info@houseofcode.io</a>
                 </div>
             </div>
         </div>

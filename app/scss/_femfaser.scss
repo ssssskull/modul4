@@ -32,6 +32,7 @@
 
         button {
             position: absolute;
+            bottom: 25%;
             color: #515f6d;
             font-size: 5rem;
             background-color: transparent;
@@ -42,89 +43,129 @@
             transform: translateY(25px);
             
             &:first-of-type {  
-                left: 0rem;
+                left: -10px;
                 opacity: 0%;
             }
 
             &:last-of-type {
-                right: 0rem;
+                right: -10px;
             }
         }
     }
 
-    &__container {
-        display: flex;
-        justify-content: space-evenly;
+    &__progress {
         position: relative;
-        max-width: 100%;
-        width: 90%;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 3.4rem;
+        margin-bottom: 3.4rem;
+
+        @include breakpoint-up(largeComputer) {
+            width: 45%;
+        }
 
         &::before {
             content: '';
             position: absolute;
             background-color: var(--line-border-fill);
             top: 50%;
-            left: 23%;
-            transform: translateY(-50%);
-            height: 15%;
-            width: 65%;
+            height: 3px;
+            width: 100%;
             z-index: -1;
         }
     }
     
-    .container__elem {
+    &__circle {
+        background-color: $lightgray;
+        border-radius: 50px;
+        width: 18px;
+        padding-top: 18px;
+        transition: $transition-200ms;
+        pointer-events: none;
+    }
+
+    &__textcont {
+        transition: $transition-200ms;
+        
+        h3 {
+            color: $darkblue;
+        }
+
+        .main__bodytext {
+            color: $black;
+        }
+
+        .main__bodytext ~ h3 {
+                margin: 3.4rem 0 1rem 0;
+            }
+    }
+
+    &__tlf {
+        background: #A5BA74;
+        transition: $transition-200ms;
+        padding: 2rem 0;
+        height: max-content;
+
         @include breakpoint-up(ipad){
-            flex-direction: row;
+            padding: 2rem 0;
         }
     }
 
-}
-.pfemfaser, #h2femfaser {
-    text-align: center;
-    color: $white;
-    transition: $transition-200ms;
-}
+    &__mail {
+        background: #A5BA74;
+        transition: $transition-200ms;
+        padding: 2rem 0;
+        height: max-content;
+    }
+
+    .container__elem {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 3rem;
+        
+        @include breakpoint-up(ipad) {
+            grid-template-columns: 1.5fr 1fr;
+            column-gap: 5rem;
+        }
+        
+        @include breakpoint-down (iphone) {
+            grid-auto-flow: unset;
+            justify-content: unset;
+        }
+    }
+    .main__col1 {
+        align-self: start;
+    }
+    .main__col2 {
+        row-gap: 3.4rem;
+        align-self: start;
+        justify-self: end;
 
 
-.femfaserprogess {
-    background-color: var(--line-border-fill);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 4px;
-    width: 0%;
-    z-index: -1;
-    transition: $transition-200ms;
-}
+        @include breakpoint-down(iphone){
+            margin-top: 6rem;
+            row-gap: unset;
+            justify-self: center;
+            figure {
+                display: none;
+            }
+        }
+        
+        div {
+            text-align: center;
 
-.femfasercircle {
-    background-color: $lightgray;
-    border-radius: 50%;
-    height: auto;
-    width: 5%;
-    padding-top: 5%;
-    display: flex;
-    transition: $transition-200ms;
-    pointer-events: none;
-}
+            @include breakpoint-up(computer) {
+                min-width: 300px;
+            }
 
-
-.tlf {
-    background: #A5BA74;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 2%;
-    margin-bottom: 7%;
-    margin-top: 15%;
-    transition: $transition-200ms;
-}
-
-.mail {
-    background: #A5BA74;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 2%;
-    margin-bottom: 20%;
-    transition: $transition-200ms;
+            a {
+                font-size: $font-xs-fallback;
+                font-size: $font-xs;
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+    }
 }

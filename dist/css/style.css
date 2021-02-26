@@ -224,8 +224,8 @@ h4 {
 }
 
 .container--ptbfemfaser {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 @media (min-width: 64em) {
@@ -677,7 +677,7 @@ h4 {
 
 .main h2 {
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 }
 
 @media (min-width: 40em) {
@@ -688,6 +688,7 @@ h4 {
 
 .main__bodytext {
   font-family: 'Roboto', sans-serif;
+  color: #323a43;
 }
 
 .main__keywords {
@@ -757,6 +758,7 @@ h4 {
 
 main > .main > .main__col1:first-of-type p:last-of-type {
   margin-bottom: 2rem;
+  margin-top: 1.7rem;
 }
 
 @media (min-width: 40em) {
@@ -792,9 +794,14 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   }
 }
 
-@media (min-width: 64em) {
-  .contact__columns .main__col1 {
-    white-space: nowrap;
+.contact__columns .main__col1 h1 {
+  white-space: nowrap;
+}
+
+@media (max-width: 39.9375em) {
+  .contact__columns .main__col1 h1 {
+    font-size: 22px;
+    font-size: 2.2rem;
   }
 }
 
@@ -803,6 +810,9 @@ main > .main > .main__col1:first-of-type p:last-of-type {
     font-size: 50px;
     font-size: 5rem;
   }
+}
+
+@media (min-width: 87.5em) {
   .contact__columns .main__col1 p {
     font-size: 18px;
     font-size: 1.8rem;
@@ -879,7 +889,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 }
 
 .femfaser {
-  color: #000;
+  color: #323a43;
 }
 
 .femfaser__heading {
@@ -915,6 +925,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 
 .femfaser__testest button {
   position: absolute;
+  bottom: 25%;
   color: #515f6d;
   font-size: 5rem;
   background-color: transparent;
@@ -928,102 +939,165 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 }
 
 .femfaser__testest button:first-of-type {
-  left: 0rem;
+  left: -10px;
   opacity: 0%;
 }
 
 .femfaser__testest button:last-of-type {
-  right: 0rem;
+  right: -10px;
 }
 
-.femfaser__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.femfaser__progress {
   position: relative;
-  max-width: 100%;
-  width: 90%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3.4rem;
+  margin-bottom: 3.4rem;
 }
 
-.femfaser__container::before {
+@media (min-width: 87.5em) {
+  .femfaser__progress {
+    width: 45%;
+  }
+}
+
+.femfaser__progress::before {
   content: '';
   position: absolute;
   background-color: var(--line-border-fill);
   top: 50%;
-  left: 23%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 15%;
-  width: 65%;
+  height: 3px;
+  width: 100%;
   z-index: -1;
 }
 
-@media (min-width: 40em) {
-  .femfaser .container__elem {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.pfemfaser, #h2femfaser {
-  text-align: center;
-  color: #FBFBFB;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.femfaserprogess {
-  background-color: var(--line-border-fill);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 4px;
-  width: 0%;
-  z-index: -1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.femfasercircle {
+.femfaser__circle {
   background-color: #D3D8D2;
-  border-radius: 50%;
-  height: auto;
-  width: 5%;
-  padding-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border-radius: 50px;
+  width: 18px;
+  padding-top: 18px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   pointer-events: none;
 }
 
-.tlf {
-  background: #A5BA74;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 2%;
-  margin-bottom: 7%;
-  margin-top: 15%;
+.femfaser__textcont {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.mail {
+.femfaser__textcont h3 {
+  color: #515f6d;
+}
+
+.femfaser__textcont .main__bodytext {
+  color: #323a43;
+}
+
+.femfaser__textcont .main__bodytext ~ h3 {
+  margin: 3.4rem 0 1rem 0;
+}
+
+.femfaser__tlf {
   background: #A5BA74;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 2%;
-  margin-bottom: 20%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  padding: 2rem 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+@media (min-width: 40em) {
+  .femfaser__tlf {
+    padding: 2rem 0;
+  }
+}
+
+.femfaser__mail {
+  background: #A5BA74;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 2rem 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.femfaser .container__elem {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+@media (min-width: 40em) {
+  .femfaser .container__elem {
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .femfaser .container__elem {
+    grid-auto-flow: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+}
+
+.femfaser .main__col1 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.femfaser .main__col2 {
+  row-gap: 3.4rem;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+@media (max-width: 39.9375em) {
+  .femfaser .main__col2 {
+    margin-top: 6rem;
+    row-gap: unset;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .femfaser .main__col2 figure {
+    display: none;
+  }
+}
+
+.femfaser .main__col2 div {
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .femfaser .main__col2 div {
+    min-width: 300px;
+  }
+}
+
+.femfaser .main__col2 div a {
+  font-size: 15px;
+  font-size: 1.5rem;
+  color: #FBFBFB;
+  text-decoration: underline;
 }
 
 footer {

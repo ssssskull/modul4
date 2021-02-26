@@ -18,7 +18,7 @@
     
     h2 {
         font-weight: 400;
-        margin-bottom: 2rem;
+        margin-bottom: 1.7rem;
 
         @include breakpoint-up(ipad) {
             margin-bottom: 3.4rem;
@@ -27,6 +27,7 @@
     
     &__bodytext {
         font-family: 'Roboto', sans-serif;
+        color: $black;
 
     }
     
@@ -89,9 +90,15 @@
 main > .main > .main__col1:first-of-type {
     p:last-of-type {
         margin-bottom: 2rem;
+        margin-top: 1.7rem;
 
         @include breakpoint-up(ipad) {
             margin-bottom: 3.4rem;
         }
     }
 }
+// main > .main > .main__col2 {
+//     @include breakpoint-up(largeComputer) {
+//         margin-right: 10rem;
+//     }
+// }
