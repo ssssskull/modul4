@@ -41,6 +41,11 @@ footer {
             text-decoration: underline;
             color: inherit;
             font-size: inherit;
+            transition: $transition-200ms;
+            
+            &:hover {
+                color: $gold;
+            }
         }
 
         figure {
