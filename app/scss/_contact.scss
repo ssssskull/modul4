@@ -41,9 +41,15 @@
         }
         .main__col2 {
             align-self: center;
+
             img {
+                max-width: 250px;
                 border-radius: 50%;
                 border: 5px solid $white;
+
+                @include breakpoint-up(largeComputer) {
+                    max-width: 300px;
+                }
             }
             @include breakpoint-down(iphone) {
                 display: none;

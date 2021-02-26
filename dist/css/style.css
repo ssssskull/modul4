@@ -810,8 +810,15 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 }
 
 .contact__columns .main__col2 img {
+  max-width: 250px;
   border-radius: 50%;
   border: 5px solid #fff;
+}
+
+@media (min-width: 87.5em) {
+  .contact__columns .main__col2 img {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 39.9375em) {
