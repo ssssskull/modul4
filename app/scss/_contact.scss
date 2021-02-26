@@ -17,10 +17,7 @@
         @include breakpoint-up(computer) {
             column-gap: 10rem;
         }
-
-        @include breakpoint-up(largeComputer) {
-            column-gap: 20rem;
-        }
+        
         .main__col1 {
             
             @include breakpoint-up(computer) {
