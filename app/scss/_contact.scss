@@ -22,9 +22,13 @@
             column-gap: 20rem;
         }
         .main__col1 {
+            
             @include breakpoint-up(computer) {
+                white-space: nowrap;
+            }
+
+            @include breakpoint-up(largeComputer) {
                 h1 {
-                    white-space: nowrap;
                     font-size: $font-xl-fallback;
                     font-size: $font-xl;
                 }
