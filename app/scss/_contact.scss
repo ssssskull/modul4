@@ -10,8 +10,21 @@
     }
 
     &__columns {
-        //TODO flex --> grid!!!!!!!!!!!!!!!!!!!!
-        .col__2 {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 5rem;
+
+        @include breakpoint-up(computer) {
+            justify-content: start;
+            column-gap: 10rem;
+        }
+
+        @include breakpoint-up(largeComputer) {
+            column-gap: 20rem;
+        }
+
+        .main__col2 {
+            align-self: center;
             img {
                 border-radius: 50%;
                 border: 5px solid $white;
