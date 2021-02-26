@@ -786,9 +786,9 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   }
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 64em) {
   .contact__columns .main__col1 h1 {
-    min-width: 500px;
+    white-space: nowrap;
     font-size: 50px;
     font-size: 5rem;
   }
