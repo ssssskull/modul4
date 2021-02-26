@@ -224,8 +224,8 @@ h4 {
 }
 
 .container--ptbfemfaser {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 @media (min-width: 64em) {
@@ -677,7 +677,7 @@ h4 {
 
 .main h2 {
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 }
 
 @media (min-width: 40em) {
@@ -915,6 +915,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 
 .femfaser__testest button {
   position: absolute;
+  bottom: 25%;
   color: #515f6d;
   font-size: 5rem;
   background-color: transparent;
@@ -928,102 +929,96 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 }
 
 .femfaser__testest button:first-of-type {
-  left: 0rem;
+  left: -10px;
   opacity: 0%;
 }
 
 .femfaser__testest button:last-of-type {
-  right: 0rem;
+  right: -10px;
 }
 
-.femfaser__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.femfaser__progress {
   position: relative;
-  max-width: 100%;
-  width: 90%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3.4rem;
+  margin-bottom: 3.4rem;
 }
 
-.femfaser__container::before {
+.femfaser__progress::before {
   content: '';
   position: absolute;
   background-color: var(--line-border-fill);
   top: 50%;
-  left: 23%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 15%;
-  width: 65%;
+  height: 3px;
+  width: 100%;
   z-index: -1;
 }
 
-@media (min-width: 40em) {
-  .femfaser .container__elem {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.pfemfaser, #h2femfaser {
-  text-align: center;
-  color: #FBFBFB;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.femfaserprogess {
-  background-color: var(--line-border-fill);
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 4px;
-  width: 0%;
-  z-index: -1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.femfasercircle {
+.femfaser__circle {
   background-color: #D3D8D2;
-  border-radius: 50%;
-  height: auto;
-  width: 5%;
-  padding-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border-radius: 50px;
+  width: 18px;
+  padding-top: 18px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   pointer-events: none;
 }
 
-.tlf {
-  background: #A5BA74;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 2%;
-  margin-bottom: 7%;
-  margin-top: 15%;
+.femfaser__textcont {
+  color: #515f6d;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.mail {
+.femfaser__textcont .main__bodytext ~ h3 {
+  margin: 3.4rem 0 1rem 0;
+}
+
+.femfaser__tlf {
   background: #A5BA74;
-  margin-left: 20%;
-  margin-right: 20%;
   padding: 2%;
-  margin-bottom: 20%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.femfaser__mail {
+  background: #A5BA74;
+  padding: 2%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.femfaser .container__elem {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: null) {
+  .femfaser .container__elem {
+    grid-auto-flow: dense;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.femfaser .main__col2 {
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.femfaser .main__col2 div {
+  text-align: center;
+}
+
+.femfaser .main__col2 div a {
+  font-size: 15px;
+  font-size: 1.5rem;
+  color: #FBFBFB;
+  text-decoration: underline;
 }
 
 footer {
