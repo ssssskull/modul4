@@ -774,9 +774,6 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 
 @media (min-width: 64em) {
   .contact__columns {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
     -webkit-column-gap: 10rem;
             column-gap: 10rem;
   }
@@ -786,6 +783,18 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   .contact__columns {
     -webkit-column-gap: 20rem;
             column-gap: 20rem;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .contact__columns .main__col1 h1 {
+    min-width: 500px;
+    font-size: 50px;
+    font-size: 5rem;
+  }
+  .contact__columns .main__col1 p {
+    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 
