@@ -77,7 +77,7 @@ LottieInteractivity.create({
 
 // Fem faser js
 
-let faser = Array.from(document.querySelectorAll(".femfasercircle")); //En array skabes udfra alle elementer i HTML, der har class .femfasercircle, og lagres som en let
+let faser = Array.from(document.querySelectorAll(".femfaser__circle")); //En array skabes udfra alle elementer i HTML, der har class .femfasercircle, og lagres som en let
 let faseFarver = document.querySelector(".femfaser__heading");
 let faseNavnFarve = document.querySelector("#h2femfaser");
 let femFaserBeskrivelse = document.querySelector("#beskrivelse")
