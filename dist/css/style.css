@@ -15,6 +15,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  --line-border-fill: #e0e0e0;
 }
 
 *, *::before, *::after {
@@ -222,12 +223,24 @@ h4 {
   }
 }
 
+.container--ptbfemfaser {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media (min-width: 64em) {
+  .container--ptbfemfaser {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+}
+
 .container--ptbfooter {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .container--ptbfooter {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -252,7 +265,7 @@ h4 {
 }
 
 .header.open nav {
-  background-color: #fff;
+  background-color: #FBFBFB;
   position: fixed;
 }
 
@@ -320,7 +333,7 @@ h4 {
     width: 160px;
   }
   .header nav ul li {
-    color: #fff;
+    color: #FBFBFB;
   }
   .header nav ul li a:hover {
     color: #d8a55a;
@@ -460,7 +473,7 @@ h4 {
   .header__toggle .header__burger > span, .header__toggle .header__burger > span::before, .header__toggle .header__burger > span::after {
     width: 26px;
     height: 4px;
-    background-color: #fff;
+    background-color: #FBFBFB;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     will-change: transform, background-color;
@@ -490,7 +503,7 @@ h4 {
 
 .mobile-lines div {
   height: 4px;
-  background-color: #fff;
+  background-color: #FBFBFB;
   position: absolute;
 }
 
@@ -559,7 +572,7 @@ h4 {
 }
 
 .hero__text {
-  color: #fff;
+  color: #FBFBFB;
   width: 100%;
   margin-top: auto;
 }
@@ -755,7 +768,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 .contact {
   background: #6696ac;
   min-height: 400px;
-  color: #fff;
+  color: #FBFBFB;
   margin-top: 4rem;
 }
 
@@ -805,7 +818,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 .contact__columns .main__col2 img {
   max-width: 250px;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid #FBFBFB;
 }
 
 @media (min-width: 87.5em) {
@@ -826,7 +839,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 
 .contact__cta a {
   display: block;
-  color: #fff;
+  color: #FBFBFB;
   font-size: 15px;
   font-size: 1.5rem;
   -webkit-transition: all 0.2s ease-in-out;
@@ -862,7 +875,146 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 }
 
 .contact .button {
-  color: #fff;
+  color: #FBFBFB;
+}
+
+.femfaser {
+  color: #000;
+}
+
+.femfaser__heading {
+  text-align: center;
+  color: #FBFBFB;
+  background: #A5BA74;
+}
+
+.femfaser__testest {
+  position: relative;
+}
+
+.femfaser__testest h1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.femfaser__testest h2 {
+  display: inline-block;
+  width: 80%;
+  margin-top: -10px;
+}
+
+.femfaser__testest button {
+  position: absolute;
+  color: #515f6d;
+  font-size: 5rem;
+  background-color: transparent;
+  border: none;
+  will-change: opacity;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+
+.femfaser__testest button:first-of-type {
+  left: 0rem;
+  opacity: 0%;
+}
+
+.femfaser__testest button:last-of-type {
+  right: 0rem;
+}
+
+.femfaser__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  max-width: 100%;
+  width: 90%;
+}
+
+.femfaser__container::before {
+  content: '';
+  position: absolute;
+  background-color: var(--line-border-fill);
+  top: 50%;
+  left: 23%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 15%;
+  width: 65%;
+  z-index: -1;
+}
+
+@media (min-width: 40em) {
+  .femfaser .container__elem {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.pfemfaser, #h1femfaser, #h2femfaser {
+  text-align: center;
+  color: #FBFBFB;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.femfaserprogess {
+  background-color: var(--line-border-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.femfasercircle {
+  background-color: var(--line-border-fill);
+  border-radius: 50%;
+  height: auto;
+  width: 5%;
+  padding-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.tlf {
+  background: #A5BA74;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 2%;
+  margin-bottom: 7%;
+  margin-top: 15%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.mail {
+  background: #A5BA74;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 2%;
+  margin-bottom: 20%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 footer {
@@ -870,7 +1022,7 @@ footer {
 }
 
 .footer {
-  color: #fff;
+  color: #FBFBFB;
   font-size: 15px;
   font-size: 1.5rem;
   position: relative;
