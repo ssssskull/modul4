@@ -989,12 +989,19 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   transition: all 0.2s ease-in-out;
 }
 
-@media (min-width: 40em) {
+.femfaser .container__elem {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (min-width: null) {
   .femfaser .container__elem {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    grid-auto-flow: dense;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

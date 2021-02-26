@@ -104,8 +104,12 @@
     }
 
     .container__elem {
-        @include breakpoint-up(ipad){
-            flex-direction: row;
+        display: grid;
+
+        @include breakpoint-up(iphone) {
+            grid-auto-flow: dense;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
         }
     }
 
