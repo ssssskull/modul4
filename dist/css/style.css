@@ -793,9 +793,14 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   }
 }
 
-@media (min-width: 64em) {
-  .contact__columns .main__col1 {
-    white-space: nowrap;
+.contact__columns .main__col1 h1 {
+  white-space: nowrap;
+}
+
+@media (max-width: 39.9375em) {
+  .contact__columns .main__col1 h1 {
+    font-size: 22px;
+    font-size: 2.2rem;
   }
 }
 
@@ -804,6 +809,9 @@ main > .main > .main__col1:first-of-type p:last-of-type {
     font-size: 50px;
     font-size: 5rem;
   }
+}
+
+@media (min-width: 87.5em) {
   .contact__columns .main__col1 p {
     font-size: 18px;
     font-size: 1.8rem;
@@ -1025,6 +1033,8 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
 }
 
 @media (min-width: 40em) {
@@ -1045,19 +1055,27 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   }
 }
 
+.femfaser .main__col1 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
 .femfaser .main__col2 {
-  margin: 0 auto;
   row-gap: 3.4rem;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  max-width: 250px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 @media (max-width: 39.9375em) {
   .femfaser .main__col2 {
     margin-top: 6rem;
     row-gap: unset;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .femfaser .main__col2 figure {
     display: none;
@@ -1066,6 +1084,12 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 
 .femfaser .main__col2 div {
   text-align: center;
+}
+
+@media (min-width: 64em) {
+  .femfaser .main__col2 div {
+    min-width: 300px;
+  }
 }
 
 .femfaser .main__col2 div a {

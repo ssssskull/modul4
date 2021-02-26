@@ -196,6 +196,7 @@ function buttonClickTilbage(t) {
     node.classList.remove("active"); //Fjerner .active class fra alle elementer med class .femfasercircle
   });
   t.currentTarget.classList.add("active");
+  buttonLeft.setAttribute("pointer-events", "none");
 
   if (faser[1].classList.contains("cirkel2")) {
     faser[0].style.background = "#A5BA74";
@@ -364,6 +365,7 @@ function buttonClickFrem(f) {
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "0";
     faser[3].classList.remove("cirkel4");
+    buttonRight.setAttribute("pointer-events", "none");
   }
 }
 
@@ -371,8 +373,8 @@ function buttonClickFrem(f) {
 /*faser.forEach(node => {
  node.addEventListener('click', handleClick);
 }); */
-buttonRight.addEventListener("click", buttonClickFrem)
-buttonLeft.addEventListener("click", buttonClickTilbage)
+buttonRight.addEventListener("click", buttonClickFrem);
+buttonLeft.addEventListener("click", buttonClickTilbage);
 
 
 

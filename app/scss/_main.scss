@@ -96,3 +96,8 @@ main > .main > .main__col1:first-of-type {
         }
     }
 }
+// main > .main > .main__col2 {
+//     @include breakpoint-up(largeComputer) {
+//         margin-right: 10rem;
+//     }
+// }
