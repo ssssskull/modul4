@@ -60,6 +60,10 @@
         margin-top: 3.4rem;
         margin-bottom: 3.4rem;
 
+        @include breakpoint-up(largeComputer) {
+            width: 45%;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -81,8 +85,15 @@
     }
 
     &__textcont {
-        color: $darkblue;
         transition: $transition-200ms;
+        
+        h3 {
+            color: $darkblue;
+        }
+
+        .main__bodytext {
+            color: $black;
+        }
 
         .main__bodytext ~ h3 {
                 margin: 3.4rem 0 1rem 0;
@@ -91,31 +102,54 @@
 
     &__tlf {
         background: #A5BA74;
-        padding: 2%;
-
         transition: $transition-200ms;
+        padding: 2rem 0;
+        height: max-content;
+
+        @include breakpoint-up(ipad){
+            padding: 2rem 0;
+        }
     }
 
     &__mail {
         background: #A5BA74;
-
-        padding: 2%;
         transition: $transition-200ms;
+        padding: 2rem 0;
+        height: max-content;
     }
 
     .container__elem {
         display: grid;
-
-        @include breakpoint-up(iphone) {
-            grid-auto-flow: dense;
-            grid-template-columns: 1fr 1fr;
-            justify-content: space-between;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        @include breakpoint-up(ipad) {
+            grid-template-columns: 1.5fr 1fr;
+            column-gap: 5rem;
+        }
+        
+        @include breakpoint-down (iphone) {
+            grid-auto-flow: unset;
+            justify-content: unset;
         }
     }
 
     .main__col2 {
         margin: 0 auto;
-        margin-top: 6rem;
+        row-gap: 3.4rem;
+        align-self: end;
+        max-width: 250px;
+
+
+        @include breakpoint-down(iphone){
+            margin-top: 6rem;
+            row-gap: unset;
+
+            figure {
+                display: none;
+            }
+        }
         
         div {
             text-align: center;
