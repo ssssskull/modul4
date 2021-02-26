@@ -32,6 +32,7 @@
 
         button {
             position: absolute;
+            bottom: 25%;
             color: #515f6d;
             font-size: 5rem;
             background-color: transparent;
@@ -42,89 +43,85 @@
             transform: translateY(25px);
             
             &:first-of-type {  
-                left: 0rem;
+                left: -10px;
                 opacity: 0%;
             }
 
             &:last-of-type {
-                right: 0rem;
+                right: -10px;
             }
         }
     }
 
-    &__container {
-        display: flex;
-        justify-content: space-evenly;
+    &__progress {
         position: relative;
-        max-width: 100%;
-        width: 90%;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 3.4rem;
+        margin-bottom: 3.4rem;
 
         &::before {
             content: '';
             position: absolute;
             background-color: var(--line-border-fill);
             top: 50%;
-            left: 23%;
-            transform: translateY(-50%);
-            height: 15%;
-            width: 65%;
+            height: 3px;
+            width: 100%;
             z-index: -1;
         }
     }
     
+    &__circle {
+        background-color: $lightgray;
+        border-radius: 50px;
+        width: 18px;
+        padding-top: 18px;
+        transition: $transition-200ms;
+        pointer-events: none;
+    }
+
+    &__textcont {
+        color: $darkblue;
+        transition: $transition-200ms;
+
+        .main__bodytext ~ h3 {
+                margin: 3.4rem 0 1rem 0;
+            }
+    }
+
+    &__tlf {
+        background: #A5BA74;
+        padding: 2%;
+
+        transition: $transition-200ms;
+    }
+
+    &__mail {
+        background: #A5BA74;
+
+        padding: 2%;
+        transition: $transition-200ms;
+    }
+
     .container__elem {
         @include breakpoint-up(ipad){
             flex-direction: row;
         }
     }
 
-}
-.pfemfaser, #h2femfaser {
-    text-align: center;
-    color: $white;
-    transition: $transition-200ms;
-}
+    .main__col2 {
+        margin: 0 auto;
+        margin-top: 6rem;
+        
+        div {
+            text-align: center;
 
-
-.femfaserprogess {
-    background-color: var(--line-border-fill);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    height: 4px;
-    width: 0%;
-    z-index: -1;
-    transition: $transition-200ms;
-}
-
-.femfasercircle {
-    background-color: $lightgray;
-    border-radius: 50%;
-    height: auto;
-    width: 5%;
-    padding-top: 5%;
-    display: flex;
-    transition: $transition-200ms;
-    pointer-events: none;
-}
-
-
-.tlf {
-    background: #A5BA74;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 2%;
-    margin-bottom: 7%;
-    margin-top: 15%;
-    transition: $transition-200ms;
-}
-
-.mail {
-    background: #A5BA74;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 2%;
-    margin-bottom: 20%;
-    transition: $transition-200ms;
+            a {
+                font-size: $font-xs-fallback;
+                font-size: $font-xs;
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+    }
 }
