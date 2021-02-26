@@ -203,7 +203,7 @@ function buttonClickTilbage(t) {
     faser[2].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
-    faseFarver.style.background = "#A5BA74";
+    faseFarver.style.color = "#A5BA74";
     faseNavnFarve.style.background = "#A5BA74";
     femFaserBeskrivelse.innerHTML = "#BeCurious handler om at forstå dit behov, men også om at opnå indsigt i, hvorfra behovet udspringer. Vi dykker ned i, hvordan du mener en app- eller webløsning vil tilgodese dit behov og afdækker, hvor langt du selv er i processen. Og med udgangspunkt i vores ekspertviden udfordrer vi dit ståsted.";
     femFaserUdbytte.innerHTML = "Udbyttet af #BeCurious er en række kerne-indsigter, både om din forretning og om løsningens behov, men også om brugskonteksten og brugernes behov. Kerne-indsigterne fra denne fase føres med videre ind i den næste fase, hvor vi starter omdannelsen til et egentligt koncept.";
@@ -222,7 +222,7 @@ function buttonClickTilbage(t) {
     faser[2].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
-    faseFarver.style.background = "#D8A55B";
+    faseFarver.style.color = "#D8A55B";
     faseNavnFarve.style.background = "#D8A55B";
     femFaserBeskrivelse.innerHTML = "Formålet med #BeCreative er at konceptualisere din løsning. Dette gøres ved omsætning af indsigterne fra den første fase til dét flow, som brugeren vil gennemgå fra start til slut i løsningen. Når alle parter har godkendt flowet, begynder vi at give liv til din løsning ved at udbygge flowet med mockups, for til sidst at stå tilbage med en færdig skitse af din løsning.";
     femFaserUdbytte.innerHTML = "Skitsen gør det muligt for dig tidligt i forløbet at se og gennemgå din løsning og komme med inputs. Det færdige koncept tager vi med videre til næste fase, hvor de tekniske aspekter kortlægges.";
@@ -241,7 +241,7 @@ function buttonClickTilbage(t) {
     faser[1].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
-    faseFarver.style.background = "#AA82AD";
+    faseFarver.style.color = "#AA82AD";
     faseNavnFarve.style.background = "#AA82AD";
     femFaserBeskrivelse.innerHTML = "I denne fase afdækkes det tekniske aspekt af din løsning. Det gør vi med udgangspunkt i de indsigter vi har taget med fra de to foregående faser. Det er her vi sikrer, at vi har kortlagt alle afhængigheder og touchpoints for din løsning. Med udgangspunkt i vores ekspertise og erfaring, har vi et solidt grundlag at vurderer og eliminerer alle faldgruber ud fra. Vi ved, hvor de fleste usikkerheder opstår, og hvordan vi skal komme dem til livs. Ved at afdække dette så tidligt som muligt, får vi en mere glidende udviklingsproces.";
     femFaserUdbytte.innerHTML = "Når vi er nået igennem #BeTechnical, står vi med et overblik over alle de faktorer, der kan påvirke løsningen, og vi er nu klar til at udarbejde en kravspecifikation for din løsning.";
@@ -260,7 +260,7 @@ function buttonClickTilbage(t) {
     faser[1].style.background = "#e0e0e0";
     faser[2].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
-    faseFarver.style.background = "#6696AD";
+    faseFarver.style.color = "#6696AD";
     faseNavnFarve.style.background = "#6696AD";
     femFaserBeskrivelse.innerHTML = "Formålet med #BeSpecific er at sammenfatte det forudgående arbejde i en kravspecifikation. Kravspecifikationen sikrer at udviklerne kan give et realistisk bud på, hvor lang tid hver enkelt del i løsningen tager at udvikle. Herfra kan vi estimere det overordnede tidsforbrug.";
     femFaserUdbytte.innerHTML = "#BeSpecific munder ud i en detaljeret kravspecifikation. En kravspecifikation er en specifik beskrivelse af den samlede løsning, så udvikleren forstår nøjagtig, hvad det er for en løsning, der skal bygges. Efter denne fase er vi klar til at omdanne det samlede afklarings-arbejde til et færdigt overblik over din løsning.";
@@ -288,7 +288,7 @@ function buttonClickFrem(f) {
     faser[2].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
-    faseFarver.style.background = "#D8A55B";
+    faseFarver.style.color = "#D8A55B";
     faseNavnFarve.style.background = "#D8A55B";
     femFaserBeskrivelse.innerHTML = "Formålet med #BeCreative er at konceptualisere din løsning. Dette gøres ved omsætning af indsigterne fra den første fase til dét flow, som brugeren vil gennemgå fra start til slut i løsningen. Når alle parter har godkendt flowet, begynder vi at give liv til din løsning ved at udbygge flowet med mockups, for til sidst at stå tilbage med en færdig skitse af din løsning.";
     femFaserUdbytte.innerHTML = "Skitsen gør det muligt for dig tidligt i forløbet at se og gennemgå din løsning og komme med inputs. Det færdige koncept tager vi med videre til næste fase, hvor de tekniske aspekter kortlægges.";
@@ -307,7 +307,7 @@ function buttonClickFrem(f) {
     faser[1].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
-    faseFarver.style.background = "#AA82AD";
+    faseFarver.style.color = "#AA82AD";
     faseNavnFarve.style.background = "#AA82AD";
     femFaserBeskrivelse.innerHTML = "I denne fase afdækkes det tekniske aspekt af din løsning. Det gør vi med udgangspunkt i de indsigter vi har taget med fra de to foregående faser. Det er her vi sikrer, at vi har kortlagt alle afhængigheder og touchpoints for din løsning. Med udgangspunkt i vores ekspertise og erfaring, har vi et solidt grundlag at vurderer og eliminerer alle faldgruber ud fra. Vi ved, hvor de fleste usikkerheder opstår, og hvordan vi skal komme dem til livs. Ved at afdække dette så tidligt som muligt, får vi en mere glidende udviklingsproces.";
     femFaserUdbytte.innerHTML = "Når vi er nået igennem #BeTechnical, står vi med et overblik over alle de faktorer, der kan påvirke løsningen, og vi er nu klar til at udarbejde en kravspecifikation for din løsning.";
@@ -326,7 +326,7 @@ function buttonClickFrem(f) {
     faser[1].style.background = "#e0e0e0";
     faser[2].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
-    faseFarver.style.background = "#6696AD";
+    faseFarver.style.color = "#6696AD";
     faseNavnFarve.style.background = "#6696AD";
     femFaserBeskrivelse.innerHTML = "Formålet med #BeSpecific er at sammenfatte det forudgående arbejde i en kravspecifikation. Kravspecifikationen sikrer at udviklerne kan give et realistisk bud på, hvor lang tid hver enkelt del i løsningen tager at udvikle. Herfra kan vi estimere det overordnede tidsforbrug.";
     femFaserUdbytte.innerHTML = "#BeSpecific munder ud i en detaljeret kravspecifikation. En kravspecifikation er en specifik beskrivelse af den samlede løsning, så udvikleren forstår nøjagtig, hvad det er for en løsning, der skal bygges. Efter denne fase er vi klar til at omdanne det samlede afklarings-arbejde til et færdigt overblik over din løsning.";
@@ -345,7 +345,7 @@ function buttonClickFrem(f) {
     faser[1].style.background = "#e0e0e0";
     faser[2].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
-    faseFarver.style.background = "#D67249";
+    faseFarver.style.color = "#D67249";
     faseNavnFarve.style.background = "#D67249";
     femFaserBeskrivelse.innerHTML = "Formålet med #BeAwesome er at sammenfatte al den indsamlede viden i et samlet overblik. Du får en velunderbygget pris og struktur for din løsning, som understøtter det overordnede formål med afklaringsfasen, at vi kan levere den ønskede løsning til aftalt tid og pris, så du ved præcis, hvad du kan forvente, når vi starter udviklingsprocessen.";
     femFaserUdbytte.innerHTML = "#BeAwesome er sidste fase i afklaringsforløbet. Alt indhold samles i et endeligt overblik, som du modtager sammen med alle indsigter, vurderinger og beskrivelser samt den endelige pris for udviklingen af din løsning. Værsgo’.";
