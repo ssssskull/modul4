@@ -15,7 +15,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  --line-border-fill: #e0e0e0;
+  --line-border-fill: #515f6d;
 }
 
 *, *::before, *::after {
@@ -885,23 +885,32 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 .femfaser__heading {
   text-align: center;
   color: #FBFBFB;
-  background: #A5BA74;
 }
 
 .femfaser__testest {
   position: relative;
 }
 
-.femfaser__testest h1 {
-  width: 50px;
-  height: 50px;
+.femfaser__testest div {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
+  border: 3px solid #D3D8D2;
+  background: #FBFBFB;
+  color: #a6bb75;
+}
+
+.femfaser__testest h1 {
+  color: inherit;
 }
 
 .femfaser__testest h2 {
   display: inline-block;
   width: 80%;
-  margin-top: -10px;
+  margin-top: -18px;
+  background: #A5BA74;
+  z-index: -1;
+  padding: 20px 0 10px 0;
 }
 
 .femfaser__testest button {
@@ -961,7 +970,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   }
 }
 
-.pfemfaser, #h1femfaser, #h2femfaser {
+.pfemfaser, #h2femfaser {
   text-align: center;
   color: #FBFBFB;
   -webkit-transition: all 0.2s ease-in-out;
@@ -983,7 +992,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 }
 
 .femfasercircle {
-  background-color: var(--line-border-fill);
+  background-color: #D3D8D2;
   border-radius: 50%;
   height: auto;
   width: 5%;
