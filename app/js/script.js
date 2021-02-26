@@ -90,8 +90,7 @@ let buttonLeft = document.querySelector(".arrowleft");
 faser[0].style.background = "#A5BA74";
 
     
-
-/* function handleClick(e) {
+ /* function handleClick(e) {
     faser.forEach(node => {
     node.addEventListener('click', handleClick)
   });
@@ -145,7 +144,7 @@ faser[0].style.background = "#A5BA74";
     faser[4].style.background = "#e0e0e0";
     faseFarver.style.background = "#AA82AD";
     faseNavnFarve.style.background = "#AA82AD";
-    femFaserBeskrivelse.innerHTML = "I denne fase afdækkes det tekniske aspekt af din løsning. Det gør vi med udgangspunkt i de indsigter vi har taget med fra de to foregående faser. Det er her vi sikrer, at vi har kortlagt alle afhængigheder og touchpoints for din løsning. Med udgangspunkt i vores ekspertise og erfaring, har vi et solidt grundlag at vurderer og eliminerer alle faldgruber ud fra. Vi ved, hvor de fleste usikkerheder opstår, og hvordan vi skal komme dem til livs. Ved at afdække dette så tidligt som muligt, får vi en mere glidende udviklingsproces.";
+    femFaserBeskrivelse.innerHTML = "I denne fase afdækkes det tekniske aspekt af din løsning. Det gør vi med udgangspunkt i de indsigter, vi har taget med fra de to foregående faser. Det er her vi sikrer, at vi har kortlagt alle afhængigheder og touchpoints for din løsning. Med udgangspunkt i vores ekspertise og erfaring, har vi et solidt grundlag at vurdere og eliminere alle faldgruber ud fra. Vi ved, hvor de fleste usikkerheder opstår, og hvordan vi skal komme dem til livs. Ved at afdække dette så tidligt som muligt, får vi en mere glidende udviklingsproces.";
     femFaserUdbytte.innerHTML = "Når vi er nået igennem #BeTechnical, står vi med et overblik over alle de faktorer, der kan påvirke løsningen, og vi er nu klar til at udarbejde en kravspecifikation for din løsning.";
     femFaseNummer.innerHTML = "03";
     faseNavnFarve.innerHTML = "#BeTechnical";
@@ -362,7 +361,9 @@ function buttonClickFrem(f) {
 }
 
 
-
+ /*faser.forEach(node => {
+  node.addEventListener('click', handleClick);
+}); */
 buttonRight.addEventListener("click", buttonClickFrem)
 buttonLeft.addEventListener("click", buttonClickTilbage)
 
