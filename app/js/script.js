@@ -81,12 +81,20 @@ let faser = Array.from(document.querySelectorAll(".femfasercircle")); //En array
 let faseFarver = document.querySelector(".femfaser__heading");
 let faseNavnFarve = document.querySelector("#h2femfaser");
 let femFaserBeskrivelse = document.querySelector("#beskrivelse")
-let femFaserUdbytte = document.querySelector("#udbytte")
-let femFaseNummer = document.querySelector("#h1femfaser")
-let tlf = document.querySelector(".tlf")
-let mail = document.querySelector(".mail")
+let femFaserUdbytte = document.querySelector("#udbytte");
+let femFaseNummer = document.querySelector("#h1femfaser");
+let tlf = document.querySelector(".tlf");
+let mail = document.querySelector(".mail");
+let buttonRight = document.querySelector(".arrowright");
+let buttonLeft = document.querySelector(".arrowleft");
+faser[0].style.background = "#A5BA74";
 
-const handleClick = (e) => {
+    
+
+/* function handleClick(e) {
+    faser.forEach(node => {
+    node.addEventListener('click', handleClick)
+  });
   e.preventDefault();
   faser.forEach(node => {
     node.classList.remove("active"); //Fjerner .active class fra alle elementer med class .femfasercircle
@@ -100,7 +108,7 @@ const handleClick = (e) => {
     faser[3].style.background = "#e0e0e0";
     faser[4].style.background = "#e0e0e0";
     faseFarver.style.background = "#A5BA74";
-    faseNavnFarve.style.background = "#A5BA74"
+    faseNavnFarve.style.background = "#A5BA74";
     femFaserBeskrivelse.innerHTML = "#BeCurious handler om at forstå dit behov, men også om at opnå indsigt i, hvorfra behovet udspringer. Vi dykker ned i, hvordan du mener en app- eller webløsning vil tilgodese dit behov og afdækker, hvor langt du selv er i processen. Og med udgangspunkt i vores ekspertviden udfordrer vi dit ståsted.";
     femFaserUdbytte.innerHTML = "Udbyttet af #BeCurious er en række kerne-indsigter, både om din forretning og om løsningens behov, men også om brugskonteksten og brugernes behov. Kerne-indsigterne fra denne fase føres med videre ind i den næste fase, hvor vi starter omdannelsen til et egentligt koncept.";
     femFaseNummer.innerHTML = "01";
@@ -130,7 +138,7 @@ const handleClick = (e) => {
   }
 
   else if (faser[2].classList.contains("active")) {
-    faser[2].style.background = "#AA82AD"
+    faser[2].style.background = "#AA82AD";
     faser[0].style.background = "#e0e0e0";
     faser[1].style.background = "#e0e0e0";
     faser[3].style.background = "#e0e0e0";
@@ -148,7 +156,7 @@ const handleClick = (e) => {
   }
 
   else if (faser[3].classList.contains("active")) {
-    faser[3].style.background = "#6696AD"
+    faser[3].style.background = "#6696AD";
     faser[0].style.background = "#e0e0e0";
     faser[1].style.background = "#e0e0e0";
     faser[2].style.background = "#e0e0e0";
@@ -166,7 +174,7 @@ const handleClick = (e) => {
   }
 
   else if (faser[4].classList.contains("active")) {
-    faser[4].style.background = "#D67249"
+    faser[4].style.background = "#D67249";
     faser[0].style.background = "#e0e0e0";
     faser[1].style.background = "#e0e0e0";
     faser[2].style.background = "#e0e0e0";
@@ -175,31 +183,148 @@ const handleClick = (e) => {
     faseNavnFarve.style.background = "#D67249";
     femFaserBeskrivelse.innerHTML = "Formålet med #BeAwesome er at sammenfatte al den indsamlede viden i et samlet overblik. Du får en velunderbygget pris og struktur for din løsning, som understøtter det overordnede formål med afklaringsfasen, at vi kan levere den ønskede løsning til aftalt tid og pris, så du ved præcis, hvad du kan forvente, når vi starter udviklingsprocessen.";
     femFaserUdbytte.innerHTML = "#BeAwesome er sidste fase i afklaringsforløbet. Alt indhold samles i et endeligt overblik, som du modtager sammen med alle indsigter, vurderinger og beskrivelser samt den endelige pris for udviklingen af din løsning. Værsgo’.";
-    femFaseNummer.innerHTML = "05"
-    faseNavnFarve.innerHTML = "#BeAwesome"
+    femFaseNummer.innerHTML = "05";
+    faseNavnFarve.innerHTML = "#BeAwesome";
     tlf.style.background = "#D67249";
     mail.style.background = "#D67249";
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "0";
+  }
+} */
 
+function buttonClickFrem(f) {
+  f.preventDefault();
+  faser.forEach(node => {
+     node.classList.remove("active"); //Fjerner .active class fra alle elementer med class .femfasercircle
+   });
+  f.currentTarget.classList.add("active");
+
+   
+  if (faser[0].classList.contains("cirkel1")) {
+    faser[1].style.background = "#D8A55B";
+    faser[0].style.background = "#e0e0e0";
+    faser[2].style.background = "#e0e0e0";
+    faser[3].style.background = "#e0e0e0";
+    faser[4].style.background = "#e0e0e0";
+    faseFarver.style.background = "#D8A55B";
+    faseNavnFarve.style.background = "#D8A55B";
+    femFaserBeskrivelse.innerHTML = "Formålet med #BeCreative er at konceptualisere din løsning. Dette gøres ved omsætning af indsigterne fra den første fase til dét flow, som brugeren vil gennemgå fra start til slut i løsningen. Når alle parter har godkendt flowet, begynder vi at give liv til din løsning ved at udbygge flowet med mockups, for til sidst at stå tilbage med en færdig skitse af din løsning.";
+    femFaserUdbytte.innerHTML = "Skitsen gør det muligt for dig tidligt i forløbet at se og gennemgå din løsning og komme med inputs. Det færdige koncept tager vi med videre til næste fase, hvor de tekniske aspekter kortlægges.";
+    femFaseNummer.innerHTML = "02";
+    faseNavnFarve.innerHTML = "#BeCreative";
+    tlf.style.background = "#D8A55B";
+    mail.style.background = "#D8A55B";
+    buttonLeft.style.opacity = "100";
+    buttonRight.style.opacity = "100";
+    faser[0].classList.remove("cirkel1");
+  }
+
+  else if (faser[1].classList.contains("cirkel2")) {
+    faser[2].style.background = "#AA82AD";
+    faser[0].style.background = "#e0e0e0";
+    faser[1].style.background = "#e0e0e0";
+    faser[3].style.background = "#e0e0e0";
+    faser[4].style.background = "#e0e0e0";
+    faseFarver.style.background = "#AA82AD";
+    faseNavnFarve.style.background = "#AA82AD";
+    femFaserBeskrivelse.innerHTML = "I denne fase afdækkes det tekniske aspekt af din løsning. Det gør vi med udgangspunkt i de indsigter vi har taget med fra de to foregående faser. Det er her vi sikrer, at vi har kortlagt alle afhængigheder og touchpoints for din løsning. Med udgangspunkt i vores ekspertise og erfaring, har vi et solidt grundlag at vurderer og eliminerer alle faldgruber ud fra. Vi ved, hvor de fleste usikkerheder opstår, og hvordan vi skal komme dem til livs. Ved at afdække dette så tidligt som muligt, får vi en mere glidende udviklingsproces.";
+    femFaserUdbytte.innerHTML = "Når vi er nået igennem #BeTechnical, står vi med et overblik over alle de faktorer, der kan påvirke løsningen, og vi er nu klar til at udarbejde en kravspecifikation for din løsning.";
+    femFaseNummer.innerHTML = "03";
+    faseNavnFarve.innerHTML = "#BeTechnical";
+    tlf.style.background = "#AA82AD";
+    mail.style.background = "#AA82AD";
+    buttonLeft.style.opacity = "100";
+    buttonRight.style.opacity = "100";
+    faser[1].classList.remove("cirkel2");
+  }
+
+  else if (faser[2].classList.contains("cirkel3")) {
+    faser[3].style.background = "#6696AD";
+    faser[0].style.background = "#e0e0e0";
+    faser[1].style.background = "#e0e0e0";
+    faser[2].style.background = "#e0e0e0";
+    faser[4].style.background = "#e0e0e0";
+    faseFarver.style.background = "#6696AD";
+    faseNavnFarve.style.background = "#6696AD";
+    femFaserBeskrivelse.innerHTML = "Formålet med #BeSpecific er at sammenfatte det forudgående arbejde i en kravspecifikation. Kravspecifikationen sikrer at udviklerne kan give et realistisk bud på, hvor lang tid hver enkelt del i løsningen tager at udvikle. Herfra kan vi estimere det overordnede tidsforbrug.";
+    femFaserUdbytte.innerHTML = "#BeSpecific munder ud i en detaljeret kravspecifikation. En kravspecifikation er en specifik beskrivelse af den samlede løsning, så udvikleren forstår nøjagtig, hvad det er for en løsning, der skal bygges. Efter denne fase er vi klar til at omdanne det samlede afklarings-arbejde til et færdigt overblik over din løsning.";
+    femFaseNummer.innerHTML = "04";
+    faseNavnFarve.innerHTML = "BeSpecific";
+    tlf.style.background = "#6696AD";
+    mail.style.background = "#6696AD";
+    buttonLeft.style.opacity = "100";
+    buttonRight.style.opacity = "100";
+    faser[2].classList.remove("cirkel3");
+ }
+
+  else if (faser[3].classList.contains("cirkel4")) {
+    faser[4].style.background = "#D67249";
+    faser[0].style.background = "#e0e0e0";
+    faser[1].style.background = "#e0e0e0";
+    faser[2].style.background = "#e0e0e0";
+    faser[3].style.background = "#e0e0e0";
+    faseFarver.style.background = "#D67249";
+    faseNavnFarve.style.background = "#D67249";
+    femFaserBeskrivelse.innerHTML = "Formålet med #BeAwesome er at sammenfatte al den indsamlede viden i et samlet overblik. Du får en velunderbygget pris og struktur for din løsning, som understøtter det overordnede formål med afklaringsfasen, at vi kan levere den ønskede løsning til aftalt tid og pris, så du ved præcis, hvad du kan forvente, når vi starter udviklingsprocessen.";
+    femFaserUdbytte.innerHTML = "#BeAwesome er sidste fase i afklaringsforløbet. Alt indhold samles i et endeligt overblik, som du modtager sammen med alle indsigter, vurderinger og beskrivelser samt den endelige pris for udviklingen af din løsning. Værsgo’.";
+    femFaseNummer.innerHTML = "05";
+    faseNavnFarve.innerHTML = "#BeAwesome";
+    tlf.style.background = "#D67249";
+    mail.style.background = "#D67249";
+    buttonLeft.style.opacity = "100";
+    buttonRight.style.opacity = "0";
+    faser[3].classList.remove("cirkel4");
   }
 }
- 
-  faser.forEach(node => {
-    node.addEventListener('click', handleClick);
-  });
 
-
-// Button click
-
-function buttonClick() {
+// function buttonClickTilbage(t) {
+//   t.preventDefault();
+//   faser.forEach(node => {
+//      node.classList.remove("active"); //Fjerner .active class fra alle elementer med class .femfasercircle
+//    });
+//   t.currentTarget.classList.add("active");
   
-}
+//   if (faser[1].classList.contains("cirkel2")) {
+//     faser[0].style.background = "#A5BA74";
+//     faser[1].style.background = "#e0e0e0";
+//     faser[2].style.background = "#e0e0e0";
+//     faser[3].style.background = "#e0e0e0";
+//     faser[4].style.background = "#e0e0e0";
+//     faseFarver.style.background = "#A5BA74";
+//     faseNavnFarve.style.background = "#A5BA74";
+//     femFaserBeskrivelse.innerHTML = "#BeCurious handler om at forstå dit behov, men også om at opnå indsigt i, hvorfra behovet udspringer. Vi dykker ned i, hvordan du mener en app- eller webløsning vil tilgodese dit behov og afdækker, hvor langt du selv er i processen. Og med udgangspunkt i vores ekspertviden udfordrer vi dit ståsted.";
+//     femFaserUdbytte.innerHTML = "Udbyttet af #BeCurious er en række kerne-indsigter, både om din forretning og om løsningens behov, men også om brugskonteksten og brugernes behov. Kerne-indsigterne fra denne fase føres med videre ind i den næste fase, hvor vi starter omdannelsen til et egentligt koncept.";
+//     femFaseNummer.innerHTML = "01";
+//     faseNavnFarve.innerHTML = "#BeCurious";
+//     tlf.style.background = "#A5BA74";
+//     mail.style.background = "#A5BA74";
+//     buttonRight.style.opacity = "100";
+//     buttonLeft.style.opacity = "0";
+//   }
 
-let buttonRight = document.querySelector(".arrowright");
-let buttonLeft = document.querySelector(".arrowleft");
+//   else if (faser[2].classList.contains("cirkel3")) {
+//     faser[1].style.background = "#D8A55B";
+//     faser[0].style.background = "#e0e0e0";
+//     faser[2].style.background = "#e0e0e0";
+//     faser[3].style.background = "#e0e0e0";
+//     faser[4].style.background = "#e0e0e0";
+//     faseFarver.style.background = "#D8A55B";
+//     faseNavnFarve.style.background = "#D8A55B";
+//     femFaserBeskrivelse.innerHTML = "Formålet med #BeCreative er at konceptualisere din løsning. Dette gøres ved omsætning af indsigterne fra den første fase til dét flow, som brugeren vil gennemgå fra start til slut i løsningen. Når alle parter har godkendt flowet, begynder vi at give liv til din løsning ved at udbygge flowet med mockups, for til sidst at stå tilbage med en færdig skitse af din løsning.";
+//     femFaserUdbytte.innerHTML = "Skitsen gør det muligt for dig tidligt i forløbet at se og gennemgå din løsning og komme med inputs. Det færdige koncept tager vi med videre til næste fase, hvor de tekniske aspekter kortlægges.";
+//     femFaseNummer.innerHTML = "02";
+//     faseNavnFarve.innerHTML = "#BeCreative";
+//     tlf.style.background = "#D8A55B";
+//     mail.style.background = "#D8A55B";
+//     buttonLeft.style.opacity = "100";
+//     buttonRight.style.opacity = "100";
+//   }
+// }
 
-buttonRight.addEventListener("click", buttonClick);
+buttonRight.addEventListener("click", buttonClickFrem)
+buttonLeft.addEventListener("click", buttonClickTilbage)
+
+
 
   
 

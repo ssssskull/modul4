@@ -711,7 +711,7 @@ h3 {
 .pfemfaser, #h1femfaser, #h2femfaser {
   text-align: center;
   color: white;
-  transition: .2s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 .femfaserprogess-container {
@@ -748,7 +748,7 @@ h3 {
   height: 4px;
   width: 0%;
   z-index: -1;
-  transition: .2s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 .femfasercircle {
@@ -758,7 +758,7 @@ h3 {
   width: 5%;
   padding-top: 5%;
   display: flex;
-  transition: .2s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 a.femfasercircle.active {
@@ -772,6 +772,8 @@ a.femfasercircle.active {
   margin-top: -6%;
   background-color: white;
   border: none;
+  transition: all 0.2s ease-in-out;
+  opacity: 0%;
 }
 
 .arrowright {
@@ -781,6 +783,7 @@ a.femfasercircle.active {
   margin-top: -6%;
   background-color: white;
   border: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .tlf {
@@ -790,7 +793,7 @@ a.femfasercircle.active {
   padding: 2%;
   margin-bottom: 7%;
   margin-top: 15%;
-  transition: .2s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 .mail {
@@ -799,11 +802,11 @@ a.femfasercircle.active {
   margin-right: 20%;
   padding: 2%;
   margin-bottom: 20%;
-  transition: .2s ease;
+  transition: all 0.2s ease-in-out;
 }
 
-.arrowleft {
-  opacity: 0%;
+.ptransition {
+  transition: all 0.2s ease-in-out;
 }
 
 footer {
