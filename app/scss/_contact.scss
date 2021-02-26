@@ -15,14 +15,30 @@
         column-gap: 5rem;
 
         @include breakpoint-up(computer) {
-            justify-content: start;
             column-gap: 10rem;
         }
 
         @include breakpoint-up(largeComputer) {
             column-gap: 20rem;
         }
+        .main__col1 {
+            
+            @include breakpoint-up(computer) {
+                white-space: nowrap;
+            }
 
+            @include breakpoint-up(largeComputer) {
+                h1 {
+                    font-size: $font-xl-fallback;
+                    font-size: $font-xl;
+                }
+    
+                p {
+                    font-size: $font-sm-fallback;
+                    font-size: $font-sm;
+                }
+            }
+        }
         .main__col2 {
             align-self: center;
             img {
