@@ -113,7 +113,12 @@ function buttonClickTilbage(t) {
     buttonRight.style.opacity = "100";
     buttonLeft.style.opacity = "0";
     faser[0].classList.add("cirkel1");
-    femFaserTekst[0].classList.add("hidden");
+
+    femFaserTekst[0].classList.remove("hidden");
+    femFaserTekst[0].classList.add("visible");
+
+    femFaserTekst[1].classList.remove("visible");
+    femFaserTekst[1].classList.add("hidden");
 
   }
 
@@ -133,6 +138,12 @@ function buttonClickTilbage(t) {
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "100";
     faser[1].classList.add("cirkel2");
+
+    femFaserTekst[1].classList.remove("hidden");
+    femFaserTekst[1].classList.add("visible");
+
+    femFaserTekst[2].classList.remove("visible");
+    femFaserTekst[2].classList.add("hidden");
   }
 
   else if (faser[3].classList.contains("cirkel4")) {
@@ -151,6 +162,12 @@ function buttonClickTilbage(t) {
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "100";
     faser[2].classList.add("cirkel3");
+
+    femFaserTekst[2].classList.remove("hidden");
+    femFaserTekst[2].classList.add("visible");
+
+    femFaserTekst[3].classList.remove("visible");
+    femFaserTekst[3].classList.add("hidden");
   }
 
   else if (faser[4].classList.contains("cirkel5")) {
@@ -169,6 +186,12 @@ function buttonClickTilbage(t) {
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "100";
     faser[3].classList.add("cirkel4");
+
+    femFaserTekst[3].classList.remove("hidden");
+    femFaserTekst[3].classList.add("visible");
+
+    femFaserTekst[4].classList.remove("visible");
+    femFaserTekst[4].classList.add("hidden");
   }
 }
 
@@ -245,6 +268,12 @@ function buttonClickFrem(f) {
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "100";
     faser[2].classList.remove("cirkel3");
+
+    femFaserTekst[2].classList.add("hidden");
+    femFaserTekst[2].classList.remove("visible");
+
+    femFaserTekst[3].classList.add("visible");
+    femFaserTekst[3].classList.remove("hidden");
   }
 
   else if (faser[3].classList.contains("cirkel4")) {
@@ -257,12 +286,19 @@ function buttonClickFrem(f) {
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#D67249";
     faseNavnFarve.innerHTML = "#BeAwesome";
+    femFaseNummer.innerHTML = "05";
     tlf.style.background = "#D67249";
     mail.style.background = "#D67249";
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "0";
     faser[3].classList.remove("cirkel4");
     buttonRight.setAttribute("pointer-events", "none");
+
+    femFaserTekst[3].classList.add("hidden");
+    femFaserTekst[3].classList.remove("visible");
+
+    femFaserTekst[4].classList.add("visible");
+    femFaserTekst[4].classList.remove("hidden");
   }
 }
 

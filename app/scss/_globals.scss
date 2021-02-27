@@ -197,11 +197,11 @@ h4 {
     }
 
     .visible {
-        animation: fade 2s linear;
+        animation: fade .2s linear;
     }
 
     .hidden {
         display: none;
-        animation: fade 2s linear;
+        animation: fade .2s linear;
     }
 }
