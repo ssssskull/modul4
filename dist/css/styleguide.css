@@ -5,7 +5,44 @@
 }
 
 .nav-headings {
-    
+    font-size: 32px;
+    font-weight: 500;
+} 
+
+.farver {
+    display:block;
+    flex-wrap:wrap;
+}
+
+.farver h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.farver p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.farve-1 {
+
+}
+
+
+.farve-col-1 {
+    display: flex;
+}
+
+.farve-col-2 {
+    display: flex;
+}
+
+.farve-col-3 {
+    display: flex;
+}
+
+.RGBHEX {
+
 }
 
 .hex1 {
