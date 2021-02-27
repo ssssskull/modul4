@@ -369,7 +369,7 @@ function buttonClickFrem(f) {
   }
 }
 
-
+//hej
 
 /*faser.forEach(node => {
  node.addEventListener('click', handleClick);
