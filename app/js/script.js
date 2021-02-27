@@ -200,10 +200,10 @@ function buttonClickTilbage(t) {
 
   if (faser[1].classList.contains("cirkel2")) {
     faser[0].style.background = "#A5BA74";
-    faser[1].style.background = "#e0e0e0";
-    faser[2].style.background = "#e0e0e0";
-    faser[3].style.background = "#e0e0e0";
-    faser[4].style.background = "#e0e0e0";
+    faser[1].style.background = "#CCCCCC";
+    faser[2].style.background = "#CCCCCC";
+    faser[3].style.background = "#CCCCCC";
+    faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#A5BA74";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#A5BA74";
@@ -220,10 +220,10 @@ function buttonClickTilbage(t) {
 
   else if (faser[2].classList.contains("cirkel3")) {
     faser[1].style.background = "#D8A55B";
-    faser[0].style.background = "#e0e0e0";
-    faser[2].style.background = "#e0e0e0";
-    faser[3].style.background = "#e0e0e0";
-    faser[4].style.background = "#e0e0e0";
+    faser[0].style.background = "#CCCCCC";
+    faser[2].style.background = "#CCCCCC";
+    faser[3].style.background = "#CCCCCC";
+    faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#D8A55B";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#D8A55B";
@@ -240,10 +240,10 @@ function buttonClickTilbage(t) {
 
   else if (faser[3].classList.contains("cirkel4")) {
     faser[2].style.background = "#AA82AD";
-    faser[0].style.background = "#e0e0e0";
-    faser[1].style.background = "#e0e0e0";
-    faser[3].style.background = "#e0e0e0";
-    faser[4].style.background = "#e0e0e0";
+    faser[0].style.background = "#CCCCCC";
+    faser[1].style.background = "#CCCCCC";
+    faser[3].style.background = "#CCCCCC";
+    faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#AA82AD";
     faseNavnFarve.style.background = "#AA82AD";
     faseFarver.style.transition = "all .2s";
@@ -260,10 +260,10 @@ function buttonClickTilbage(t) {
 
   else if (faser[4].classList.contains("cirkel5")) {
     faser[3].style.background = "#6696AD";
-    faser[0].style.background = "#e0e0e0";
-    faser[1].style.background = "#e0e0e0";
-    faser[2].style.background = "#e0e0e0";
-    faser[4].style.background = "#e0e0e0";
+    faser[0].style.background = "#CCCCCC";
+    faser[1].style.background = "#CCCCCC";
+    faser[2].style.background = "#CCCCCC";
+    faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#6696AD";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#6696AD";
@@ -289,10 +289,10 @@ function buttonClickFrem(f) {
 
   if (faser[0].classList.contains("cirkel1")) {
     faser[1].style.background = "#D8A55B";
-    faser[0].style.background = "#e0e0e0";
-    faser[2].style.background = "#e0e0e0";
-    faser[3].style.background = "#e0e0e0";
-    faser[4].style.background = "#e0e0e0";
+    faser[0].style.background = "#CCCCCC";
+    faser[2].style.background = "#CCCCCC";
+    faser[3].style.background = "#CCCCCC";
+    faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#D8A55B";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#D8A55B";
@@ -309,10 +309,10 @@ function buttonClickFrem(f) {
 
   else if (faser[1].classList.contains("cirkel2")) {
     faser[2].style.background = "#AA82AD";
-    faser[0].style.background = "#e0e0e0";
-    faser[1].style.background = "#e0e0e0";
-    faser[3].style.background = "#e0e0e0";
-    faser[4].style.background = "#e0e0e0";
+    faser[0].style.background = "#CCCCCC";
+    faser[1].style.background = "#CCCCCC";
+    faser[3].style.background = "#CCCCCC";
+    faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#AA82AD";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#AA82AD";
@@ -329,10 +329,10 @@ function buttonClickFrem(f) {
 
   else if (faser[2].classList.contains("cirkel3")) {
     faser[3].style.background = "#6696AD";
-    faser[0].style.background = "#e0e0e0";
-    faser[1].style.background = "#e0e0e0";
-    faser[2].style.background = "#e0e0e0";
-    faser[4].style.background = "#e0e0e0";
+    faser[0].style.background = "#CCCCCC";
+    faser[1].style.background = "#CCCCCC";
+    faser[2].style.background = "#CCCCCC";
+    faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#6696AD";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#6696AD";
@@ -349,10 +349,10 @@ function buttonClickFrem(f) {
 
   else if (faser[3].classList.contains("cirkel4")) {
     faser[4].style.background = "#D67249";
-    faser[0].style.background = "#e0e0e0";
-    faser[1].style.background = "#e0e0e0";
-    faser[2].style.background = "#e0e0e0";
-    faser[3].style.background = "#e0e0e0";
+    faser[0].style.background = "#CCCCCC";
+    faser[1].style.background = "#CCCCCC";
+    faser[2].style.background = "#CCCCCC";
+    faser[3].style.background = "#CCCCCC";
     faseFarver.style.color = "#D67249";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#D67249";
@@ -369,12 +369,18 @@ function buttonClickFrem(f) {
   }
 }
 
-
 /*faser.forEach(node => {
  node.addEventListener('click', handleClick);
 }); */
+
 buttonRight.addEventListener("click", buttonClickFrem);
 buttonLeft.addEventListener("click", buttonClickTilbage);
+
+
+//Nav farveskift js
+
+
+
 
 
 
