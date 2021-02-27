@@ -2,11 +2,43 @@
     width: 380px;
     height: 40px;
     padding: 15px;
-    background-color: black;
 }
 
-
-.hex1 {
+.nav-headings {
     
 }
+
+.hex1 {
+    background-color: #D67249;
+}
+
+.hex2 {
+    background-color: #D36D75;
+}
+
+.hex3 {
+    background-color: #A5BA74;
+}
+
+.hex4 {
+    background-color: #6696AD;
+}
+
+.hex5 {
+    background-color: #D8A55B;
+}
+
+.hex6 {
+    background-color: #BFBCBA;
+}
+
+.hex7 {
+    background-color: #515E6D;
+}
+
+.hex8 {
+    background-color: #AA82AD;
+}
+
+
 
