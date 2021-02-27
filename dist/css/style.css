@@ -217,6 +217,18 @@ h4 {
   }
 }
 
+.container .visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.container .hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
 .header {
   position: absolute;
 }
@@ -1001,14 +1013,6 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   font-size: 1.5rem;
   color: #FBFBFB;
   text-decoration: underline;
-}
-
-.femfaser .transform {
-  transition: all 2s linear;
-}
-
-.femfaser .transform-active {
-  color: white;
 }
 
 footer {
