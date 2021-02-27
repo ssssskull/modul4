@@ -369,13 +369,14 @@ function buttonClickFrem(f) {
   }
 }
 
+
+
 /*faser.forEach(node => {
  node.addEventListener('click', handleClick);
 }); */
 
 buttonRight.addEventListener("click", buttonClickFrem);
 buttonLeft.addEventListener("click", buttonClickTilbage);
-
 
 //Nav farveskift js
 
