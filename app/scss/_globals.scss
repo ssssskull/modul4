@@ -197,14 +197,11 @@ h4 {
     }
 
     .visible {
-        visibility: visible;
-        opacity: 1;
-        transition: opacity 0.5s linear;
+        animation: fade 0.5s linear;
     }
 
     .hidden {
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s 0.5s, opacity 0.5s linear;
+        display: none;
+        animation: fade 0.5s linear;
     }
 }

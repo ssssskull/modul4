@@ -114,7 +114,7 @@ function buttonClickTilbage(t) {
     buttonLeft.style.opacity = "0";
     faser[0].classList.add("cirkel1");
     femFaserTekst[0].classList.add("hidden");
-    
+
   }
 
   else if (faser[2].classList.contains("cirkel3")) {
@@ -196,9 +196,6 @@ function buttonClickFrem(f) {
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "100";
     faser[0].classList.remove("cirkel1");
-    femFaserTekst[0].classList.add("hidden");
-    femFaserTekst[0].classlist.remove("visible");
-    femFaserTekst[1].classList.add("hidden")
   }
 
   else if (faser[1].classList.contains("cirkel2")) {
@@ -217,8 +214,12 @@ function buttonClickFrem(f) {
     buttonLeft.style.opacity = "100";
     buttonRight.style.opacity = "100";
     faser[1].classList.remove("cirkel2");
+    femFaserTekst[0].classList.add("hidden");
+    femFaserTekst[0].classList.remove("visible");
+
     femFaserTekst[1].classList.add("visible");
     femFaserTekst[1].classList.remove("hidden");
+
   }
 
   else if (faser[2].classList.contains("cirkel3")) {
