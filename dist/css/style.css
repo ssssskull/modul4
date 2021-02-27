@@ -255,14 +255,14 @@ h4 {
 }
 
 .container .visible {
-  -webkit-animation: fade 0.5s linear;
-          animation: fade 0.5s linear;
+  -webkit-animation: fade 2s linear;
+          animation: fade 2s linear;
 }
 
 .container .hidden {
   display: none;
-  -webkit-animation: fade 0.5s linear;
-          animation: fade 0.5s linear;
+  -webkit-animation: fade 2s linear;
+          animation: fade 2s linear;
 }
 
 @-webkit-keyframes fade {
