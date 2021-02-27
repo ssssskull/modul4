@@ -15,18 +15,20 @@
 }
 
 .farver h3 {
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0px 0px 20px;
     font-size: 25px;
     font-weight: 700;
 }
 
 .farver p {
+    font-family: roboto;
     font-size: 20px;
     font-weight: 500;
+    margin: 0px 0px 0px 20px;
 }
 
 .farve-1 {
-    padding: 0px 0px 0px 20px
+    padding: 0px 0px 14px 0px
 }
 
 
