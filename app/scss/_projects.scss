@@ -2,7 +2,15 @@
 
     .main__col2 {
         max-width: unset;
-        //@include brealpoint-up
+
+        @include breakpoint-up(ipad) {
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include breakpoint-up(computer) {
+            grid-template-columns: 350px 350px;
+        }
     }
     color: $darkblue;
 
@@ -10,11 +18,6 @@
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: 1;
-        max-width: 300px;
-
-        @include breakpoint-up(ipad) {
-            max-width: 350px;
-        }
 
         &:not(:first-of-type) {
             .projects__overlay {
@@ -45,8 +48,8 @@
       }
       
       &__logo {
-          width: 50px;
-          height: 50px;
+        width: 100%;
+        height: unset;
         }
       
       &__info {

@@ -271,7 +271,16 @@
             <div class="main__col2">
                 <div class="projects__item">
                     <div class="projects__overlay">
-                        <img class="projects__logo" src="https://www.houseofcode.io/wp-content/uploads/2019/11/au.png">
+                        <picture>
+                            <source type="image/avif" srcset="
+                            images/logo_gg-349w.avif 349w
+                            " sizes="349px" />
+                            <source type="image/webp" srcset="
+                            images/logo_gg-349w.webp 349w
+                            " sizes="349px" />
+                            <img class="projects__logo" src="images/logo_gg-349w.png" alt="au" loading="lazy"
+                                decoding="async" width="349" height="140" />
+                        </picture>
                         <div class="projects__info">
                             <h2>Title</h2>
                             <p>subtitle</p>
@@ -280,11 +289,32 @@
                                 projekter</a>
                         </div>
                     </div>
-                    <img class="projects__image" src="https://source.unsplash.com/user/erondu/350x350">
+                    <picture class="projects__image">
+                        <!-- Here, we declare the widths our different files have: 380px, 640px and 960px -->
+                        <source type="image/avif" srcset="
+                        images/ggcover-750w.avif 750w,
+                        images/ggcover-350w.avif 350w
+                        " sizes="(max-width: 640) 350w, 750w" />
+                        <source type="image/webp" srcset="
+                        images/ggcover-750w.webp 750w,
+                        images/ggcover-350w.webp 350w
+                        " sizes="(max-width: 640) 350w, 750w" />
+                        <img class="projects__image" src="images/ggcover.jpg" alt="A test image" loading="lazy"
+                            decoding="async" width="750" height="750" />
+                    </picture>
                 </div>
                 <div class="projects__item">
                     <div class="projects__overlay">
-                        <img class="projects__logo" src="https://www.houseofcode.io/wp-content/uploads/2019/11/au.png">
+                        <picture>
+                            <source type="image/avif" srcset="
+                            images/au-349w.avif 349w
+                            " sizes="349px" />
+                            <source type="image/webp" srcset="
+                            images/au-349w.webp 349w
+                            " sizes="349px" />
+                            <img class="projects__logo" src="images/au-349w.png" alt="au" loading="lazy"
+                                decoding="async" width="349" height="140" />
+                        </picture>
                         <div class="projects__info">
                             <h2>Title</h2>
                             <p>subtitle</p>
@@ -293,7 +323,19 @@
                                 projekter</a>
                         </div>
                     </div>
-                    <img class="projects__image" src="https://source.unsplash.com/user/erondu/350x350">
+                    <picture class="projects__image">
+                        <!-- Here, we declare the widths our different files have: 380px, 640px and 960px -->
+                        <source type="image/avif" srcset="
+                        images/aucover-750w.avif 750w,
+                        images/aucover-350w.avif 350w
+                        " sizes="(max-width: 640) 350w, 750w" />
+                        <source type="image/webp" srcset="
+                        images/aucover-750w.webp 750w,
+                        images/aucover-350w.webp 350w
+                        " sizes="(max-width: 640) 350w, 750w" />
+                        <img class="projects__image" src="images/aucover.jpg" alt="A test image" loading="lazy"
+                            decoding="async" width="750" height="750" />
+                    </picture>
                 </div>
             </div>
 

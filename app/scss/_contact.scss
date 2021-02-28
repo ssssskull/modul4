@@ -12,8 +12,11 @@
     &__columns {
         display: grid;
         grid-auto-flow: column;
-        column-gap: 5rem;
+        column-gap: 2rem;
 
+        @include breakpoint-up(computer) {
+            column-gap: 5rem;
+        }
         @include breakpoint-up(computer) {
             column-gap: 10rem;
         }
@@ -46,6 +49,11 @@
                 max-width: 250px;
                 border-radius: 50%;
                 border: 5px solid $white;
+
+                @include breakpoint-up(ipad) {
+                    width: 100%;
+                    height: unset;
+                }
 
                 @include breakpoint-up(largeComputer) {
                     max-width: 300px;
