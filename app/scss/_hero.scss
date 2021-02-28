@@ -86,3 +86,20 @@
         }
     }
 }
+
+#dontcry {
+    .mobile-lines {
+        > * {
+            background: #c0bcbb;
+        }
+    }
+    a > span {
+        background: $darkblue;
+        &::after {
+            background: $darkblue;
+        }
+        &::before {
+            background: $darkblue;
+        }
+    }
+}

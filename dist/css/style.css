@@ -772,6 +772,22 @@ h4 {
           transform: rotate(45deg);
 }
 
+#dontcry .mobile-lines > * {
+  background: #c0bcbb;
+}
+
+#dontcry a > span {
+  background: #515f6d;
+}
+
+#dontcry a > span::after {
+  background: #515f6d;
+}
+
+#dontcry a > span::before {
+  background: #515f6d;
+}
+
 .main {
   display: -ms-grid;
   display: grid;

@@ -316,6 +316,7 @@ buttonLeft.addEventListener("click", buttonClickTilbage);
 //Nav farveskift js
 function scrollColorChange() {
   let mainContainer = document.getElementById("mainContainer").getBoundingClientRect();
+  let mainContainer = document.getElementById(" ").getBoundingClientRect();
   document.querySelector(".nav.takaro").style = "clip: rect(" + (mainContainer.y - 50) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);"
 }
 
@@ -331,7 +332,7 @@ document.addEventListener('scroll', () => {
 });
 
 
-//window.onload = scrollColorChange();
+window.onload = scrollColorChange();
 
 
 
