@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/styleguide.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Decide what fonts to use and remember to combine them so you dont call them multiple times -->
+    <title>Style Guide</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="flex flex-jc-st flex-ai-st flex-dr-col">
+            <a id="logoHome" class="header__logo" href="#" tabindex="0"></a>
+            <ul class="header__menu">
+                <li><a href="#farver" tabindex="0">Farver</a></li>
+                <li><a href="#typografi" tabindex="0">Typografi</a></li>
+                <li><a href="#knapper" tabindex="0">Knapper</a></li>
+                <li><a href="#karrusel" tabindex="0">Karrusel</a></li>
+                <li><a href="#formular" tabindex="0">Formular</a></li>
+                <li><a href="#navigation" tabindex="0">Navigation</a></li>
+
+            </ul>
+        </nav>
+        <a id="mobileLogo" class="header__mobile-logo" href="#" title="House of Code"></a>
+        <div class="header__toggle">
+            <div class="mobile-lines">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
+            </div>
+            <a id="btnHamburger" href="#" class="header__burger" title="Menu icon">
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <section class="hero">
+        <!--TODO fix padding on mob ile - forgot container class on parent-->
+        <div class="hero__wrapper flex flex-jc-c flex-ai-c flex-dr-col">
+            <div class="container hero__text flex flex-dr-col container--ptb">
+                <h1 class="container__elem ">Style Guide // HoC</h1>
+                <p class="container__elem ">med vores afklaringsforløb</p>
+            </div>
+            <a href="#" id="scrollToContent" class="hero__scroll" title="Scroll to main content" onclick="return false;"
+                onmousedown="autoScrollTo('mainContainer');">scroll<span>View.</span>
+            </a>
+        </div>
+    </section>
+    <main>
+        <div>
+            <p class="nav-headings">01 FARVE.</p>
+            <section class="farver">
+                <div class="farve-col-1">
+                    <div class="farve-1">
+                        <div class="farve-box hex1"></div>
+                        <h3>Raw Sienna</h3>
+                        <p class="RGBHEX">RGB: 214, 114, 73</p>
+                        <p class="RGBHEX">#D67249</p>
+                    </div>
+                    <div class="farve-1 ">
+                        <div class="farve-box hex2"></div>
+                        <h3>New York Pink</h3>
+                        <p class="RGBHEX">RGB: 211, 109, 117</p>
+                        <p class="RGBHEX">#D36D75</p>
+                    </div>
+                    <div class="farve-1">
+                        <div class="farve-box hex3"></div>
+                        <h3>Olivine</h3>
+                        <p class="RGBHEX">RGB: 165, 186, 116</p>
+                        <p class="RGBHEX">#A5BA74</p>
+                    </div>
+                </div>
+                <div class="farve-col-2">
+                    <div class="farve-1">
+                        <div class="farve-box hex4"></div>
+                        <h3>Hippie Blue</h3>
+                        <p class="RGBHEX">RGB: 102, 150, 173</p>
+                        <p class="RGBHEX">#6696AD</p>
+                    </div>
+                    <div class="farve-1">
+                        <div class="farve-box hex5"></div>
+                        <h3>Di Serria</h3>
+                        <p class="RGBHEX">RGB: 216, 165, 91</p>
+                        <p class="RGBHEX">#D8A55B</p>
+                    </div>
+                    <div class="farve-1">
+                        <div class="farve-box hex6"></div>
+                        <h3>Cotton Seed</h3>
+                        <p class="RGBHEX">RGB: 191, 188, 186</p>
+                        <p class="RGBHEX">#BFBCBA</p>
+                    </div>
+                </div>
+                <div class="farve-col-3">
+                    <div class="farve-1">
+                        <div class="farve-box hex7"></div>
+                        <h3>Shuttle Gray</h3>
+                        <p class="RGBHEX">RGB: 81, 94, 109</p>
+                        <p class="RGBHEX">#515E6D</p>
+                    </div>
+                    <div class="farve-1">
+                        <div class="farve-box hex8"></div>
+                        <h3>Amethyst Smoke</h3>
+                        <p class="RGBHEX">RGB: 170, 130, 173</p>
+                        <p class="RGBHEX">#AA82AD</p>
+                    </div>
+                </div>
+            </section>
+            <p class="nav-headings">02 TYPOGRAFI.</p>
+            <p class="nav-overskrifter">CODE SNIPPETS.</p>
+            <section class="typografi">
+                <h3 class="typo-overskrift">‘Roboto Mono’, monospace - medium </h3>
+                <h5 class="typo-beskrivende">‘Roboto Mono’ er en Google Font. Den bliver brugt til al tekst i produktet.
+                </h5>
+
+                <h3 class="typo-overskrift">EKSEMPEL PÅ OVERSKRIFT - H1 - (50px) </h3>
+                <h5 class="typo-beskrivende">DETTE ER ET EKSEMPEL PÅ EN OVERSKRIFT.</h5>
+
+                <h3 class="typo-overskrift">EKSEMPEL PÅ OVERSKRIFT - H2 - (22px) </h3>
+                <h5 class="typo-beskrivende">Dette er et eksempel på en brødtekst.</h5>
+
+                <h3 class="typo-overskrift">EKSEMPEL PÅ BRØDTEKST (15px) </h3>
+                <h5 class="typo-beskrivende">Dette er et eksempel på en brødtekst.</h5>
+
+
+                <a href="https://fonts.google.com/specimen/Roboto+Mono?preview.text_type=custom">DOWNLOAD 'ROBOTO
+                    MONO'</a>
+
+            </section>
+            <p class="nav-headings">03 KNAPPER.</p>
+            <p class="nav-overskrifter">KNAP</p>
+            <p class="nav-overskrifter">BESKRIVELSE</p>
+            <p class="nav-overskrifter">CODE SNIPPETS</p>
+            <section class="knapper">
+
+            </section>
+            <p class="nav-headings">04 KARRUSEL.</p>
+            <p class="nav-overskrifter">CODE SNIPPETS</p>
+            <section class="karrusel">
+
+            </section>
+            <p class="nav-headings">05 FORMULAR.</p>
+            <p class="nav-overskrifter">CODE SNIPPETS</p>
+            <section class="formular">
+                <h4 class="typo-beskrivelse">Der bliver anvendt en pop-up formular som kommer op fra
+                    højre hjørne.</h4>
+
+            </section>
+            <p class="nav-headings">06 NAVIGATION.</p>
+            <p class="nav-overskrifter">CODE SNIPPETS</p>
+            <section class="navigation">
+                <h4 class="typo-beskrivelse">Navigationen er placeret ude til højre i viewporten.</h4>
+
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="container__elem footer flex container--ptbfooter flex-dr-col">
+            <div class="footer__container">
+                <h4>House of Code</h4>
+                <p>Edisonsvej 2</p>
+                <p>5000 Odense C</p>
+                <p>Mejlgade 27, 1. t.h.</p>
+                <p>8000 Aarhus C</p>
+                <p>CVR: 36030410</p>
+                <a href="#" title="Privatlivspolitik">Privatlivspolitik</a>
+            </div>
+            <div class="footer__container flex flex-dr-col">
+                <h4>Start dit projekt</h4>
+                <a href="#" title="Skriv til os">info@houseofcode.io</a>
+                <a href="#" title="Ring til os">+45 70 84 85 39</a>
+                <!--TODO fix padding here-->
+            </div>
+            <div class="footer__container">
+                <h4>Socialisér</h4>
+                <ul>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer__container">
+                <figure>
+                    <picture>
+                        <source type="image/avif" srcset="/images/gazelle-negativ-2020-160w.avif 160w" sizes="160px" />
+                        <source type="image/webp" srcset="/images/gazelle-negativ-2020-160w.webp 160w" sizes="160px" />
+                        <img src="/images/gazelle-negativ-2020-160w.png" alt="Børsen Gazelle vinder 2020" loading="lazy"
+                            decoding="async" width="160" height="66" />
+                    </picture>
+                </figure>
+                <figure>
+                    <picture>
+                        <source type="image/avif" srcset="/images/gazelle-negativ-160w.avif 160w" sizes="160px" />
+                        <source type="image/webp" srcset="/images/gazelle-negativ-160w.webp 160w" sizes="160px" />
+                        <img src="/images/gazelle-negativ-160w.png" alt="Børsen Gazelle vinder 2019" loading="lazy"
+                            decoding="async" width="160" height="66" />
+                    </picture>
+                </figure>
+            </div>
+        </div>
+    </footer>
+    <script src="app/js/script.js" async></script>
+</body>
+
+</html>
