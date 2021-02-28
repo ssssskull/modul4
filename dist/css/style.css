@@ -752,7 +752,7 @@ h4 {
 }
 
 .main__keywords:last-of-type {
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 }
 
 @media (min-width: 40em) {
