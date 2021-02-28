@@ -56,6 +56,8 @@
         z-index: 2;
         position: fixed;
         pointer-events: none;
+        content: "0" counter(item);
+        counter-increment: item;
 
         ul {
             pointer-events: auto;
@@ -91,10 +93,13 @@
 
 
             li.takaro {
-                counter-reset: item;
-                content: "0" counter(item);
-                counter-increment: item;
                 color: $black;
+
+                &::before{
+                    content: "0" counter(item);
+                    counter-increment: item;
+                }
+                }
             }
 
             .active-menu {

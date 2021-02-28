@@ -395,6 +395,8 @@ h4 {
   z-index: 2;
   position: fixed;
   pointer-events: none;
+  content: "0" counter(item);
+  counter-increment: item;
 }
 
 .header nav ul {
@@ -891,6 +893,12 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   }
 }
 
+.contact__columns .main__col1 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
 .contact__columns .main__col1 h1 {
   white-space: nowrap;
 }
@@ -917,9 +925,19 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 }
 
 .contact__columns .main__col2 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.contact__columns .main__col2 p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact__columns .main__col2 p:first-of-type {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .contact__columns .main__col2 img {
@@ -937,7 +955,7 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 
 @media (min-width: 87.5em) {
   .contact__columns .main__col2 img {
-    max-width: 300px;
+    max-width: 275px;
   }
 }
 
