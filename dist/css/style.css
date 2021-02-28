@@ -142,6 +142,7 @@ h4 {
 .overskrift {
   font-weight: 400;
   color: inherit;
+  line-height: normal;
 }
 
 @media (max-width: 39.9375em) {
@@ -1172,6 +1173,30 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   color: #515f6d;
 }
 
+.projects .main__col1 {
+  margin-bottom: 3.4rem;
+}
+
+.projects .main__col1 h1 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 87.5em) {
+  .projects .container__elem {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -webkit-column-gap: 1.7rem;
+            column-gap: 1.7rem;
+  }
+  .projects .container__elem .main__col1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    margin-bottom: unset;
+  }
+}
+
 .projects .main__col2 {
   max-width: unset;
 }
@@ -1198,10 +1223,16 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
       grid-template-columns: 1;
   -ms-grid-rows: 1;
       grid-template-rows: 1;
+  overflow: hidden;
 }
 
 .projects__item:not(:first-of-type) .projects__overlay {
-  background: rgba(215, 115, 74, 0.7);
+  background: rgba(170, 129, 172, 0.85);
+}
+
+.projects__item:hover .projects__image {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .projects__image {
@@ -1214,6 +1245,12 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  will-change: transition;
+  -webkit-transition: 750ms -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 750ms -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 750ms transform cubic-bezier(0.23, 1, 0.32, 1);
+  transition: 750ms transform cubic-bezier(0.23, 1, 0.32, 1), 750ms -webkit-transform cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: -1;
 }
 
 .projects__overlay {
@@ -1242,8 +1279,21 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   color: #FBFBFB;
 }
 
+.projects__info p:first-of-type {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.projects__info p:last-of-type {
+  margin: 1.7rem 0;
+}
+
 .projects__info a {
   color: inherit;
+  text-decoration: unset;
+}
+
+.projects__info a:hover {
+  color: unset;
 }
 
 footer {

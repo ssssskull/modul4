@@ -106,6 +106,7 @@ h4 {
 .overskrift {
     font-weight: 400;
     color: inherit;
+    line-height: normal;
 
     @include breakpoint-down(iphone) {
         font-size: $font-med-fallback;
