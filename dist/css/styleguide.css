@@ -1,5 +1,8 @@
 
-
+main {
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
 
 .farve-box{
     width: 380px;
@@ -9,7 +12,10 @@
 
 .nav-headings {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 700;
+    color: #515F6D;
+    margin-top: 90px;
+    margin-bottom: 90px;
 } 
 
 .farver {
@@ -83,10 +89,22 @@
     background-color: #AA82AD;
 }
 
+<<<<<<< HEAD
 .boxed {
     background: #515F6D;
     color: white;
     width: 380px;
     height: 101px;
   }
+=======
+.typo-overskrift {
+    
+}
+
+.typo-beskrivende {
+
+}
+
+
+>>>>>>> 418c425e0df4ecdfcea63710114a58c2d151f9fb
 
