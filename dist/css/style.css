@@ -931,6 +931,35 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 
 .femfaser {
   color: #323a43;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+@media (min-width: 40em) {
+  .femfaser {
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .femfaser {
+    grid-auto-flow: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
 }
 
 .femfaser__heading {
@@ -938,11 +967,11 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   color: #FBFBFB;
 }
 
-.femfaser__label {
+.femfaser__top {
   position: relative;
 }
 
-.femfaser__label button {
+.femfaser__top button {
   position: absolute;
   bottom: 25%;
   color: #515f6d;
@@ -957,12 +986,12 @@ main > .main > .main__col1:first-of-type p:last-of-type {
           transform: translateY(25px);
 }
 
-.femfaser__label button:first-of-type {
+.femfaser__top button:first-of-type {
   left: -10px;
   opacity: 0%;
 }
 
-.femfaser__label button:last-of-type {
+.femfaser__top button:last-of-type {
   right: -10px;
 }
 
@@ -1060,38 +1089,6 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-}
-
-.femfaser .container__elem {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 3rem;
-          column-gap: 3rem;
-}
-
-@media (min-width: 40em) {
-  .femfaser .container__elem {
-    -ms-grid-columns: 1.5fr 1fr;
-        grid-template-columns: 1.5fr 1fr;
-    -webkit-column-gap: 5rem;
-            column-gap: 5rem;
-  }
-}
-
-@media (max-width: 39.9375em) {
-  .femfaser .container__elem {
-    grid-auto-flow: unset;
-    -webkit-box-pack: unset;
-        -ms-flex-pack: unset;
-            justify-content: unset;
-  }
 }
 
 .femfaser .main__col1 {

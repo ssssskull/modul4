@@ -1,12 +1,27 @@
 .femfaser {
     color: $black;
-    
+    display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 3rem;
+        
+        @include breakpoint-up(ipad) {
+            grid-template-columns: 1.5fr 1fr;
+            column-gap: 5rem;
+        }
+        
+        @include breakpoint-down (iphone) {
+            grid-auto-flow: unset;
+            justify-content: unset;
+        }
+        
     &__heading {
         text-align: center;
         color: $white;
     }
 
-    &__label {
+    &__top {
         position: relative;
 
         button {
@@ -120,25 +135,7 @@
         padding: 2rem 0;
         height: max-content;
     }
-    
-    .container__elem {
-        display: grid;
-        grid-auto-flow: column;
-        justify-content: space-between;
-        align-items: center;
-        column-gap: 3rem;
-        
-        @include breakpoint-up(ipad) {
-            grid-template-columns: 1.5fr 1fr;
-            column-gap: 5rem;
-        }
-        
-        @include breakpoint-down (iphone) {
-            grid-auto-flow: unset;
-            justify-content: unset;
-        }
-    }
-    
+
     .main__col1 {
         align-self: start;
     }
