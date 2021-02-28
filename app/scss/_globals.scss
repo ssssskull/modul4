@@ -102,6 +102,21 @@ h4 {
     font-size: $font-xs-fallback;
     font-size: $font-xs;
 }
+
+.overskrift {
+    font-weight: 400;
+    color: inherit;
+
+    @include breakpoint-down(iphone) {
+        font-size: $font-med-fallback;
+        font-size: $font-med;
+    }
+}
+
+.overskrift--mobil {
+
+}
+
 // Buttons
 
 .button {

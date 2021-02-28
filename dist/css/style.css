@@ -139,6 +139,18 @@ h4 {
   font-size: 1.5rem;
 }
 
+.overskrift {
+  font-weight: 400;
+  color: inherit;
+}
+
+@media (max-width: 39.9375em) {
+  .overskrift {
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+}
+
 .button {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -967,11 +979,11 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   color: #FBFBFB;
 }
 
-.femfaser__top {
+.femfaser__label {
   position: relative;
 }
 
-.femfaser__top button {
+.femfaser__label button {
   position: absolute;
   bottom: 25%;
   color: #515f6d;
@@ -986,12 +998,12 @@ main > .main > .main__col1:first-of-type p:last-of-type {
           transform: translateY(25px);
 }
 
-.femfaser__top button:first-of-type {
+.femfaser__label button:first-of-type {
   left: -10px;
   opacity: 0%;
 }
 
-.femfaser__top button:last-of-type {
+.femfaser__label button:last-of-type {
   right: -10px;
 }
 
@@ -1133,6 +1145,10 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   font-size: 1.5rem;
   color: #FBFBFB;
   text-decoration: underline;
+}
+
+.projects {
+  color: #515f6d;
 }
 
 footer {
