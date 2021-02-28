@@ -28,7 +28,6 @@ body {
   padding: 0;
   font-weight: 400;
   line-height: 1.7;
-  counter-reset: item;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +38,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  counter-reset: item;
 }
 
 figure {
@@ -395,8 +395,14 @@ h4 {
   z-index: 2;
   position: fixed;
   pointer-events: none;
-  content: "0" counter(item);
-  counter-increment: item;
+}
+
+.header nav .nav {
+  position: fixed;
+}
+
+.header nav .takaro ul > li {
+  color: red;
 }
 
 .header nav ul {
@@ -426,12 +432,6 @@ h4 {
   }
   .header nav ul li a:hover::after {
     color: #d8a55a;
-  }
-  .header nav li.takaro {
-    counter-reset: item;
-    content: "0" counter(item);
-    counter-increment: item;
-    color: #323a43;
   }
   .header nav .active-menu > a {
     color: #d8a55a;
@@ -1348,14 +1348,6 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 
 .projects__info a:hover {
   color: unset;
-}
-
-.nav {
-  position: fixed;
-}
-
-.first {
-  z-index: -1;
 }
 
 .container {

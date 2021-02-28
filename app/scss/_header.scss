@@ -56,8 +56,21 @@
         z-index: 2;
         position: fixed;
         pointer-events: none;
-        content: "0" counter(item);
-        counter-increment: item;
+        
+        .nav {
+            position: fixed;
+
+            &--contrast {
+                
+            }
+        }
+        .takaro {
+
+            ul > li {
+
+                color: red;
+            }
+        }
 
         ul {
             pointer-events: auto;
@@ -89,17 +102,6 @@
                     }
                 }
 
-            }
-
-
-            li.takaro {
-                color: $black;
-
-                &::before{
-                    content: "0" counter(item);
-                    counter-increment: item;
-                }
-                }
             }
 
             .active-menu {
