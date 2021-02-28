@@ -1,5 +1,3 @@
-// TODO Tilæføj og fjern visible/hidden fra h2 tagget i div --> transition
-
 console.log("hello");
 // Hamburger toggle
 const btnHamburger = document.querySelector(".header__toggle");
@@ -108,6 +106,7 @@ function buttonClickTilbage(t) {
     faseFarver.style.color = "#A5BA74";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#A5BA74";
+    faseNavnFarve.style.transition = "all .2s"
     femFaseNummer.innerHTML = "01";
     faseNavnFarve.innerHTML = "#BeCurious";
     tlf.style.background = "#A5BA74";
@@ -133,6 +132,7 @@ function buttonClickTilbage(t) {
     faseFarver.style.color = "#D8A55B";
     faseFarver.style.transition = "all .2s";
     faseNavnFarve.style.background = "#D8A55B";
+    faseNavnFarve.style.transition = "all .2s"
     femFaseNummer.innerHTML = "02";
     faseNavnFarve.innerHTML = "#BeCreative";
     tlf.style.background = "#D8A55B";
@@ -157,6 +157,7 @@ function buttonClickTilbage(t) {
     faseFarver.style.color = "#AA82AD";
     faseNavnFarve.style.background = "#AA82AD";
     faseFarver.style.transition = "all .2s";
+    faseNavnFarve.style.transition = "all .2s"
     femFaseNummer.innerHTML = "03";
     faseNavnFarve.innerHTML = "#BeTechnical";
     tlf.style.background = "#AA82AD";
@@ -180,6 +181,7 @@ function buttonClickTilbage(t) {
     faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#6696AD";
     faseFarver.style.transition = "all .2s";
+    faseNavnFarve.style.transition = "all .2s"
     faseNavnFarve.style.background = "#6696AD";
     femFaseNummer.innerHTML = "04";
     faseNavnFarve.innerHTML = "BeSpecific";
@@ -213,6 +215,7 @@ function buttonClickFrem(f) {
     faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#D8A55B";
     faseFarver.style.transition = "all .2s";
+    faseNavnFarve.style.transition = "all .2s"
     faseNavnFarve.style.background = "#D8A55B";
     femFaseNummer.innerHTML = "02";
     faseNavnFarve.innerHTML = "#BeCreative";
@@ -237,6 +240,7 @@ function buttonClickFrem(f) {
     faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#AA82AD";
     faseFarver.style.transition = "all .2s";
+    faseNavnFarve.style.transition = "all .2s"
     faseNavnFarve.style.background = "#AA82AD";
     femFaseNummer.innerHTML = "03";
     faseNavnFarve.innerHTML = "#BeTechnical";
@@ -262,6 +266,7 @@ function buttonClickFrem(f) {
     faser[4].style.background = "#CCCCCC";
     faseFarver.style.color = "#6696AD";
     faseFarver.style.transition = "all .2s";
+    faseNavnFarve.style.transition = "all .2s"
     faseNavnFarve.style.background = "#6696AD";
     femFaseNummer.innerHTML = "04";
     faseNavnFarve.innerHTML = "#BeSpecific";
@@ -286,6 +291,7 @@ function buttonClickFrem(f) {
     faser[3].style.background = "#CCCCCC";
     faseFarver.style.color = "#D67249";
     faseFarver.style.transition = "all .2s";
+    faseNavnFarve.style.transition = "all .2s"
     faseNavnFarve.style.background = "#D67249";
     faseNavnFarve.innerHTML = "#BeAwesome";
     femFaseNummer.innerHTML = "05";
@@ -366,7 +372,8 @@ let button = document.querySelector("button");
 button.addEventListener("click", incrementNummer)
 */
 
-// Viewport 100vh fix
+// Smooth Scroll Safari
+
 let scrollToContent = document.getElementById("#scrollToContent");
 let mainContainer = document.getElementById("#mainContainer");
 
