@@ -184,7 +184,7 @@ function buttonClickTilbage(t) {
     faseNavnFarve.style.transition = "all .2s"
     faseNavnFarve.style.background = "#6696AD";
     femFaseNummer.innerHTML = "04";
-    faseNavnFarve.innerHTML = "BeSpecific";
+    faseNavnFarve.innerHTML = "#BeSpecific";
     tlf.style.background = "#6696AD";
     mail.style.background = "#6696AD";
     buttonLeft.style.opacity = "100";
