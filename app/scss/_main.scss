@@ -13,7 +13,8 @@
     
     @include breakpoint-up(computer) {
         row-gap: 20rem;
-        grid-template-columns: 380px 350px;
+        grid-template-columns: 1.5fr 1fr;
+        column-gap: 10rem;
     }
     
     h2 {
@@ -78,7 +79,7 @@
             align-self: center;
             
             @include breakpoint-up(ipad) {
-                width: 90%;
+                width: 100%;
                 height: unset;
             }
         }

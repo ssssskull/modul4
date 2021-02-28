@@ -170,14 +170,14 @@ h4 {
 
 @media (min-width: 87.5em) {
   .container {
-    padding-left: 10rem;
+    padding-left: 20rem;
+    padding-right: 35rem;
   }
 }
 
 .container__elem {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
 }
 
 .container--ptb {
@@ -237,6 +237,27 @@ h4 {
 .container .hidden {
   display: none;
   animation: fade .2s ease-in-out;
+}
+
+@media (min-width: 1799px) {
+  .container {
+    padding-left: 50rem;
+    padding-right: 50rem;
+  }
+}
+
+@media (min-width: 2199px) {
+  .container {
+    padding-left: 55rem;
+    padding-right: 55rem;
+  }
+}
+
+@media (min-width: 2499px) {
+  .container {
+    padding-left: 75rem;
+    padding-right: 75rem;
+  }
 }
 
 @keyframes fade {
@@ -649,7 +670,8 @@ h4 {
 @media (min-width: 64em) {
   .main {
     row-gap: 20rem;
-    grid-template-columns: 380px 350px;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 10rem;
   }
 }
 
@@ -717,7 +739,7 @@ h4 {
 
 @media (min-width: 40em) {
   .main__col2 #firstLottie, .main__col2 img {
-    width: 90%;
+    width: 100%;
     height: unset;
   }
 }
@@ -853,7 +875,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   column-gap: 3rem;
   /*
          @include breakpoint-up(computer) {
@@ -867,7 +889,13 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 @media (min-width: 40em) {
   .femfaser {
     grid-template-columns: 1.5fr 1fr;
-    column-gap: 15rem;
+    column-gap: 10rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .femfaser {
+    column-gap: 10rem;
   }
 }
 
@@ -951,7 +979,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   content: '';
   position: absolute;
   background-color: var(--line-border-fill);
-  top: 50%;
+  top: 45%;
   height: 3px;
   width: 90%;
   z-index: -1;
@@ -998,10 +1026,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 }
 
 .femfaser .main__col2 {
-  padding-top: 35%;
   row-gap: 3.4rem;
-  align-self: start;
-  justify-self: end;
 }
 
 @media (max-width: 39.9375em) {
@@ -1019,12 +1044,6 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   text-align: center;
 }
 
-@media (min-width: 64em) {
-  .femfaser .main__col2 div {
-    width: 225px;
-  }
-}
-
 .femfaser .main__col2 div a {
   font-size: 15px;
   font-size: 1.5rem;
@@ -1033,7 +1052,11 @@ main > .main > .main__col1:first-of-type p:last-of-type {
 }
 
 .femfaser .main__col2 img {
-  height: 90%;
+  height: 100%;
+}
+
+.femfaser .videmere {
+  text-align: center;
 }
 
 .projects {

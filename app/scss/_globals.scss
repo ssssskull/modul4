@@ -160,13 +160,13 @@ h4 {
         padding-left: 10rem;
     }
     @include breakpoint-up(largeComputer) {
-        padding-left: 10rem;
+        padding-left: 20rem;
+        padding-right: 35rem;
     }
 
     &__elem {
         margin: 0 auto;
         width: 100%;
-        max-width: 1200px;
     }
 
     &--ptb {
@@ -216,4 +216,19 @@ h4 {
         display: none;
         animation: fade .2s ease-in-out;
     }
+
+    @media (min-width: 1799px) {
+        padding-left: 50rem;
+        padding-right: 50rem;
+      }
+
+    @media (min-width: 2199px) {
+        padding-left: 55rem;
+        padding-right: 55rem;
+      }
+
+      @media (min-width: 2499px) {
+        padding-left: 75rem;
+        padding-right: 75rem;
+      }
 }

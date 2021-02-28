@@ -3,12 +3,17 @@
     display: grid;
         grid-auto-flow: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
         column-gap: 3rem;
         
         @include breakpoint-up(ipad) {
             grid-template-columns: 1.5fr 1fr;
-            column-gap: 15rem;
+            column-gap: 10rem;
+        }
+
+        
+        @include breakpoint-up(computer) {
+            column-gap: 10rem;
         }
         
         @include breakpoint-down (iphone) {
@@ -93,7 +98,7 @@
             content: '';
             position: absolute;
             background-color: var(--line-border-fill);
-            top: 50%;
+            top: 45%;
             height: 3px;
             width: 90%;
             z-index: -1;
@@ -145,11 +150,7 @@
     }
 
     .main__col2 {
-        padding-top: 35%;
         row-gap: 3.4rem;
-        align-self: start;
-        justify-self: end;
-        
         
         @include breakpoint-down(iphone){
             margin-top: 6rem;
@@ -162,10 +163,7 @@
         
         div {
             text-align: center;
-            
-            @include breakpoint-up(computer) {
-                width: 225px;
-            }
+        
             
             a {
                 font-size: $font-xs-fallback;
@@ -176,7 +174,13 @@
         }
 
         img {
-            height: 90%;
+            height: 100%;
         }
+
     }
+
+    .videmere {
+        text-align: center;
+    }
+
 }
