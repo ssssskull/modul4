@@ -292,6 +292,12 @@ h4 {
   }
 }
 
+@media (min-width: 64em) {
+  .divider {
+    max-width: 50%;
+  }
+}
+
 .femfaser ~ .divider {
   margin: 0 auto 1.7rem auto;
 }
