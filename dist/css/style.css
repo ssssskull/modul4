@@ -425,6 +425,12 @@ h4 {
   .header nav ul li a:hover::after {
     color: #d8a55a;
   }
+  .header nav li.takaro {
+    counter-reset: item;
+    content: "0" counter(item);
+    counter-increment: item;
+    color: #323a43;
+  }
   .header nav .active-menu > a {
     color: #d8a55a;
   }
@@ -1324,6 +1330,18 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 
 .projects__info a:hover {
   color: unset;
+}
+
+.nav {
+  position: fixed;
+}
+
+.first {
+  z-index: -1;
+}
+
+.container {
+  position: relative;
 }
 
 footer {

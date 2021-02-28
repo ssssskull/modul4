@@ -314,6 +314,10 @@ buttonRight.addEventListener("click", buttonClickFrem);
 buttonLeft.addEventListener("click", buttonClickTilbage);
 
 //Nav farveskift js
+document.addEventListener('scroll', function(event) {
+	let mainContainer = document.getElementById("mainContainer").getBoundingClientRect()
+	document.querySelector(".nav.takaro").style = "clip: rect("+mainContainer.y+"px, 200px, "+(mainContainer.y+mainContainer.height)+"px, 0px);"
+})
 
 
 

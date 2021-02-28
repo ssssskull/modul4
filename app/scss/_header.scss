@@ -86,10 +86,16 @@
                         }
                     }
                 }
+
             }
 
 
-
+            li.takaro {
+                counter-reset: item;
+                content: "0" counter(item);
+                counter-increment: item;
+                color: $black;
+            }
 
             .active-menu {
                 > a {
@@ -99,6 +105,7 @@
                     color: $gold;
                 }
             }
+
         }
 
         .header__logo {
@@ -180,6 +187,7 @@
                 transition: $transition-200ms;
             }
         }
+        
 
     }
 
