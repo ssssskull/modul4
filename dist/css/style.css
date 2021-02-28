@@ -301,6 +301,9 @@ h4 {
     color: #d8a55a;
   }
   .header nav li.takaro {
+    counter-reset: item;
+    content: "0" counter(item);
+    counter-increment: item;
     color: #323a43;
   }
   .header nav .active-menu > a {
