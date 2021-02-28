@@ -1,13 +1,12 @@
-.startNav {
-    z-index: 999;
+.nav {
     position: fixed;
 }
 
-.slutNav {
-    color: black;
-    z-index: 999;
+.first {
+    z-index: -1;
 }
 
-#mainContainer {
+
+.container {
     position: relative;
 }

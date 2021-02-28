@@ -86,10 +86,13 @@
                         }
                     }
                 }
+
             }
 
 
-
+            li.takaro {
+                color: $black;
+            }
 
             .active-menu {
                 > a {
@@ -99,6 +102,7 @@
                     color: $gold;
                 }
             }
+
         }
 
         .header__logo {
