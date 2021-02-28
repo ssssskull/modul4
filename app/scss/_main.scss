@@ -65,9 +65,7 @@
         width: 100%;
         max-width: 250px;
         
-        @include breakpoint-up(ipad) {
-            max-width: 300px;
-        }
+
 
         @include breakpoint-up(largeComputer) {
             max-width: 350px;
@@ -80,7 +78,7 @@
             align-self: center;
             
             @include breakpoint-up(ipad) {
-                width: 100%;
+                width: 90%;
                 height: unset;
             }
         }

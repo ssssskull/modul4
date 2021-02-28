@@ -8,7 +8,7 @@
         
         @include breakpoint-up(ipad) {
             grid-template-columns: 1.5fr 1fr;
-            column-gap: 5rem;
+            column-gap: 15rem;
         }
         
         @include breakpoint-down (iphone) {
@@ -74,7 +74,6 @@
         z-index: -1;
         
         h2 {
-            
             padding: 20px 0 10px 0;
         }
     }
@@ -96,8 +95,9 @@
             background-color: var(--line-border-fill);
             top: 50%;
             height: 3px;
-            width: 100%;
+            width: 90%;
             z-index: -1;
+            transform: translateX(5%);
         }
     }
     
@@ -128,18 +128,15 @@
     &__tlf {
         background: #A5BA74;
         transition: $transition-200ms;
-        padding: 2rem 0;
+        padding: 1.5rem 0;
         height: max-content;
-        
-        @include breakpoint-up(ipad){
-            padding: 2rem 0;
-        }
+    
     }
     
     &__mail {
         background: #A5BA74;
         transition: $transition-200ms;
-        padding: 2rem 0;
+        padding: 1.5rem 0;
         height: max-content;
     }
 
@@ -148,6 +145,7 @@
     }
 
     .main__col2 {
+        padding-top: 35%;
         row-gap: 3.4rem;
         align-self: start;
         justify-self: end;
@@ -166,7 +164,7 @@
             text-align: center;
             
             @include breakpoint-up(computer) {
-                min-width: 300px;
+                width: 225px;
             }
             
             a {
@@ -175,6 +173,10 @@
                 color: $white;
                 text-decoration: underline;
             }
+        }
+
+        img {
+            height: 90%;
         }
     }
 }
