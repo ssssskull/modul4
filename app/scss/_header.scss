@@ -306,11 +306,26 @@
         right: -14px;
     }
 }
-.header .takaro ul > .active-menu  {
+.header .takaro ul > li::before{
+    content: "0" counter(item2);
+    counter-increment: item2;
+}
+
+.header .takaro ul > li {
+    color: $lightblue;
+
     &::before {
         color: $lightblue;
     }
-    
+
+    a {
+        &:hover{
+        color: $lightblue;
+        }
+    }
+}
+.header .takaro ul > .active-menu {
+    color: $lightblue;
     a {
         color: $lightblue;
     }

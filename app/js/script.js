@@ -316,15 +316,22 @@ buttonLeft.addEventListener("click", buttonClickTilbage);
 //Nav farveskift js
 function scrollColorChange() {
   let mainContainer = document.getElementById("mainContainer").getBoundingClientRect();
-  let femfaserContainer = document.getElementById("femfaserContainer").getBoundingClientRect();
-
   document.querySelector(".nav.takaro").style = "clip: rect(" + (mainContainer.y - 50) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);"
+}
+
+/*function guilty() {
+  let femfaserContainer = document.getElementById("femfaserContainer").getBoundingClientRect();
   document.querySelector(".nav.takaro").style = "clip: rect(" + (femfaserContainer.y - 50) + "px, " + femfaserContainer.width + "px," + (femfaserContainer.y + femfaserContainer.height) + "px, 0px);"
 
 }
+*/
 
-document.addEventListener('scroll', scrollColorChange);
-window.onload = scrollColorChange();
+document.addEventListener('scroll', () => {
+  scrollColorChange();
+});
+
+
+//window.onload = scrollColorChange();
 
 
 

@@ -38,7 +38,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   min-height: 100vh;
   min-height: -webkit-fill-available;
-  counter-reset: item;
+  counter-reset: item item2;
 }
 
 figure {
@@ -644,7 +644,24 @@ h4 {
   right: -14px;
 }
 
-.header .takaro ul > .active-menu::before {
+.header .takaro ul > li::before {
+  content: "0" counter(item2);
+  counter-increment: item2;
+}
+
+.header .takaro ul > li {
+  color: #6696ac;
+}
+
+.header .takaro ul > li::before {
+  color: #6696ac;
+}
+
+.header .takaro ul > li a:hover {
+  color: #6696ac;
+}
+
+.header .takaro ul > .active-menu {
   color: #6696ac;
 }
 
