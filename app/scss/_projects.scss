@@ -1,3 +1,61 @@
 .projects {
+
+    .main__col2 {
+        max-width: unset;
+        //@include brealpoint-up
+    }
     color: $darkblue;
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1;
+        max-width: 300px;
+
+        @include breakpoint-up(ipad) {
+            max-width: 350px;
+        }
+
+        &:not(:first-of-type) {
+            .projects__overlay {
+                background: transparentize($orange, 0.3);
+            }
+        }
+      }
+
+      &__image {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        align-self: start;
+      }
+      
+      &__overlay {
+          //TODO make div clickable https://stackoverflow.com/questions/20772954/add-click-event-on-div-tag-using-javascript
+        background: transparentize($lightblue, 0.3);
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        position: relative;
+        display: grid;
+        justify-items: start;
+        align-items: space-between;
+        padding: 2rem;
+      }
+      
+      &__logo {
+          width: 50px;
+          height: 50px;
+        }
+      
+      &__info {
+        align-self: end;
+        color: $white;
+
+        a {
+            color: inherit;
+        }
+      }
+      
 }

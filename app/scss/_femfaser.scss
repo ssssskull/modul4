@@ -16,6 +16,13 @@
             justify-content: unset;
         }
         
+        /*
+         @include breakpoint-up(computer) {
+            justify-items: start;
+            column-gap: 10rem;
+            grid-template-columns: 380px 350px;
+        }
+        */
     &__heading {
         text-align: center;
         color: $white;
