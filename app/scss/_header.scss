@@ -59,16 +59,14 @@
         
         .nav {
             position: fixed;
-
-            &--contrast {
-                
-            }
         }
-        .takaro {
 
-            ul > li {
-
-                color: red;
+        .active-menu {
+            > a {
+                color: $gold;
+            }
+            &::before {
+                color: $gold;
             }
         }
 
@@ -103,16 +101,6 @@
                 }
 
             }
-
-            .active-menu {
-                > a {
-                    color: $gold;
-                }
-                &::before {
-                    color: $gold;
-                }
-            }
-
         }
 
         .header__logo {
@@ -129,6 +117,21 @@
                 background-image: url("../../images/logo-grey.svg");
                 margin-bottom: 5rem;
                 margin-left: 3.5rem;
+            }
+        }
+        .takaro {
+            ul > li {
+                color: $darkblue;
+
+                .active-menu {
+                    > a {
+                        color: $lightblue;
+
+                        &:hover {
+                            color: $lightblue;
+                        }
+                    }
+                }
             }
         }
     }
@@ -301,5 +304,14 @@
         width: 10px;
         top: 20px;
         right: -14px;
+    }
+}
+.header .takaro ul > .active-menu  {
+    &::before {
+        color: $lightblue;
+    }
+    
+    a {
+        color: $lightblue;
     }
 }

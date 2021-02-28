@@ -401,8 +401,12 @@ h4 {
   position: fixed;
 }
 
-.header nav .takaro ul > li {
-  color: red;
+.header nav .active-menu > a {
+  color: #d8a55a;
+}
+
+.header nav .active-menu::before {
+  color: #d8a55a;
 }
 
 .header nav ul {
@@ -433,12 +437,6 @@ h4 {
   .header nav ul li a:hover::after {
     color: #d8a55a;
   }
-  .header nav .active-menu > a {
-    color: #d8a55a;
-  }
-  .header nav .active-menu::before {
-    color: #d8a55a;
-  }
 }
 
 .header nav .header__logo {
@@ -458,6 +456,18 @@ h4 {
     margin-bottom: 5rem;
     margin-left: 3.5rem;
   }
+}
+
+.header nav .takaro ul > li {
+  color: #515f6d;
+}
+
+.header nav .takaro ul > li .active-menu > a {
+  color: #6696ac;
+}
+
+.header nav .takaro ul > li .active-menu > a:hover {
+  color: #6696ac;
 }
 
 @media (max-width: 63.9375em) {
@@ -632,6 +642,14 @@ h4 {
   width: 10px;
   top: 20px;
   right: -14px;
+}
+
+.header .takaro ul > .active-menu::before {
+  color: #6696ac;
+}
+
+.header .takaro ul > .active-menu a {
+  color: #6696ac;
 }
 
 .hero {
