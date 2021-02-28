@@ -458,6 +458,12 @@ h4 {
   }
 }
 
+@media (min-width: 64em) {
+  .header nav .takaro .header__logo {
+    background-image: url("../../images/logo-color.svg");
+  }
+}
+
 .header nav .takaro ul > li {
   color: #515f6d;
 }
@@ -770,6 +776,10 @@ h4 {
   left: 50%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+#dontcry {
+  z-index: 1;
 }
 
 #dontcry .mobile-lines > * {

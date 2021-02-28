@@ -120,6 +120,12 @@
             }
         }
         .takaro {
+
+            .header__logo {
+                @include breakpoint-up(computer) {
+                background-image: url("../../images/logo-color.svg");
+                }
+            }
             ul > li {
                 color: $darkblue;
 
