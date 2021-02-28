@@ -217,3 +217,23 @@ h4 {
         animation: fade .2s ease-in-out;
     }
 }
+
+.divider {
+    display: block;
+    opacity: 0.7;
+    max-width: 70%;
+    width: 100%;
+    margin: 1.7rem auto;
+
+    @include breakpoint-up(ipad) {
+        margin: 3.4rem auto;
+    }
+}
+
+.femfaser ~ .divider {
+        margin: 0 auto 1.7rem auto;
+
+        @include breakpoint-up(ipad) {
+            margin: 0 auto 3.4rem auto;
+        }
+}
