@@ -1,4 +1,8 @@
 
+main {
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
 
 
 .farve-box{
@@ -81,6 +85,14 @@
 
 .hex8 {
     background-color: #AA82AD;
+}
+
+.typo-overskrift {
+    
+}
+
+.typo-beskrivende {
+
 }
 
 
