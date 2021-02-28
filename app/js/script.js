@@ -1,3 +1,5 @@
+// TODO Tilæføj og fjern visible/hidden fra h2 tagget i div --> transition
+
 console.log("hello");
 // Hamburger toggle
 const btnHamburger = document.querySelector(".header__toggle");
@@ -364,8 +366,7 @@ let button = document.querySelector("button");
 button.addEventListener("click", incrementNummer)
 */
 
-// Smooth Scroll Safari
-
+// Viewport 100vh fix
 let scrollToContent = document.getElementById("#scrollToContent");
 let mainContainer = document.getElementById("#mainContainer");
 

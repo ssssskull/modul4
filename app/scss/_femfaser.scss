@@ -1,34 +1,13 @@
 .femfaser {
     color: $black;
-
+    
     &__heading {
         text-align: center;
         color: $white;
     }
 
-    &__testest { 
+    &__label {
         position: relative;
-
-        div {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid $lightgray;
-            background: $white;
-            color: $green;
-        }
-        h1 {
-            color: inherit;
-        }
-
-        h2 {
-            display: inline-block;
-            width: 80%;
-            margin-top: -18px;
-            background: #A5BA74;
-            z-index: -1;
-            padding: 20px 0 10px 0;
-        } 
 
         button {
             position: absolute;
@@ -46,24 +25,49 @@
                 left: -10px;
                 opacity: 0%;
             }
-
+            
             &:last-of-type {
                 right: -10px;
             }
         }
     }
 
+    &__fasenummer {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid $lightgray;
+            background: $white;
+            color: $green;
+
+            h1 {
+                color: inherit;
+            }
+    }
+
+    &__fasenavn {
+        width: 80%;
+        margin-top: -18px;
+        background: #A5BA74;
+        z-index: -1;
+        
+        h2 {
+            
+            padding: 20px 0 10px 0;
+        }
+    }
+    
     &__progress {
         position: relative;
         width: 60%;
         margin: 0 auto;
         margin-top: 3.4rem;
         margin-bottom: 3.4rem;
-
+        
         @include breakpoint-up(largeComputer) {
             width: 45%;
         }
-
+        
         &::before {
             content: '';
             position: absolute;
@@ -83,40 +87,40 @@
         transition: $transition-200ms;
         pointer-events: none;
     }
-
+    
     &__textcont {
         
         h3 {
             color: $darkblue;
         }
-
+        
         .main__bodytext {
             color: $black;
         }
-
+        
         .main__bodytext ~ h3 {
-                margin: 3.4rem 0 1rem 0;
-            }
+            margin: 3.4rem 0 1rem 0;
+        }
     }
-
+    
     &__tlf {
         background: #A5BA74;
         transition: $transition-200ms;
         padding: 2rem 0;
         height: max-content;
-
+        
         @include breakpoint-up(ipad){
             padding: 2rem 0;
         }
     }
-
+    
     &__mail {
         background: #A5BA74;
         transition: $transition-200ms;
         padding: 2rem 0;
         height: max-content;
     }
-
+    
     .container__elem {
         display: grid;
         grid-auto-flow: column;
@@ -134,15 +138,17 @@
             justify-content: unset;
         }
     }
+    
     .main__col1 {
         align-self: start;
     }
+
     .main__col2 {
         row-gap: 3.4rem;
         align-self: start;
         justify-self: end;
-
-
+        
+        
         @include breakpoint-down(iphone){
             margin-top: 6rem;
             row-gap: unset;
@@ -154,11 +160,11 @@
         
         div {
             text-align: center;
-
+            
             @include breakpoint-up(computer) {
                 min-width: 300px;
             }
-
+            
             a {
                 font-size: $font-xs-fallback;
                 font-size: $font-xs;
