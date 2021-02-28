@@ -83,5 +83,10 @@
     background-color: #AA82AD;
 }
 
-
+.boxed {
+    background: #515F6D;
+    color: white;
+    width: 380px;
+    height: 101px;
+  }
 
