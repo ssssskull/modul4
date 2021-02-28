@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 main {
     padding-left: 30rem;
@@ -19,8 +22,8 @@ main {
 } 
 
 .farver {
-    display:block;
-    flex-wrap:wrap;
+    width: 1303px;
+    color:#515E6D;  
 }
 
 .farver h3 {
@@ -43,18 +46,17 @@ main {
 
 .farve-col-1 {
     display: flex;
+    justify-content: space-between;  
 }
 
 .farve-col-2 {
     display: flex;
+    justify-content: space-between;  
 }
 
 .farve-col-3 {
     display: flex;
-}
-
-.RGBHEX {
-
+    justify-content: flex-start;  
 }
 
 .hex1 {
@@ -89,10 +91,40 @@ main {
     background-color: #AA82AD;
 }
 
+.nav-overskrifter {
+    color: #515E6D;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.typo-container {
+    width: 640px;
+}
+
+.typo-overskrift {
+    font-size: 30px;
+    font-weight: 500;
+    color:#515E6D;
+}
+
+.typo-beskrivende {
+    font-size: 20px;
+    color: #515E6D;
+}
+
+
 .boxed {
     background: #515F6D;
     color: white;
     width: 380px;
-    height: 101px;
-  }
+    padding: 20px;
+}
 
+.boxed code{
+    font-size: 20px;
+}
+
+.knapper-headers {
+    display:flex;
+    justify-content: space-between;
+}
