@@ -7,6 +7,11 @@ main {
     padding-right: 30rem;
 }
 
+h4 {
+    font-size: 15px;
+    color: #515E6D;
+}
+
 .farve-box{
     width: 380px;
     height: 40px;
@@ -154,10 +159,21 @@ xmp {
     flex-grow: 3;
 }
 
+.karrusel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.karrusel-desc {
+    width: 380px;
+}
+
+
 
 .header-divs {
     display:flex;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .ikon {
