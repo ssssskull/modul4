@@ -125,7 +125,6 @@ main {
     color: #515E6D;
 }
 
-
 .boxed {
     background: #515F6D;
     color: white;
@@ -146,4 +145,13 @@ xmp {
 .knapper-headers {
     display:flex;
     justify-content: space-between;
+}
+
+.ikon {
+    display:flex;
+    justify-content: space-between;
+}
+
+.ikon-beskrivelse {
+    width: 380px;
 }
