@@ -3,18 +3,23 @@
     display: grid;
         grid-auto-flow: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: start;
         column-gap: 3rem;
         
         @include breakpoint-up(ipad) {
             grid-template-columns: 1.5fr 1fr;
-            column-gap: 5rem;
+            column-gap: 10rem;
         }
         
+        @include breakpoint-up(computer) {
+            column-gap: 10rem;
+        }
+
         @include breakpoint-down (iphone) {
             grid-auto-flow: unset;
             justify-content: unset;
         }
+        
         
         /*
          @include breakpoint-up(computer) {
@@ -94,7 +99,7 @@
             content: '';
             position: absolute;
             background-color: var(--line-border-fill);
-            top: 50%;
+            top: 45%;
             height: 3px;
             width: 100%;
             z-index: -1;
@@ -149,8 +154,6 @@
 
     .main__col2 {
         row-gap: 3.4rem;
-        align-self: start;
-        justify-self: end;
         
         
         @include breakpoint-down(iphone){
@@ -165,10 +168,6 @@
         div {
             text-align: center;
             
-            @include breakpoint-up(computer) {
-                min-width: 300px;
-            }
-            
             a {
                 font-size: $font-xs-fallback;
                 font-size: $font-xs;
@@ -176,5 +175,13 @@
                 text-decoration: underline;
             }
         }
+        img {
+            height: 100%;
+        }
+
+    }
+
+    .videmere {
+        text-align: center;
     }
 }

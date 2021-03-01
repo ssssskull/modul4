@@ -160,7 +160,8 @@ h4 {
         padding-right: 24rem;
     }
     @include breakpoint-up(largeComputer) {
-        padding-left: 10rem;
+        padding-left: 20rem;
+        padding-right: 35rem;
     }
 
     &__elem {

@@ -207,7 +207,8 @@ h4 {
 
 @media (min-width: 87.5em) {
   .container {
-    padding-left: 10rem;
+    padding-left: 20rem;
+    padding-right: 35rem;
   }
 }
 
@@ -823,8 +824,10 @@ h4 {
 @media (min-width: 64em) {
   .main {
     row-gap: 20rem;
-    -ms-grid-columns: 380px 350px;
-        grid-template-columns: 380px 350px;
+    -ms-grid-columns: 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
+    -webkit-column-gap: 10rem;
+            column-gap: 10rem;
   }
 }
 
@@ -1079,9 +1082,9 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
   /*
@@ -1097,8 +1100,15 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   .femfaser {
     -ms-grid-columns: 1.5fr 1fr;
         grid-template-columns: 1.5fr 1fr;
-    -webkit-column-gap: 5rem;
-            column-gap: 5rem;
+    -webkit-column-gap: 10rem;
+            column-gap: 10rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .femfaser {
+    -webkit-column-gap: 10rem;
+            column-gap: 10rem;
   }
 }
 
@@ -1186,7 +1196,7 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   content: '';
   position: absolute;
   background-color: var(--line-border-fill);
-  top: 50%;
+  top: 45%;
   height: 3px;
   width: 100%;
   z-index: -1;
@@ -1248,11 +1258,6 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 
 .femfaser .main__col2 {
   row-gap: 3.4rem;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  -ms-grid-column-align: end;
-      justify-self: end;
 }
 
 @media (max-width: 39.9375em) {
@@ -1271,17 +1276,19 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   text-align: center;
 }
 
-@media (min-width: 64em) {
-  .femfaser .main__col2 div {
-    min-width: 300px;
-  }
-}
-
 .femfaser .main__col2 div a {
   font-size: 15px;
   font-size: 1.5rem;
   color: #FBFBFB;
   text-decoration: underline;
+}
+
+.femfaser .main__col2 img {
+  height: 100%;
+}
+
+.femfaser .videmere {
+  text-align: center;
 }
 
 .projects {
