@@ -77,7 +77,7 @@ LottieInteractivity.create({
 */
 /*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
 
-// Fem faser js
+// Fem faser js – Frederikke
 
 let faser = Array.from(document.querySelectorAll(".femfaser__circle")); //En array skabes udfra alle elementer i HTML, der har class .femfasercircle, og lagres som en let
 let faseFarver = document.querySelector(".femfaser__heading");
@@ -316,15 +316,12 @@ buttonLeft.addEventListener("click", buttonClickTilbage);
 //Nav farveskift js
 function scrollColorChange() {
   let mainContainer = document.getElementById("mainContainer").getBoundingClientRect();
-  let femfaserContainer = document.getElementById("femfaserContainer").getBoundingClientRect();
-
-  document.querySelector(".nav.takaro").style = "clip: rect(" + (mainContainer.y - 50) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);"
-  document.querySelector(".nav.takaro").style = "clip: rect(" + (femfaserContainer.y - 50) + "px, " + femfaserContainer.width + "px," + (femfaserContainer.y + femfaserContainer.height) + "px, 0px);"
-
+  document.querySelector(".nav.takaro").style = "clip: rect(" + (mainContainer.y - 50) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);";
 }
 
 document.addEventListener('scroll', scrollColorChange);
 window.onload = scrollColorChange();
+
 
 
 
