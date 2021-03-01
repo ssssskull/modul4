@@ -315,45 +315,19 @@ buttonLeft.addEventListener("click", buttonClickTilbage);
 
 //Nav farveskift js
 
-function isElementVisible(el) {
-  var rect = el.getBoundingClientRect(),
-    vWidth = window.innerWidth || document.documentElement.clientWidth,
-    vHeight = window.innerHeight || document.documentElement.clientHeight,
-    efp = function (x, y) { return document.elementFromPoint(x, y) };
 
-  // Return false if it's not in the viewport
-  if (rect.right < 0 || rect.bottom < 0
-    || rect.left > vWidth || rect.top > vHeight)
-    return false;
-
-  // Return true if any of its four corners are visible
-  return (
-    el.contains(efp(rect.left, rect.top))
-    || el.contains(efp(rect.right, rect.top))
-    || el.contains(efp(rect.right, rect.bottom))
-    || el.contains(efp(rect.left, rect.bottom))
-  );
+function scrollColorChange() {
+  let mainContainer = document.getElementById("mainContainer").getBoundingClientRect()
+  document.querySelector(".nav.takaro").style = "clip: rect(" + (mainContainer.y - 50) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);"
+  document.getElementById("dontcry").style = "clip: rect(" + (mainContainer.y - 30) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);"
 }
 
-
-if (isElementVisible) {
-  function scrollColorChange() {
-    let mainContainer = document.getElementById("mainContainer").getBoundingClientRect()
-    document.querySelector(".nav.takaro").style = "clip: rect(" + (mainContainer.y - 50) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);"
-  }
-}
-
-function scrollColorChange2() {
-  let dontcry = document.getElementById("mainContainer").getBoundingClientRect()
-  document.querySelector(".header__toggle.dontcry").style = "clip: rect(" + (dontcry.y - 50) + "px, " + dontcry.width + "px," + (dontcry.y + dontcry.height) + "px, 0px);"
-}
 
 
 window.onload = scrollColorChange;
 
 document.addEventListener('scroll', () => {
   scrollColorChange();
-  scrollColorChange2();
 });
 
 

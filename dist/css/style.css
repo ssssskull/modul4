@@ -785,10 +785,6 @@ h4 {
           transform: rotate(45deg);
 }
 
-#dontcry {
-  z-index: 1;
-}
-
 #dontcry .mobile-lines > * {
   background: #c0bcbb;
 }
