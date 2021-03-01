@@ -12,6 +12,13 @@ h4 {
     color: #515E6D;
 }
 
+.section-line {
+    width: 1340px;
+    height: 4px;
+    background-color:#515E6D;
+    margin-top: 90px;
+}
+
 .farve-box{
     width: 380px;
     height: 40px;
