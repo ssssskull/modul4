@@ -343,16 +343,17 @@ if (isElementVisible) {
   }
 }
 
-/*function scrollColorChange2() {
+function scrollColorChange2() {
   let dontcry = document.getElementById("mainContainer").getBoundingClientRect()
   document.querySelector(".header__toggle.dontcry").style = "clip: rect(" + (dontcry.y - 50) + "px, " + dontcry.width + "px," + (dontcry.y + dontcry.height) + "px, 0px);"
-}*/
+}
 
 
 window.onload = scrollColorChange;
 
 document.addEventListener('scroll', () => {
   scrollColorChange();
+  scrollColorChange2();
 });
 
 
