@@ -785,7 +785,7 @@ h4 {
           transform: rotate(45deg);
 }
 
-#dontcry .mobile-lines > * {
+#dontcry .mobile-lines > div {
   background: #c0bcbb;
 }
 

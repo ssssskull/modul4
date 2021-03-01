@@ -314,30 +314,49 @@ buttonRight.addEventListener("click", buttonClickFrem);
 buttonLeft.addEventListener("click", buttonClickTilbage);
 
 //Nav farveskift js
-
-
-function scrollColorChange() {
-  let mainContainer = document.getElementById("mainContainer").getBoundingClientRect()
-  document.querySelector(".nav.takaro").style = "clip: rect(" + (mainContainer.y - 50) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);"
-  document.getElementById("dontcry").style = "clip: rect(" + (mainContainer.y - 30) + "px, " + mainContainer.width + "px," + (mainContainer.y + mainContainer.height) + "px, 0px);"
+//Adds mask and changes size of it depended on which container is sent through the parameters
+function scrollColorChange(container) {
+  container = container.getBoundingClientRect()
+  document.querySelector(".nav.takaro").style = "clip: rect(" + (container.y - 50) + "px, " + container.width + "px," + (container.y + container.height) + "px, 0px);"
+  document.querySelector("#dontcry").style = "clip: rect(" + (container.y - 30) + "px, " + container.width + "px," + (container.y + container.height) + "px, -50px);"
 }
 
+//Selection of containers and array that contains them for further use
+const projectscontainer = document.querySelector(".projects");
+const famfaserHugeSection = document.querySelector("#TestSection");
+const mainContainerColorChange = document.getElementById("mainContainer");
 
+const visibleCheckItems = [mainContainerColorChange, famfaserHugeSection];
 
-window.onload = scrollColorChange;
+//Checks whether a valid container is visible
+function isAnyPartOfElementInViewport(visibleCheckItems) {
+  let check = false;
+  let priorElement = null;
+  visibleCheckItems.forEach(element => {
+    const rect = element.getBoundingClientRect();
 
-document.addEventListener('scroll', () => {
-  scrollColorChange();
+    const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+    const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
+
+    const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+    const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+    if ((vertInView && horInView) & !(priorElement)) {
+      check = element;
+    }
+    priorElement = (vertInView && horInView);
+  });
+  return check;
+}
+window.onload = scrollColorChange(mainContainerColorChange);
+document.addEventListener('scroll', function () {
+  //Returns container if its visible or false if non of the containers were visible
+  const IsVisibleContainer = isAnyPartOfElementInViewport(visibleCheckItems)
+  //Checks if the container that might've been returned is in the array of containers
+  if (visibleCheckItems.includes(IsVisibleContainer)) {
+    scrollColorChange(IsVisibleContainer);
+  }
 });
-
-
-
-
-
-
-
-
-
 
 
 //const header = document.querySelector('.header');
