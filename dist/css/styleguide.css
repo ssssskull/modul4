@@ -97,11 +97,11 @@ main {
 }
 
 #typo-code-snippets {
-    margin-bottom: 150px;
+    margin-bottom: 75px;
 }
 
 #typo-code-div {
-    margin-bottom: 150px;
+    margin-bottom: 25px;
 }
 
 .nav-overskrifter {
@@ -132,10 +132,12 @@ main {
     padding: 20px;
     font-size: 20px;
     overflow-wrap: break-word;
+    margin: 0px 0px 15px 0px;
 }
 
 xmp {
     white-space: normal;
+    margin: 0px 0px 0px 0px;
 }
 
 .knap-div {
@@ -145,7 +147,13 @@ xmp {
 
 .knap-h4-div {
     width: 380px;
+    margin-right: 75px;
 }
+
+.knapper {
+    flex-grow: 3;
+}
+
 
 .header-divs {
     display:flex;
