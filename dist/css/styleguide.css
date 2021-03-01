@@ -97,11 +97,11 @@ main {
 }
 
 #typo-code-snippets {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 #typo-code-div {
-
+    margin-bottom: 150px;
 }
 
 .nav-overskrifter {
@@ -131,10 +131,16 @@ main {
     color: white;
     width: 380px;
     padding: 20px;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+xmp {
+    width: 340px;
 }
 
 .boxed code{
-    font-size: 20px;
+    
 }
 
 .knapper-headers {
