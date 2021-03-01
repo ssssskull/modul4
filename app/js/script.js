@@ -49,19 +49,57 @@ function autoScrollTo(el) {
 }
 
 
-/*// Lottie animation
+// Lottie animation
 LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
-  //TODO fix trigger mobile/desktop container: "#lottieTriggerFirst",
+  autoplay: "true",
+  //container: "#lottieTriggerFirst",
   actions: [
     {
       visibility: [0, 1],
       type: "seek",
-      frames: [0, 49]
+      frames: [0, 49],
+
     }
-  ],
+  ]
+  ,
 });
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#firstLottie2',
+  autoplay: "true",
+  //container: "#lottieTriggerFirst",
+  actions: [
+    {
+      visibility: [0, 1],
+      type: "seek",
+      frames: [0, 49],
+
+    }
+  ]
+  ,
+}); LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#firstLottie3',
+  autoplay: "true",
+  //container: "#lottieTriggerFirst",
+  actions: [
+    {
+      visibility: [0, 0.9],
+      type: "seek",
+      frames: [0, 48],
+
+    }
+  ]
+  ,
+},
+  {
+    visibility: [0.9, 1],
+    type: "stop",
+    frames: [48, 49],
+  }
+);
 // Offsetting:
 /*
 {// stopping the animatio until 25% of the container is visible

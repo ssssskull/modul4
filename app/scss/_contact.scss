@@ -2,8 +2,11 @@
     background: $lightblue;
     min-height: 400px;
     color: $white;
-    margin-top: 4rem;
     
+    // @include breakpoint-up(ipad) {
+    //     margin-top: 4rem;
+    // }
+
     .container__elem > .main__col1 > p {
         margin-top: 1rem;
         margin-bottom: 6rem;

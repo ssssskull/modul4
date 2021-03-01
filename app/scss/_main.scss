@@ -19,10 +19,10 @@
     
     h2 {
         font-weight: 400;
-        margin-bottom: 1.7rem;
+        margin-bottom: 2rem;
 
-        @include breakpoint-up(ipad) {
-            margin-bottom: 3.4rem;
+        @include breakpoint-up(computer) {
+            margin-bottom: 2rem;
         }
     }
     
@@ -33,17 +33,13 @@
     }
     
     &__keywords {
-        color: $lightblue;
+        color: $gold;
         font-family: 'Roboto Mono', monospace;
         font-weight: 500;
         margin-bottom: 1rem;
 
         &:last-of-type {
             margin-bottom: 1.7rem;
-            
-            @include breakpoint-up(ipad) {
-                margin-bottom: 3.4rem;
-            }
         }
     }
     
@@ -88,15 +84,26 @@ main > .main > .main__col1:first-of-type {
 }
 
 main > .main > .main__col2 {
-    #firstLottie, img {// TODO Victor --> img tag skal slettes når du er færdig med animationerne
+    .lottieContainer  {
         width: 100%;
         height: 100%;
         margin: 0 auto;
         align-self: center;
-        
+
         @include breakpoint-up(ipad) {
-            width: 100%;
-            height: unset;
+            width: 120%;
+            transform: translateX(-10%);
+
+            &:last-child {
+            width: 110%;
+            }
+        }
+        @include breakpoint-up(computer) {
+
+            width: 148%;
+            transform: translateX(-182px);
+            // height: 200%;
+
         }
     }
 }

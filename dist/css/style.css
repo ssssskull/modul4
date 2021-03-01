@@ -225,15 +225,8 @@ h4 {
 }
 
 .container--ptb {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-@media (min-width: 40em) {
-  .container--ptb {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 @media (min-width: 64em) {
@@ -243,15 +236,22 @@ h4 {
   }
 }
 
-.container--ptbfemfaser {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+.container--ptbhero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 40em) {
+  .container--ptbhero {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 @media (min-width: 64em) {
-  .container--ptbfemfaser {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+  .container--ptbhero {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -287,8 +287,7 @@ h4 {
 
 .divider {
   display: block;
-  opacity: 0.7;
-  max-width: 70%;
+  opacity: 0.5;
   width: 100%;
   margin: 1.7rem auto;
 }
@@ -296,6 +295,7 @@ h4 {
 @media (min-width: 40em) {
   .divider {
     margin: 3.4rem auto;
+    max-width: 80%;
   }
 }
 
@@ -306,12 +306,12 @@ h4 {
 }
 
 .femfaser ~ .divider {
-  margin: 0 auto 1.7rem auto;
+  margin: 0 auto 8rem auto;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .femfaser ~ .divider {
-    margin: 0 auto 3.4rem auto;
+    margin: 0 auto 10em auto;
   }
 }
 
@@ -839,12 +839,12 @@ h4 {
 
 .main h2 {
   font-weight: 400;
-  margin-bottom: 1.7rem;
+  margin-bottom: 2rem;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .main h2 {
-    margin-bottom: 3.4rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -854,7 +854,7 @@ h4 {
 }
 
 .main__keywords {
-  color: #6696ac;
+  color: #d8a55a;
   font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -862,12 +862,6 @@ h4 {
 
 .main__keywords:last-of-type {
   margin-bottom: 1.7rem;
-}
-
-@media (min-width: 40em) {
-  .main__keywords:last-of-type {
-    margin-bottom: 3.4rem;
-  }
 }
 
 @media (min-width: 64em) {
@@ -907,7 +901,7 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   }
 }
 
-main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
+main > .main > .main__col2 .lottieContainer {
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -917,9 +911,21 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 }
 
 @media (min-width: 40em) {
-  main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
-    width: 100%;
-    height: unset;
+  main > .main > .main__col2 .lottieContainer {
+    width: 120%;
+    -webkit-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+  main > .main > .main__col2 .lottieContainer:last-child {
+    width: 110%;
+  }
+}
+
+@media (min-width: 64em) {
+  main > .main > .main__col2 .lottieContainer {
+    width: 148%;
+    -webkit-transform: translateX(-182px);
+            transform: translateX(-182px);
   }
 }
 
@@ -927,7 +933,6 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   background: #6696ac;
   min-height: 400px;
   color: #FBFBFB;
-  margin-top: 4rem;
 }
 
 .contact .container__elem > .main__col1 > p {
@@ -1257,11 +1262,11 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 
 .femfaser .main__col2 {
   row-gap: 3.4rem;
+  padding-top: 6rem;
 }
 
 @media (max-width: 39.9375em) {
   .femfaser .main__col2 {
-    margin-top: 6rem;
     row-gap: unset;
     -ms-grid-column-align: center;
         justify-self: center;
@@ -1286,6 +1291,13 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 
 .femfaser .videmere {
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+@media (max-width: 39.9375em) {
+  .femfaser .videmere {
+    padding-bottom: 6rem;
+  }
 }
 
 .projects {

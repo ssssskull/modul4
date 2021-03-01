@@ -125,7 +125,7 @@ h4 {
     font-weight: 700;
     position: relative;
     transition: $transition-200ms;
-    
+
     &::after {
         display: inline;
         padding-left: 1rem;
@@ -180,8 +180,18 @@ h4 {
     }
 
     &--ptb {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+
+        @include breakpoint-up(computer) {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+        }
+    }
+
+    &--ptbhero {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
         @include breakpoint-up(ipad) {
             padding-top: 6rem;
@@ -194,15 +204,6 @@ h4 {
         }
     }
     
-    &--ptbfemfaser {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-
-        @include breakpoint-up(computer) {
-            padding-top: 15rem;
-            padding-bottom: 15rem;
-        }
-    }
     &--ptbfooter {
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -230,13 +231,13 @@ h4 {
 
 .divider {
     display: block;
-    opacity: 0.7;
-    max-width: 70%;
+    opacity: 0.5;
     width: 100%;
     margin: 1.7rem auto;
 
     @include breakpoint-up(ipad) {
         margin: 3.4rem auto;
+        max-width: 80%;
     }
 
     @include breakpoint-up(computer) {
@@ -245,9 +246,11 @@ h4 {
 }
 
 .femfaser ~ .divider {
-        margin: 0 auto 1.7rem auto;
+        margin: 0 auto 8rem auto;
 
-        @include breakpoint-up(ipad) {
-            margin: 0 auto 3.4rem auto;
+        @include breakpoint-up(computer) {
+            margin: 0 auto 10em auto;
         }
+
+        //TODO diskuter at der måske skulle være 15rem mellem divider
 }
