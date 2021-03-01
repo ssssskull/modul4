@@ -164,10 +164,19 @@ h4 {
         padding-right: 35rem;
     }
 
+    @include breakpoint-up(xlargeComputer) {
+        //padding-left: 50rem;
+        //padding-right: 50rem;
+    }
+
     &__elem {
         margin: 0 auto;
         width: 100%;
         max-width: 1200px;
+
+        @include breakpoint-up(xlargeComputer) {
+            max-width: unset;
+        }
     }
 
     &--ptb {

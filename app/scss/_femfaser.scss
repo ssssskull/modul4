@@ -154,7 +154,7 @@
 
     .main__col2 {
         row-gap: 3.4rem;
-        
+        //max-width: unset;
         
         @include breakpoint-down(iphone){
             margin-top: 6rem;
@@ -175,6 +175,7 @@
                 text-decoration: underline;
             }
         }
+
     }
 
     .videmere {

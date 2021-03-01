@@ -218,6 +218,12 @@ h4 {
   max-width: 1200px;
 }
 
+@media (min-width: 106.25em) {
+  .container__elem {
+    max-width: unset;
+  }
+}
+
 .container--ptb {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -887,12 +893,6 @@ h4 {
 @media (min-width: 40em) {
   .main__col2 {
     max-width: 300px;
-  }
-}
-
-@media (min-width: 87.5em) {
-  .main__col2 {
-    max-width: 350px;
   }
 }
 
