@@ -168,6 +168,30 @@ xmp {
     width: 380px;
 }
 
+.formular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-text {
+    color: #515E6D;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.basic-form {
+    width: 380px;
+    height: 53px;
+    border: solid 2px;
+    border-color: #515E6D;
+}
+
+.message-form {
+    width: 380px;
+    height: 200px;
+    border: solid 2px;
+    border-color: #515E6D;
+}
 
 
 .header-divs {
