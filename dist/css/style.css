@@ -1121,6 +1121,12 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   }
 }
 
+.femfaser__title {
+  color: #515f6d;
+  text-align: center;
+  margin-bottom: 3.4rem;
+}
+
 .femfaser__heading {
   text-align: center;
   color: #FBFBFB;

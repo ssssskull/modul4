@@ -28,6 +28,13 @@
             grid-template-columns: 380px 350px;
         }
         */
+
+    &__title {
+        color: $darkblue;
+        text-align: center;
+        margin-bottom: 3.4rem;
+    }
+
     &__heading {
         text-align: center;
         color: $white;
