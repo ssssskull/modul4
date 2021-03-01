@@ -138,8 +138,13 @@ xmp {
     width: 340px;
 }
 
-.boxed code{
-    
+.knap-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.knap-h4-div {
+    width: 380px;
 }
 
 .knapper-headers {
