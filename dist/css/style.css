@@ -475,6 +475,10 @@ h4 {
   color: #515f6d;
 }
 
+.header nav .takaro ul > li::before {
+  opacity: 0.6;
+}
+
 .header nav .takaro ul > li .active-menu > a {
   color: #6696ac;
 }
@@ -1171,6 +1175,7 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 }
 
 .femfaser__fasenavn h2 {
+  cursor: text;
   padding: 20px 0 10px 0;
 }
 
@@ -1224,23 +1229,15 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
   background: #A5BA74;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  padding: 2rem 0;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-}
-
-@media (min-width: 40em) {
-  .femfaser__tlf {
-    padding: 2rem 0;
-  }
 }
 
 .femfaser__mail {
   background: #A5BA74;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  padding: 2rem 0;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -1273,6 +1270,8 @@ main > .main > .main__col2 #firstLottie, main > .main > .main__col2 img {
 }
 
 .femfaser .main__col2 div a {
+  display: block;
+  padding: 2rem 0;
   font-size: 15px;
   font-size: 1.5rem;
   color: #FBFBFB;

@@ -79,7 +79,7 @@
         z-index: -1;
         
         h2 {
-            
+            cursor: text;
             padding: 20px 0 10px 0;
         }
     }
@@ -133,18 +133,12 @@
     &__tlf {
         background: #A5BA74;
         transition: $transition-200ms;
-        padding: 2rem 0;
         height: max-content;
-        
-        @include breakpoint-up(ipad){
-            padding: 2rem 0;
-        }
     }
     
     &__mail {
         background: #A5BA74;
         transition: $transition-200ms;
-        padding: 2rem 0;
         height: max-content;
     }
 
@@ -169,6 +163,8 @@
             text-align: center;
             
             a {
+                display: block;
+                padding: 2rem 0;
                 font-size: $font-xs-fallback;
                 font-size: $font-xs;
                 color: $white;
