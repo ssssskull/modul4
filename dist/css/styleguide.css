@@ -147,7 +147,7 @@ xmp {
     width: 380px;
 }
 
-.knapper-headers {
+.header-divs {
     display:flex;
     justify-content: space-between;
 }
