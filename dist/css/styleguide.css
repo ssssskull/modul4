@@ -91,6 +91,19 @@ main {
     background-color: #AA82AD;
 }
 
+.typografi {
+    display: flex;
+    justify-content: space-between;
+}
+
+#typo-code-snippets {
+    margin-bottom: 100px;
+}
+
+#typo-code-div {
+
+}
+
 .nav-overskrifter {
     color: #515E6D;
     font-size: 30px;
