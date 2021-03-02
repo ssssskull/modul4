@@ -329,7 +329,7 @@ xmp {
     gap: 2rem;
   }
 .karrusel-billede {
-    max-width: 50px;
+    width: none;
 }
 
 
