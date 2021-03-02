@@ -188,9 +188,12 @@ h4 {
     border-top: 30px solid #515F6D;
     padding: 2rem;
     background: rgb(243, 243, 243);
-    align-self: start;
+    
   }
-  
+
+  .typo-beskrivende {
+      font-size: 15px;
+  }
   .heading-1 h2 {
     margin-bottom: 1rem;
   }
@@ -203,7 +206,7 @@ h4 {
     border-top: 30px solid #515F6D;
     padding: 2rem;
     background: rgb(243, 243, 243);
-    align-self: start;
+    
   }
   
   .heading-2 h2 {
@@ -218,7 +221,7 @@ h4 {
     border-top: 30px solid #515F6D;
     padding: 2rem;
     background: rgb(243, 243, 243);
-    align-self: start;
+   
   }
   
   .heading-3 h2 {
@@ -233,7 +236,7 @@ h4 {
     border-top: 30px solid #515F6D;
     padding: 2rem;
     background: rgb(243, 243, 243);
-    align-self: start;
+    
   }
   
   .heading-4 h2 {
@@ -245,10 +248,10 @@ h4 {
   }
 
   .boxed {
-    border-top: 30px solid #2483e2;
+    border-top: 30px solid #d36d75;
     padding: 2rem;
     background: rgb(243, 243, 243);
-    align-self: start;
+    
   }
   
   .boxed h2 {
@@ -270,6 +273,7 @@ h4 {
 .boxed {
     background: #515F6D;
     color: white;
+    width: 380px;
     padding: 20px;
     font-size: 20px;
     overflow-wrap: break-word;
@@ -281,9 +285,21 @@ xmp {
     margin: 0px 0px 0px 0px;
 }
 
+.knapper-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+    justify-content: center;
+    gap: 2rem;
+  }
+
 .knap-div {
     display: flex;
     justify-content: space-between;
+    
+}
+
+.button {
+    font-size: 20px;
 }
 
 .knap-h4-div {
@@ -291,9 +307,7 @@ xmp {
     margin-right: 75px;
 }
 
-.knapper {
-    flex-grow: 3;
-}
+
 
 .karrusel {
     display: flex;
@@ -351,4 +365,8 @@ xmp {
 
 .ikon-beskrivelse {
     width: 380px;
+}
+
+.nav-headings {
+    padding-left: 60px;
 }
