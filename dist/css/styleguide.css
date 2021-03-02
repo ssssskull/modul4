@@ -37,9 +37,9 @@ h4 {
   }
   
   .farve-1 {
-    border-top: 20px solid blue;
+    border-top: 30px solid #D67249;
     padding: 2rem;
-    background: lightblue;
+    background: rgb(243, 243, 243);
     align-self: start;
   }
   
@@ -50,6 +50,129 @@ h4 {
   .farve-1 p:first-of-type {
     margin-bottom: 0.5rem;
   }
+
+
+
+
+  .farve-2 {
+    border-top: 30px solid #D36D75;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .farve-2 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .farve-2 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+
+
+  .farve-3 {
+    border-top: 30px solid #A5BA74;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .farve-3 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .farve-3 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+
+
+  .farve-4 {
+    border-top: 30px solid #6696AD;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .farve-4 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .farve-4 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+
+
+  .farve-5 {
+    border-top: 30px solid #D8A55B;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .farve-5 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .farve-5 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+
+
+  .farve-6 {
+    border-top: 30px solid #BFBCBA;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .farve-6 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .farve-6 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+
+  .farve-7 {
+    border-top: 30px solid #515E6D;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .farve-7 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .farve-7 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+
+  .farve-8 {
+    border-top: 30px solid #AA82AD;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .farve-8 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .farve-8 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+
+  
+
+
   
   h2, p {
     margin: 0;
