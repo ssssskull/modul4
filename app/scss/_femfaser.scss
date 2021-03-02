@@ -1,47 +1,48 @@
 .femfaser {
     color: $black;
     display: grid;
-        grid-auto-flow: column;
-        justify-content: space-between;
-        align-items: start;
-        column-gap: 3rem;
-        
-        @include breakpoint-up(ipad) {
-            grid-template-columns: 1.5fr 1fr;
-            column-gap: 10rem;
-        }
-        
-        @include breakpoint-up(computer) {
-            column-gap: 10rem;
-        }
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 3rem;
+    padding-bottom: 0;
 
-        @include breakpoint-down (iphone) {
-            grid-auto-flow: unset;
-            justify-content: unset;
-        }
-        
-        
-        /*
-         @include breakpoint-up(computer) {
-            justify-items: start;
-            column-gap: 10rem;
-            grid-template-columns: 380px 350px;
-        }
-        */
-
+    @include breakpoint-up(ipad) {
+        grid-template-columns: 1.5fr 1fr;
+        column-gap: 10rem;
+    }
+    
+    @include breakpoint-up(computer) {
+        column-gap: 10rem;
+    }
+    
+    @include breakpoint-down (iphone) {
+        grid-auto-flow: unset;
+        justify-content: unset;
+    }
+    
+    
+    /*
+    @include breakpoint-up(computer) {
+        justify-items: start;
+        column-gap: 10rem;
+        grid-template-columns: 380px 350px;
+    }
+    */
+    
     &__title {
         color: $darkblue;
         margin-bottom: 6rem;
     }
-
+    
     &__heading {
         text-align: center;
         color: $white;
     }
-
+    
     &__label {
         position: relative;
-
+        
         button {
             position: absolute;
             bottom: 25%;
@@ -64,20 +65,20 @@
             }
         }
     }
-
+    
     &__fasenummer {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 3px solid $lightgray;
-            background: $white;
-            color: $green;
-
-            h1 {
-                color: inherit;
-            }
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid $lightgray;
+        background: $white;
+        color: $green;
+        
+        h1 {
+            color: inherit;
+        }
     }
-
+    
     &__fasenavn {
         width: 80%;
         margin-top: -18px;
@@ -147,11 +148,11 @@
         transition: $transition-200ms;
         height: max-content;
     }
-
+    
     .main__col1 {
         align-self: start;
     }
-
+    
     .main__col2 {
         row-gap: 3.4rem;
         padding-top: 8.6rem;
@@ -177,9 +178,9 @@
                 text-decoration: underline;
             }
         }
-
+        
     }
-
+    
     .videmere {
         text-align: center;
         @include breakpoint-down(iphone) {

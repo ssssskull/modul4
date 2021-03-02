@@ -79,13 +79,13 @@ LottieInteractivity.create({
     {
       visibility: [0, 0.9],
       type: "seek",
-      frames: [0, 35],
+      frames: [0, 71],
 
     },
     {
       visibility: [0.9, 1],
       type: "stop",
-      frames: [35, 36],
+      frames: [71, 72],
 
     }
   ]
@@ -100,13 +100,13 @@ LottieInteractivity.create({
     {
       visibility: [0, 0.9],
       type: "seek",
-      frames: [0, 75],
+      frames: [0, 95],
 
     },
     {
       visibility: [0.9, 1],
       type: "stop",
-      frames: [75, 76],
+      frames: [95, 96],
 
     }
   ]
@@ -120,7 +120,13 @@ LottieInteractivity.create({
     {
       visibility: [0, 0.9],
       type: "seek",
-      frames: [0, 48],
+      frames: [0, 75],
+
+    },
+    {
+      visibility: [0.9, 1],
+      type: "stop",
+      frames: [75, 76],
 
     }
   ]

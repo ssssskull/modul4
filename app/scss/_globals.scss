@@ -238,20 +238,14 @@ h4 {
 
     @include breakpoint-up(ipad) {
         margin: 3.4rem auto;
-        max-width: 80%;
     }
 
     @include breakpoint-up(computer) {
-        max-width: 60%;
+        margin: 13rem auto;
     }
-}
 
-.femfaser ~ .divider {
-        margin: 0 auto 8rem auto;
-
-        @include breakpoint-up(computer) {
-            margin: 0 auto 10em auto;
-        }
-
-        //TODO diskuter at der måske skulle være 15rem mellem divider
+    @include breakpoint-up(largeComputer) {
+        margin: 16rem auto;
+        max-width: 80%;
+    }
 }

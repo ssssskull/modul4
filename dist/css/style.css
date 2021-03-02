@@ -296,23 +296,19 @@ h4 {
 @media (min-width: 40em) {
   .divider {
     margin: 3.4rem auto;
-    max-width: 80%;
   }
 }
 
 @media (min-width: 64em) {
   .divider {
-    max-width: 60%;
+    margin: 13rem auto;
   }
 }
 
-.femfaser ~ .divider {
-  margin: 0 auto 8rem auto;
-}
-
-@media (min-width: 64em) {
-  .femfaser ~ .divider {
-    margin: 0 auto 10em auto;
+@media (min-width: 87.5em) {
+  .divider {
+    margin: 16rem auto;
+    max-width: 80%;
   }
 }
 
@@ -1128,13 +1124,14 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
           align-items: start;
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
+  padding-bottom: 0;
   /*
-         @include breakpoint-up(computer) {
-            justify-items: start;
-            column-gap: 10rem;
-            grid-template-columns: 380px 350px;
-        }
-        */
+    @include breakpoint-up(computer) {
+        justify-items: start;
+        column-gap: 10rem;
+        grid-template-columns: 380px 350px;
+    }
+    */
 }
 
 @media (min-width: 40em) {
