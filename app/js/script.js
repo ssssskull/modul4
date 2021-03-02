@@ -48,11 +48,25 @@ function autoScrollTo(el) {
   }
 }
 
-// TODO innerhtml json fil that doesnt go backwards on mobile
-let innerWidth = window.innerWidth;
-let lottieContainer1 = document.getElementById("firstlottie");
-console.log(lottieContainer1);
+// Clickable div
 
+let clickDiv1 = document.getElementById('project-au');
+let clickDiv2 = document.getElementById('project-gg');
+let link1 = `https://www.houseofcode.io/projekter/aarhus-universitet-evacuate/`;
+let link2 = `https://www.houseofcode.io/projekter/guloggratis/`;
+
+// function openLink() {
+//   console.log(clickDiv);
+//   window.open('http://www.example.com?ReportID=1', '_blank');
+// }
+// clickDiv.addEventListener('click', openLink)
+
+clickDiv1.addEventListener("click", function () {
+  window.open(link1, '_self');
+});
+clickDiv2.addEventListener("click", function () {
+  window.open(link2, '_self');
+});
 
 // Lottie animation
 LottieInteractivity.create({
@@ -65,13 +79,13 @@ LottieInteractivity.create({
     {
       visibility: [0, 0.9],
       type: "seek",
-      frames: [0, 29],
+      frames: [0, 37],
 
     },
     {
       visibility: [0.9, 1],
       type: "stop",
-      frames: [29, 30],
+      frames: [37, 38],
 
     }
   ]

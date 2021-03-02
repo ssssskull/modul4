@@ -92,8 +92,23 @@ main > .main > .main__col2 {
 
         transform-origin: 50% 50%;
         transform: scale(1.7);
+
+        &:last-of-type {   
+            transform: scale(1.3);
+        }
+
         @include breakpoint-up(ipad) {
             transform-origin: 50% 0%;
+
+            &:last-of-type {   
+                transform-origin: 50% 65%;
+            }
+        }
+
+        @include breakpoint-up(computer) {
+            &:first-of-type { 
+                transform-origin: 50% 0%;
+            }
         }
     }
 }
