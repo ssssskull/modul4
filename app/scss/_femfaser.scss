@@ -31,8 +31,7 @@
 
     &__title {
         color: $darkblue;
-        text-align: center;
-        margin-bottom: 3.4rem;
+        margin-bottom: 6rem;
     }
 
     &__heading {
@@ -155,10 +154,10 @@
 
     .main__col2 {
         row-gap: 3.4rem;
+        padding-top: 8.6rem;
         //max-width: unset;
         
         @include breakpoint-down(iphone){
-            margin-top: 6rem;
             row-gap: unset;
             justify-self: center;
             figure {
@@ -183,5 +182,9 @@
 
     .videmere {
         text-align: center;
+        @include breakpoint-down(iphone) {
+            padding-bottom: 6rem;
+        }
+        font-family: 'Roboto Mono', monospace;
     }
 }

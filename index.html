@@ -82,7 +82,7 @@
     <section class="hero">
         <!--TODO fix padding on mob ile - forgot container class on parent-->
         <div class="hero__wrapper flex flex-jc-c flex-ai-c flex-dr-col">
-            <div class="container hero__text flex flex-dr-col container--ptb">
+            <div class="container hero__text flex flex-dr-col container--ptbhero">
                 <h1 class="container__elem ">Start dit projekt</h1>
                 <p class="container__elem ">med vores afklaringsforløb</p>
             </div>
@@ -111,9 +111,9 @@
                     faser</a>
             </div>
             <figure class="main__col2">
-                <img src="images/placeholder3_new.svg">
-                <!-- <lottie-player id="firstLottie" src="https://assets1.lottiefiles.com/packages/lf20_okph4ekx.json">
-                    </lottie-player> -->
+                <!-- <img src="images/placeholder3_new.svg"> -->
+                <lottie-player id="firstLottie" class="lottieContainer" src="images/flag.json">
+                </lottie-player>
             </figure>
             <div class="main__col1">
                 <h2>Hvorfor et afklaringsforløb?</h2>
@@ -130,7 +130,9 @@
                     designfasen.</p>
             </div>
             <figure class="main__col2">
-                <img src="images/placeholder3_new.svg">
+                <lottie-player id="firstLottie2" class="lottieContainer" src="images/dollarreverse.json">
+                </lottie-player>
+                <!-- <img src="images/placeholder3_new.svg"> -->
             </figure>
             <div class="main__col1">
                 <h2>Hvordan foregår det?</h2>
@@ -145,7 +147,9 @@
                     løsningen til i starten end at kode den om, når brugerne står med det færdige produkt i hånden.</p>
             </div>
             <figure class="main__col2">
-                <img src="images/placeholder3_new.svg">
+                <lottie-player id="firstLottie3" class="lottieContainer" src="images/likereverse.json">
+                </lottie-player>
+                <!-- <img src="images/placeholder3_new.svg"> -->
             </figure>
         </div>
     </main>
@@ -184,9 +188,9 @@
         </div>
     </section>
     <section id="TestSection">
-        <div class="container femfaser container--ptbfemfaser" id="femfaserContainer">
+        <div class="container femfaser container--ptb" id="femfaserContainer">
             <div class="container__elem main__col1">
-                <h2 class="femfaser__title overskrift">De fem faser</h2>
+                <h2 class="femfaser__title overskrift">Afklaringsforløbets fem faser</h2>
                 <div class="femfaser__top">
                     <div class="femfaser__label">
                         <div class="flex flex-dr-col flex-ai-c">
@@ -293,7 +297,7 @@
                 <figure>
                     <img src="images/kontaktsec2.svg">
                 </figure>
-                <p class="main__bodytext videmere">Vil du vide mere?</p>
+                <p class="main__bodytext videmere">Kom i gang, kontakt os!</p>
                 <!--TODO add bg color to button instead of div to make whole thing clickable not just text-->
                 <div class="femfaser__tlf">
                     <a href="tel:4570848538" tabindex="0" title="Telefonnummer">+45 70 84 85 40</a>
@@ -316,7 +320,7 @@
                         projekter</a>
                 </div>
                 <div class="main__col2">
-                    <div class="projects__item">
+                    <div class="projects__item" id="project-gg">
                         <div class="projects__overlay">
                             <picture>
                                 <source type="image/avif" srcset="
@@ -350,7 +354,7 @@
                                 decoding="async" width="750" height="750" />
                         </picture>
                     </div>
-                    <div class="projects__item">
+                    <div class="projects__item" id="project-au">
                         <div class="projects__overlay">
                             <picture>
                                 <source type="image/avif" srcset="
@@ -363,10 +367,10 @@
                                     loading="lazy" decoding="async" width="175" height="70" />
                             </picture>
                             <div class="projects__info">
-                                <h2>Aarhus Universitet</h2>
-                                <p>Rådgivning | Drift</p>
-                                <p>Gul og Gratis er hele Danmarks brugtmarked...</p>
-                                <a href="#" tabindex="0" class="button" type="button" title="GulogGratis">Se
+                                <h2>Beredskabsapp til sikker evakuering</h2>
+                                <p>Rådgivning | Udvikling</p>
+                                <p>Formål: Sikker evakuering AU Evacuate</p>
+                                <a href="#" tabindex="0" class="button" type="button" title="Aarhus Universitet">Se
                                     case</a>
                             </div>
                         </div>

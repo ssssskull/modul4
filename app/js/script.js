@@ -48,19 +48,76 @@ function autoScrollTo(el) {
   }
 }
 
+// Clickable div
 
-/*// Lottie animation
+let clickDiv1 = document.getElementById('project-au');
+let clickDiv2 = document.getElementById('project-gg');
+let link1 = `https://www.houseofcode.io/projekter/aarhus-universitet-evacuate/`;
+let link2 = `https://www.houseofcode.io/projekter/guloggratis/`;
+
+// function openLink() {
+//   console.log(clickDiv);
+//   window.open('http://www.example.com?ReportID=1', '_blank');
+// }
+// clickDiv.addEventListener('click', openLink)
+
+clickDiv1.addEventListener("click", function () {
+  window.open(link1, '_self');
+});
+clickDiv2.addEventListener("click", function () {
+  window.open(link2, '_self');
+});
+
+// Lottie animation
 LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
-  //TODO fix trigger mobile/desktop container: "#lottieTriggerFirst",
+  autoplay: false,
+  loop: false,
+  //container: "#lottieTriggerFirst",
+  actions: [
+    {
+      visibility: [0, 0.9],
+      type: "seek",
+      frames: [0, 37],
+
+    },
+    {
+      visibility: [0.9, 1],
+      type: "stop",
+      frames: [37, 38],
+
+    }
+  ]
+  ,
+});
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#firstLottie2',
+  autoplay: "true",
+  //container: "#lottieTriggerFirst",
   actions: [
     {
       visibility: [0, 1],
       type: "seek",
-      frames: [0, 49]
+      frames: [0, 49],
+
     }
-  ],
+  ]
+  ,
+}); LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#firstLottie3',
+  autoplay: "true",
+  //container: "#lottieTriggerFirst",
+  actions: [
+    {
+      visibility: [0, 0.9],
+      type: "seek",
+      frames: [0, 48],
+
+    }
+  ]
 });
 // Offsetting:
 /*
@@ -75,7 +132,6 @@ LottieInteractivity.create({
   frames: [0, 100]
 }
 */
-/*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
 
 // Fem faser js
 
