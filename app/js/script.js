@@ -24,6 +24,7 @@ for (x = 0; x < farver.length; x++) {
 // Hamburger toggle af Daniel!!!!!
 const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector('.header');
+const bodyTarget = document.querySelector("body");
 const btnToggle = document.querySelectorAll(".header__burger");
 
 btnHamburger.addEventListener('click', function () {
@@ -33,7 +34,7 @@ btnHamburger.addEventListener('click', function () {
   }
   else { // Open Hamburger Menu
     header.classList.add('open');
-
+    bodyTarget.style.overflow = "hidden";
   }
 });
 
