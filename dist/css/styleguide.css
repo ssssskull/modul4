@@ -289,7 +289,20 @@ xmp {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
     justify-content: center;
+    align-items: center;
     gap: 2rem;
+  }
+
+  .nav-overskrifter {
+      font-weight: bold;
+      color: white;
+      font-size: 20px;
+      background-color: #515E6D;
+      text-align: center;
+  }
+
+  .knapper {
+      align-items: center;
   }
 
 .knap-div {
