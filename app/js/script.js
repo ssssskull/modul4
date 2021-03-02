@@ -1,7 +1,13 @@
-// TODO Tilæføj og fjern visible/hidden fra h2 tagget i div --> transition
+// Pensum demonstration 🦽 af Daniel!!!!!
+let x;
+let farver = ['blå', 'rød'];
+for (x = 0; x < farver.length; x++) {
+  console.log(farver[x]);
+}
+
 
 console.log("hello");
-// Hamburger toggle
+// Hamburger toggle af Daniel!!!!!
 const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector('.header');
 
@@ -15,7 +21,7 @@ btnHamburger.addEventListener('click', function () {
 });
 
 
-// Smoth scroll
+// Smoth scroll af Simone!!!!!
 let scrollY = 0;
 let distance = 10;
 let speed = 0.4;
@@ -48,18 +54,12 @@ function autoScrollTo(el) {
   }
 }
 
-// Clickable div
+// Clickable div af Daniel!!!!!
 
 let clickDiv1 = document.getElementById('project-au');
 let clickDiv2 = document.getElementById('project-gg');
 let link1 = `https://www.houseofcode.io/projekter/aarhus-universitet-evacuate/`;
 let link2 = `https://www.houseofcode.io/projekter/guloggratis/`;
-
-// function openLink() {
-//   console.log(clickDiv);
-//   window.open('http://www.example.com?ReportID=1', '_blank');
-// }
-// clickDiv.addEventListener('click', openLink)
 
 clickDiv1.addEventListener("click", function () {
   window.open(link1, '_self');
@@ -68,7 +68,7 @@ clickDiv2.addEventListener("click", function () {
   window.open(link2, '_self');
 });
 
-// Lottie animation
+// Lottie animation af Daniel!!!!!
 LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
@@ -133,7 +133,7 @@ LottieInteractivity.create({
 }
 */
 
-// Fem faser js
+// Fem faser js af Frederikke!!!!!
 
 let faser = Array.from(document.querySelectorAll(".femfaser__circle")); //En array skabes udfra alle elementer i HTML, der har class .femfasercircle, og lagres som en let
 let faseFarver = document.querySelector(".femfaser__heading");
@@ -368,16 +368,10 @@ function buttonClickFrem(f) {
   }
 }
 
-//hej
-
-/*faser.forEach(node => {
- node.addEventListener('click', handleClick);
-}); */
-
 buttonRight.addEventListener("click", buttonClickFrem);
 buttonLeft.addEventListener("click", buttonClickTilbage);
 
-//Nav farveskift js
+//Nav farveskift js af Daniel!!!!!
 //Adds mask and changes size of it depended on which container is sent through the parameters
 function scrollColorChange(container) {
   container = container.getBoundingClientRect()
@@ -423,44 +417,7 @@ document.addEventListener('scroll', function () {
 });
 
 
-//const header = document.querySelector('.header');
-
-// btnHamburger.addEventListener('click', function () {
-//   if (header.classList.contains('open')) { // Close Hamburger Menu
-//     header.classList.remove('open');
-//   }
-//   else { // Open Hamburger Menu
-//     header.classList.add('open');
-//   }
-// });
-
-
-/*input = parseFloat(input);
-
-
-
-function next_id(input) {
-  var output = parseInt(input, 10) + 1; // parse and increment
-  output += ""; // convert to string
-  while (output.length < 2) output = "0" + output; // prepend leading zeros
-  return output;
-}
-
-const id = "00";
-for (var increment = 0; increment < 20; increment++) {
-  console.log(id);
-  id = next_id(id);
-}
-
-/*function incrementNummer() {
-  document.querySelector("#h1femfaser").value = nummer += 2;
-}
-
-let button = document.querySelector("button");
-button.addEventListener("click", incrementNummer)
-*/
-
-// Viewport 100vh fix
+// Viewport 100vh fix af Daniel!!!!!
 let scrollToContent = document.getElementById("#scrollToContent");
 let mainContainer = document.getElementById("#mainContainer");
 
@@ -475,9 +432,3 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 })
-
-/* document.addEventListener('scroll', function(event) {
-    let csik = document.getElementById("csik").getBoundingClientRect()
-    document.querySelector(".nav.takaro").style = "clip: rect("+csik.y+"px, 200px, "+(csik.y+csik.height)+"px, 0px);"
-}) */
-// TODO add block to onload to fix color change
