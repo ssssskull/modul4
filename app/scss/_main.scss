@@ -89,22 +89,6 @@ main > .main > .main__col2 {
         height: 100%;
         margin: 0 auto;
         align-self: center;
-
-        @include breakpoint-up(ipad) {
-            width: 120%;
-            transform: translateX(-10%);
-
-            &:last-child {
-            width: 110%;
-            }
-        }
-        @include breakpoint-up(computer) {
-
-            width: 148%;
-            transform: translateX(-182px);
-            // height: 200%;
-
-        }
     }
 }
 // main > .main > .main__col2 {

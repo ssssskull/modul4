@@ -910,25 +910,6 @@ main > .main > .main__col2 .lottieContainer {
       align-self: center;
 }
 
-@media (min-width: 40em) {
-  main > .main > .main__col2 .lottieContainer {
-    width: 120%;
-    -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
-  }
-  main > .main > .main__col2 .lottieContainer:last-child {
-    width: 110%;
-  }
-}
-
-@media (min-width: 64em) {
-  main > .main > .main__col2 .lottieContainer {
-    width: 148%;
-    -webkit-transform: translateX(-182px);
-            transform: translateX(-182px);
-  }
-}
-
 .contact {
   background: #6696ac;
   min-height: 400px;
