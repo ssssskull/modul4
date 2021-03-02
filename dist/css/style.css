@@ -874,6 +874,14 @@ h4 {
   }
 }
 
+.main__intro {
+  grid-column: 1/-1;
+}
+
+.main__intro p {
+  max-width: 50%;
+}
+
 .main__bodytext {
   font-family: 'Roboto', sans-serif;
   color: #323a43;
@@ -1126,14 +1134,13 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
           align-items: start;
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
-  padding-bottom: 0;
   /*
-    @include breakpoint-up(computer) {
-        justify-items: start;
-        column-gap: 10rem;
-        grid-template-columns: 380px 350px;
-    }
-    */
+         @include breakpoint-up(computer) {
+            justify-items: start;
+            column-gap: 10rem;
+            grid-template-columns: 380px 350px;
+        }
+        */
 }
 
 @media (min-width: 40em) {
@@ -1297,6 +1304,17 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 .femfaser .main__col2 {
   row-gap: 3.4rem;
   padding-top: 8.6rem;
+}
+
+.femfaser .main__col2 figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+}
+
+.femfaser .main__col2 figure img {
+  max-width: 70%;
 }
 
 @media (max-width: 39.9375em) {
