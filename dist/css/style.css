@@ -376,6 +376,21 @@ h4 {
           transform: translateY(0px) translateZ(0px);
 }
 
+.header.open .header__menu > li > a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header.open .header__menu > li > a:first-of-type > a::after {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header.open .header__menu > li > a:last-of-type > a::after {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .header.open .header__burger > span {
   background-color: transparent;
 }
@@ -535,8 +550,8 @@ h4 {
   overflow: hidden;
   color: inherit;
   font-weight: 700;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .header__menu > li > a:hover, .header__menu > li > a:focus {
@@ -547,16 +562,16 @@ h4 {
   content: "()";
   display: inline;
   color: #c0bcbb;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .header__menu > li:last-of-type > a::after {
   content: ";";
   display: inline;
   color: #c0bcbb;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .header__mobile-logo {
@@ -891,13 +906,22 @@ h4 {
   }
 }
 
-main > .main > .main__col1:first-of-type p:last-of-type {
+main > .main > .main__col1 p:nth-of-type(3) {
   margin-bottom: 2rem;
-  margin-top: 1.7rem;
 }
 
 @media (min-width: 40em) {
-  main > .main > .main__col1:first-of-type p:last-of-type {
+  main > .main > .main__col1 p:nth-of-type(3) {
+    margin-bottom: 3.4rem;
+  }
+}
+
+main > .main > .main__col1 p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 40em) {
+  main > .main > .main__col1 p:last-of-type {
     margin-bottom: 3.4rem;
   }
 }
@@ -940,7 +964,6 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 
 .contact {
   background: #6696ac;
-  min-height: 400px;
   color: #FBFBFB;
 }
 
@@ -975,10 +998,6 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-}
-
-.contact__columns .main__col1 h1 {
-  white-space: nowrap;
 }
 
 @media (max-width: 39.9375em) {
@@ -1019,7 +1038,7 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 }
 
 .contact__columns .main__col2 img {
-  max-width: 250px;
+  max-width: 200px;
   border-radius: 50%;
   border: 5px solid #FBFBFB;
 }

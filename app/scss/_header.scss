@@ -20,7 +20,6 @@
             }
 
         }
-
         .header__mobile-logo {
             visibility: hidden;
         }
@@ -29,6 +28,19 @@
             visibility: visible;
             transform: translateY(0px) translateZ(0px);
         }
+
+        .header__menu > li > a {
+            transition: all 0.2s ease-in-out;
+
+            &:first-of-type > a::after {
+                transition: $transition-200ms;
+            }
+            
+            &:last-of-type > a::after {
+                transition: $transition-200ms;
+            }
+        }
+
         .header__burger {
             > span{
                 background-color: transparent;
@@ -186,7 +198,7 @@
                 overflow: hidden;
                 color: inherit;
                 font-weight: 700;
-                transition: $transition-200ms;
+                transition: none;
 
                 &:hover, &:focus {
                     color: $lightblue;
@@ -197,13 +209,13 @@
                 content: "()";
                 display: inline;
                 color: $gray;
-                transition: $transition-200ms;
+                transition: none;
             }
             &:last-of-type > a::after {
                 content: ";";
                 display: inline;
                 color: $gray;
-                transition: $transition-200ms;
+                transition: none;
             }
         }
         

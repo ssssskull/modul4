@@ -14,12 +14,12 @@ const header = document.querySelector('.header');
 btnHamburger.addEventListener('click', function () {
   if (header.classList.contains('open')) { // Close Hamburger Menu
     header.classList.remove('open');
+
   }
   else { // Open Hamburger Menu
     header.classList.add('open');
   }
 });
-
 
 // Smoth scroll af Simone!!!!!
 let scrollY = 0;
@@ -79,13 +79,13 @@ LottieInteractivity.create({
     {
       visibility: [0, 0.9],
       type: "seek",
-      frames: [0, 37],
+      frames: [0, 35],
 
     },
     {
       visibility: [0.9, 1],
       type: "stop",
-      frames: [37, 38],
+      frames: [35, 36],
 
     }
   ]
@@ -98,9 +98,15 @@ LottieInteractivity.create({
   //container: "#lottieTriggerFirst",
   actions: [
     {
-      visibility: [0, 1],
+      visibility: [0, 0.9],
       type: "seek",
-      frames: [0, 49],
+      frames: [0, 75],
+
+    },
+    {
+      visibility: [0.9, 1],
+      type: "stop",
+      frames: [75, 76],
 
     }
   ]

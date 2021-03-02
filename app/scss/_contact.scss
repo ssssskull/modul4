@@ -1,6 +1,5 @@
 .contact {
     background: $lightblue;
-    min-height: 400px;
     color: $white;
     
     // @include breakpoint-up(ipad) {
@@ -28,7 +27,6 @@
             align-self: end;
 
             h1 {
-                white-space: nowrap;
                 @include breakpoint-down(iphone) {
                     font-size: $font-med-fallback;
                     font-size: $font-med;
@@ -62,7 +60,7 @@
             }
 
             img {
-                max-width: 250px;
+                max-width: 200px;
                 border-radius: 50%;
                 border: 5px solid $white;
 
