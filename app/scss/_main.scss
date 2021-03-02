@@ -106,16 +106,13 @@ main > .main > .main__col2 {
         }
 
         @include breakpoint-up(ipad) {
-            transform-origin: 50% 0%;
+            transform-origin: 50% -40%;
 
-            &:last-of-type {   
-                transform-origin: 50% 65%;
-            }
         }
 
         @include breakpoint-up(computer) {
             &:first-of-type { 
-                transform-origin: 50% 0%;
+                transform-origin: 50% 0;
             }
         }
     }

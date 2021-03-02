@@ -234,10 +234,12 @@ h4 {
     display: block;
     opacity: 0.5;
     width: 100%;
-    margin: 1.7rem auto;
+    margin: 8rem auto;
+    transform: scale(1.7);
 
     @include breakpoint-up(ipad) {
-        margin: 3.4rem auto;
+        margin: 10rem auto;
+        transform: unset;
     }
 
     @include breakpoint-up(computer) {

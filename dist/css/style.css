@@ -290,12 +290,16 @@ h4 {
   display: block;
   opacity: 0.5;
   width: 100%;
-  margin: 1.7rem auto;
+  margin: 8rem auto;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
 }
 
 @media (min-width: 40em) {
   .divider {
-    margin: 3.4rem auto;
+    margin: 10rem auto;
+    -webkit-transform: unset;
+            transform: unset;
   }
 }
 
@@ -474,6 +478,8 @@ h4 {
   background-image: url("../../images/logo-color.svg");
   background-repeat: no-repeat;
   will-change: visibility;
+  -webkit-transition: none;
+  transition: none;
 }
 
 @media (min-width: 64em) {
@@ -950,19 +956,15 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 
 @media (min-width: 40em) {
   main > .main > .main__col2 .lottieContainer {
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
-  }
-  main > .main > .main__col2 .lottieContainer:last-of-type {
-    -webkit-transform-origin: 50% 65%;
-            transform-origin: 50% 65%;
+    -webkit-transform-origin: 50% -40%;
+            transform-origin: 50% -40%;
   }
 }
 
 @media (min-width: 64em) {
   main > .main > .main__col2 .lottieContainer:first-of-type {
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
   }
 }
 
