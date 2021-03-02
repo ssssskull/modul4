@@ -166,12 +166,7 @@ h4 {
     margin-bottom: 0.5rem;
   }
 
-
-  
-
-
-  
-  h2, p {
+ h2, p {
     margin: 0;
     padding: 0;
   }
@@ -179,45 +174,102 @@ h4 {
     display: block;
   }
 
-.typografi {
-    display: flex;
-    justify-content: space-between;
-}
-
-#typo-code-snippets {
-    margin-bottom: 75px;
-}
-
-#typo-code-div {
-    margin-bottom: 25px;
-}
-
-.nav-overskrifter {
-    color: #515E6D;
-    font-size: 30px;
-    font-weight: 700;
-}
 
 .typo-container {
-    width: 640px;
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+    justify-content: center;
+    gap: 2rem;
+    place-content: start space-evenly;
+  }
 
-.typo-overskrift {
-    font-size: 30px;
-    font-weight: 500;
-    color:#515E6D;
-}
 
-.typo-beskrivende {
-    font-size: 20px;
-    color: #515E6D;
-    width: 280px;
-}
+  .heading-1 {
+    border-top: 30px solid #515F6D;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .heading-1 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .heading-1 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+  .heading-2 {
+    border-top: 30px solid #515F6D;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .heading-2 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .heading-2 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+  .heading-3 {
+    border-top: 30px solid #515F6D;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .heading-3 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .heading-3 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+  .heading-4 {
+    border-top: 30px solid #515F6D;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .heading-4 h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .heading-4 p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+  .boxed {
+    border-top: 30px solid #2483e2;
+    padding: 2rem;
+    background: rgb(243, 243, 243);
+    align-self: start;
+  }
+  
+  .boxed h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .boxed p:first-of-type {
+    margin-bottom: 0.5rem;
+  }
+
+
+
+
+
+
+
+
 
 .boxed {
     background: #515F6D;
     color: white;
-    width: 380px;
     padding: 20px;
     font-size: 20px;
     overflow-wrap: break-word;
