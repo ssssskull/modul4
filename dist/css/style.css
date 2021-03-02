@@ -291,8 +291,6 @@ h4 {
   opacity: 0.5;
   width: 100%;
   margin: 8rem auto;
-  -webkit-transform: scale(1.7);
-          transform: scale(1.7);
 }
 
 @media (min-width: 40em) {
@@ -714,6 +712,7 @@ h4 {
 
 .hero {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   background-image: url("../../images/hero-bg-1024w.jpg");
   background-size: cover;
@@ -737,6 +736,7 @@ h4 {
   position: absolute;
   z-index: 1;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   background-color: rgba(5, 3, 19, 0.81);
 }
