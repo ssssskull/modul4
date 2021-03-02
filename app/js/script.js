@@ -49,72 +49,71 @@ function autoScrollTo(el) {
 }
 
 
-// Lottie
-const loader = document.getElementsByClassName("bodymovin-1");
-const lottie1 = document.getElementById("lottie1");
-const lottie2 = document.getElementById("lottie2");
-const lottie3 = document.getElementById("lottie3");
+// Lottie animation
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#firstLottie',
+  autoplay: "true",
+  //container: "#lottieTriggerFirst",
+  actions: [
+    {
+      visibility: [0, 1],
+      type: "seek",
+      frames: [0, 49],
 
-function loadBMAnimation(loader) {
-  let jsonAnimation = `flag`;
+    }
+  ]
+  ,
+});
+LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#firstLottie2',
+  autoplay: "true",
+  //container: "#lottieTriggerFirst",
+  actions: [
+    {
+      visibility: [0, 1],
+      type: "seek",
+      frames: [0, 49],
 
-  if (loader.getAttribute('id') == "lottie1") {
-    jsonAnimation = `flag`;
-    console.log(jsonAnimation);
-  }
-  else if (loader.getAttribute('id') == "lottie2") {
-    jsonAnimation = `dollar`;
-  }
-  else if ((loader.getAttribute('id') == "lottie3")) {
-    jsonAnimation = `like`;
-  }
-  else {
-    return;
-  }
+    }
+  ]
+  ,
+}); LottieInteractivity.create({
+  mode: 'scroll',
+  player: '#firstLottie3',
+  autoplay: "true",
+  //container: "#lottieTriggerFirst",
+  actions: [
+    {
+      visibility: [0, 0.9],
+      type: "seek",
+      frames: [0, 48],
 
-  let innerWidth = window.innerWidth;
-  let viewBoxPos = 0;
-  if (innerWidth >= 1920) {
-    viewBoxPos = -110;
+    }
+  ]
+  ,
+},
+  {
+    visibility: [0.9, 1],
+    type: "stop",
+    frames: [48, 49],
   }
-  else {
-    viewBoxPos = 0;
-  }
-
-  let anim = bodymovin.loadAnimation({
-    container: loader,
-    renderer: "svg",
-    mode: "scroll",
-    loop: false,
-    autoplay: true,
-    rendererSettings: {
-      progressiveLoad: false,
-      preserveAspectRatio: 'xMaxYMax slice',
-      viewBoxSize: `${viewBoxPos} 0 500 500`
-    },
-    renderConfig: {
-      viewBoxOnly: true
-    },
-    path: `../../images/${jsonAnimation}.json`
-  });
-
-
-  if (innerWidth > 640) {
-    anim.addEventListener('complete', () => {
-      bodymovin.setDirection(-1);
-      anim.play();
-    });
-  }
-  else {
-    return;
-  }
-
+);
+// Offsetting:
+/*
+{// stopping the animatio until 25% of the container is visible
+  visibility: [0, 0.25],
+  type: "stop",
+  frames: [0]
+},
+{// Start playing after 25% of the container is visible
+  visibility: [0.25, 1],
+  type: "seek",
+  frames: [0, 100]
 }
-
-for (var h = 0; h < loader.length; h++) {
-  loadBMAnimation(loader[h]);
-}
-
+*/
+/*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
 
 // Fem faser js
 

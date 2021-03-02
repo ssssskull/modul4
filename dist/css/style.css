@@ -901,15 +901,14 @@ main > .main > .main__col1:first-of-type p:last-of-type {
   }
 }
 
-main > .main > .main__col2 .lottieContainer {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
+/*main > .main > .main__col2 {
+    .lottieContainer  {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        align-self: center;
+    }
+}*/
 .contact {
   background: #6696ac;
   min-height: 400px;
