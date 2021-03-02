@@ -8,8 +8,7 @@
     }
 
     // Hamburger Open Styles
-    &.open {
-        //TODO fix transition on opening
+    &.open {        
         nav {
             background-color: $white;
             position: fixed;
@@ -35,7 +34,7 @@
             &:first-of-type > a::after {
                 transition: $transition-200ms;
             }
-            
+
             &:last-of-type > a::after {
                 transition: $transition-200ms;
             }

@@ -5,8 +5,6 @@ for (x = 0; x < farver.length; x++) {
   console.log(farver[x]);
 }
 
-
-console.log("hello");
 // Hamburger toggle af Daniel!!!!!
 const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector('.header');
@@ -18,6 +16,7 @@ btnHamburger.addEventListener('click', function () {
   }
   else { // Open Hamburger Menu
     header.classList.add('open');
+
   }
 });
 
@@ -383,6 +382,12 @@ function scrollColorChange(container) {
   container = container.getBoundingClientRect()
   document.querySelector(".nav.takaro").style = "clip: rect(" + (container.y - 50) + "px, " + container.width + "px," + (container.y + container.height) + "px, 0px);"
   document.querySelector("#dontcry").style = "clip: rect(" + (container.y - 30) + "px, " + container.width + "px," + (container.y + container.height) + "px, -50px);"
+
+  let headerSelector = document.querySelector("header");
+
+  if (headerSelector.classList.contains("open")) {
+    document.querySelector("#dontcry").style = "clip: rect(0 0 0 0);";
+  }
 }
 
 //Selection of containers and array that contains them for further use
