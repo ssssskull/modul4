@@ -48,18 +48,30 @@ function autoScrollTo(el) {
   }
 }
 
+// TODO innerhtml json fil that doesnt go backwards on mobile
+let innerWidth = window.innerWidth;
+let lottieContainer1 = document.getElementById("firstlottie");
+console.log(lottieContainer1);
+
 
 // Lottie animation
 LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie',
-  autoplay: "true",
+  autoplay: false,
+  loop: false,
   //container: "#lottieTriggerFirst",
   actions: [
     {
-      visibility: [0, 1],
+      visibility: [0, 0.9],
       type: "seek",
-      frames: [0, 49],
+      frames: [0, 29],
+
+    },
+    {
+      visibility: [0.9, 1],
+      type: "stop",
+      frames: [29, 30],
 
     }
   ]
@@ -92,14 +104,7 @@ LottieInteractivity.create({
 
     }
   ]
-  ,
-},
-  {
-    visibility: [0.9, 1],
-    type: "stop",
-    frames: [48, 49],
-  }
-);
+});
 // Offsetting:
 /*
 {// stopping the animatio until 25% of the container is visible
@@ -113,7 +118,6 @@ LottieInteractivity.create({
   frames: [0, 100]
 }
 */
-/*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
 
 // Fem faser js
 
