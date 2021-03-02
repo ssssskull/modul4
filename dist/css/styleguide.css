@@ -19,7 +19,7 @@ h4 {
 
 
 .nav-headings {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 700;
     color: #515F6D;
     margin-top: 90px;
@@ -28,7 +28,7 @@ h4 {
 
 .farver {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
     justify-content: center;
     gap: 2rem;
   }
@@ -177,12 +177,17 @@ h4 {
 
 .typo-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
     justify-content: center;
     gap: 2rem;
     place-content: start space-evenly;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 
+ #typo-code-div{
+     max-width: 320px;
+ } 
 
   .heading-1 {
     border-top: 30px solid #515F6D;
