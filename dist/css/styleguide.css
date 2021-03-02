@@ -321,19 +321,27 @@ xmp {
 }
 
 
-
-.karrusel {
-    display: flex;
-    justify-content: space-between;
+.karrusel-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+.karrusel-billede {
+    max-width: 50px;
 }
 
-.karrusel-desc {
-    width: 380px;
-}
 
-.formular {
-    display: flex;
-    justify-content: space-between;
+
+.formular-container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      
 }
 
 .form-text {
