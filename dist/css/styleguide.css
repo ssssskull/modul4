@@ -374,6 +374,15 @@ xmp {
     justify-content: space-between;
 }
 
+.navigation-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      
+}
+
 .main-nav {
     margin-top: 25px;
 }
@@ -387,6 +396,14 @@ xmp {
 .ikon {
     display:flex;
     justify-content: space-between;
+}
+
+.ikon-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .ikon-beskrivelse {
