@@ -12,7 +12,7 @@
     }
     
     @include breakpoint-up(computer) {
-        row-gap: 20rem;
+        row-gap: 15rem;
         grid-template-columns: 1.5fr 1fr;
         column-gap: 10rem;
     }

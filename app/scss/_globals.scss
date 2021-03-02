@@ -157,7 +157,8 @@ h4 {
         padding-right: 5rem;
     };
     @include breakpoint-up(computer) {
-        padding-right: 24rem;
+        padding-left: 8rem;
+        padding-right: 27rem;
     }
     @include breakpoint-up(largeComputer) {
         padding-left: 20rem;
