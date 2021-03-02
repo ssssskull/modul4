@@ -356,6 +356,14 @@ h4 {
   }
 }
 
+.header.open body {
+  overflow: hidden;
+}
+
+.header.open .header {
+  pointer-events: all;
+}
+
 .header.open nav {
   background-color: #FBFBFB;
   position: fixed;
