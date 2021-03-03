@@ -30,6 +30,12 @@ for (vloop = 0; vloop < 4; vloop++) {
 
 console.log(vloop);
 
+//Frederikke
+let fbm;
+for (fbm = 0; fbm < 4; fbm++) {
+    console.log("Burde nok have brugt et loop til min js :)");
+}
+
 // Emelie
 // log, If Else & loop
 
