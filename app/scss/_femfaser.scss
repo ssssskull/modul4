@@ -5,12 +5,12 @@
         justify-content: space-between;
         align-items: start;
         column-gap: 3rem;
-        
+
         @include breakpoint-up(ipad) {
             grid-template-columns: 1.5fr 1fr;
             column-gap: 10rem;
         }
-        
+
         @include breakpoint-up(computer) {
             column-gap: 10rem;
         }
@@ -19,8 +19,8 @@
             grid-auto-flow: unset;
             justify-content: unset;
         }
-        
-        
+
+
         /*
          @include breakpoint-up(computer) {
             justify-items: start;
@@ -32,6 +32,7 @@
     &__title {
         color: $darkblue;
         margin-bottom: 6rem;
+        text-align: center;
     }
 
     &__heading {
@@ -53,12 +54,12 @@
             transition: $transition-200ms;
             cursor: pointer;
             transform: translateY(25px);
-            
-            &:first-of-type {  
+
+            &:first-of-type {
                 left: -10px;
                 opacity: 0%;
             }
-            
+
             &:last-of-type {
                 right: -10px;
             }
@@ -83,24 +84,24 @@
         margin-top: -18px;
         background: #A5BA74;
         z-index: -1;
-        
+
         h2 {
             cursor: text;
             padding: 20px 0 10px 0;
         }
     }
-    
+
     &__progress {
         position: relative;
         width: 60%;
         margin: 0 auto;
         margin-top: 3.4rem;
         margin-bottom: 3.4rem;
-        
+
         @include breakpoint-up(largeComputer) {
             width: 45%;
         }
-        
+
         &::before {
             content: '';
             position: absolute;
@@ -111,7 +112,7 @@
             z-index: -1;
         }
     }
-    
+
     &__circle {
         background-color: $lightgray;
         border-radius: 50px;
@@ -120,28 +121,28 @@
         transition: $transition-200ms;
         pointer-events: none;
     }
-    
+
     &__textcont {
-        
+
         h3 {
             color: $darkblue;
         }
-        
+
         .main__bodytext {
             color: $black;
         }
-        
+
         .main__bodytext ~ h3 {
             margin: 3.4rem 0 1rem 0;
         }
     }
-    
+
     &__tlf {
         background: #A5BA74;
         transition: $transition-200ms;
         height: max-content;
     }
-    
+
     &__mail {
         background: #A5BA74;
         transition: $transition-200ms;
@@ -164,7 +165,7 @@
                 max-width: 70%;
             }
         }
-        
+
         @include breakpoint-down(iphone){
             row-gap: unset;
             justify-self: center;
@@ -172,10 +173,10 @@
                 display: none;
             }
         }
-        
+
         div {
             text-align: center;
-            
+
             a {
                 display: block;
                 padding: 2rem 0;

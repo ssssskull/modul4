@@ -1171,6 +1171,7 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 .femfaser__title {
   color: #515f6d;
   margin-bottom: 6rem;
+  text-align: center;
 }
 
 .femfaser__heading {
