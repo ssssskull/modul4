@@ -77,7 +77,7 @@ LottieInteractivity.create({
 */
 /*not sure if this works lol setTimeout(function () { animation.play(); }, 20000);*/
 
-// Fem faser js
+// Fem faser js – Frederikke
 
 let faser = Array.from(document.querySelectorAll(".femfaser__circle")); //En array skabes udfra alle elementer i HTML, der har class .femfasercircle, og lagres som en let
 let faseFarver = document.querySelector(".femfaser__heading");
@@ -302,6 +302,11 @@ function buttonClickFrem(f) {
     femFaserTekst[4].classList.add("visible");
     femFaserTekst[4].classList.remove("hidden");
   }
+}
+
+let fbm;
+  for (fbm = 0; fbm < 4; fbm++) {
+  console.log("Burde nok have lavet mit js med et loop :)")
 }
 
 //hej
