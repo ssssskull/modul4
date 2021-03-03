@@ -84,6 +84,11 @@ function autoScrollTo(el) {
 
 // Emelie
 // log, If Else & loop
+let emelie;
+let kanlide = ['fodbold', 'oc'];
+for (emelie = 0; emelie < kanlide.length; emelie++) {
+  console.log("emelie kan lide"+kanlide[emelie]);
+}
 
 
 
