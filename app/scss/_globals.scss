@@ -32,6 +32,14 @@ body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
     counter-reset: item item2;
+
+    @include breakpoint-up(ipad) {
+        line-height: 1.8;
+    };
+
+    @include breakpoint-up(largeComputer) {
+        line-height: 1.9;
+    }
 }
 
 figure {
@@ -100,6 +108,10 @@ h1 {
 h2 {
     font-size: $font-med-fallback;
     font-size: $font-med;
+    @include breakpoint-up(ipad){
+        font-size: 25px;
+        font-size: 2.5rem;
+    }
 }
 h3 {
     font-size: $font-sm-fallback;

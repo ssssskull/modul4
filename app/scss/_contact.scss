@@ -9,6 +9,10 @@
     .container__elem > .main__col1 > p {
         margin-top: 1rem;
         margin-bottom: 6rem;
+
+        @include breakpoint-up(computer) {
+            margin-top: 2rem;
+        }
     }
 
     &__columns {
@@ -28,6 +32,9 @@
             letter-spacing: -0.013em;
 
             h1 {
+                
+                line-height: normal;
+                
                 @include breakpoint-down(iphone) {
                     font-size: $font-med-fallback;
                     font-size: $font-med;

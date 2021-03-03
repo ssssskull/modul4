@@ -51,6 +51,18 @@ body {
   counter-reset: item item2;
 }
 
+@media (min-width: 40em) {
+  body {
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: 87.5em) {
+  body {
+    line-height: 1.9;
+  }
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -137,6 +149,13 @@ h1 {
 h2 {
   font-size: 22px;
   font-size: 2.2rem;
+}
+
+@media (min-width: 40em) {
+  h2 {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
 }
 
 h3 {
@@ -749,7 +768,8 @@ h3 {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background-color: rgba(5, 3, 19, 0.81);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #000000a3), to(#98989873));
+  background: linear-gradient(0deg, #000000a3 50%, #98989873 100%);
 }
 
 .hero__text {
@@ -1000,6 +1020,12 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
   margin-bottom: 6rem;
 }
 
+@media (min-width: 64em) {
+  .contact .container__elem > .main__col1 > p {
+    margin-top: 2rem;
+  }
+}
+
 .contact__columns {
   display: -ms-grid;
   display: grid;
@@ -1027,6 +1053,10 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
       -ms-grid-row-align: end;
       align-self: end;
   letter-spacing: -0.013em;
+}
+
+.contact__columns .main__col1 h1 {
+  line-height: normal;
 }
 
 @media (max-width: 39.9375em) {
