@@ -14,13 +14,6 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 })
 
-// Pensum demonstration 🦽 af Daniel!!!!!
-let x;
-let farver = ['blå', 'rød'];
-for (x = 0; x < farver.length; x++) {
-  console.log(farver[x]);
-}
-
 // Hamburger toggle af Daniel!!!!!
 const btnHamburger = document.querySelector(".header__toggle");
 const header = document.querySelector('.header');
