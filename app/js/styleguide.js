@@ -1,6 +1,12 @@
+// Pensum demonstration 🦽 af Daniel!!!!!
+let x;
+let farver = ['blå', 'rød'];
+for (x = 0; x < farver.length; x++) {
+  console.log(farver[x]);
+}
 
 // Victor
-// log, If Else & loop 
+// log, If Else & loop
 
 let vfirstName = "Victor";
 let vsurname = "Sehested";
@@ -25,7 +31,7 @@ for (vloop = 0; vloop < 4; vloop++) {
 console.log(vloop);
 
 // Emelie
-// log, If Else & loop 
+// log, If Else & loop
 
 
 
@@ -35,7 +41,7 @@ console.log(vloop);
 
 
 // Sara
-// log, If Else & loop 
+// log, If Else & loop
 
 
 
