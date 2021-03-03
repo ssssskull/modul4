@@ -30,8 +30,6 @@
         grid-column: 1/-1;
 
         p {
-            max-width: 50%;
-
             @include breakpoint-up(ipad){
                 max-width: 50%;
             }

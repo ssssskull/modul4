@@ -885,10 +885,6 @@ h4 {
   grid-column: 1/-1;
 }
 
-.main__intro p {
-  max-width: 50%;
-}
-
 @media (min-width: 40em) {
   .main__intro p {
     max-width: 50%;
