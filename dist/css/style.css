@@ -201,8 +201,8 @@ h4 {
 
 @media (min-width: 64em) {
   .container {
-    padding-left: 8rem;
-    padding-right: 27rem;
+    padding-left: 10rem;
+    padding-right: 29rem;
   }
 }
 
@@ -286,11 +286,17 @@ h4 {
           animation: fade .2s ease-in-out;
 }
 
+.divider__container {
+  overflow: hidden;
+}
+
 .divider {
   display: block;
   opacity: 0.5;
   width: 100%;
   margin: 8rem auto;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 @media (min-width: 40em) {

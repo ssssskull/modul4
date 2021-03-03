@@ -140,7 +140,7 @@ h4 {
 
     &:hover {
         color: $green;
-        
+
         &::after {
             padding-left: 2rem;
         }
@@ -151,14 +151,14 @@ h4 {
 .container {
     padding-left: 2rem;
     padding-right: 2rem;
-    
+
     @include breakpoint-up(ipad) {
         padding-left: 5rem;
         padding-right: 5rem;
     };
     @include breakpoint-up(computer) {
-        padding-left: 8rem;
-        padding-right: 27rem;
+        padding-left: 10rem;
+        padding-right: 29rem;
     }
     @include breakpoint-up(largeComputer) {
         padding-left: 20rem;
@@ -204,7 +204,7 @@ h4 {
             padding-bottom: 10rem;
         }
     }
-    
+
     &--ptbfooter {
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -230,11 +230,16 @@ h4 {
     }
 }
 
+.divider__container {
+    overflow: hidden;
+}
+
 .divider {
     display: block;
     opacity: 0.5;
     width: 100%;
     margin: 8rem auto;
+    transform: scale(2);
 
     @include breakpoint-up(ipad) {
         margin: 10rem auto;
