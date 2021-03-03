@@ -132,7 +132,6 @@ LottieInteractivity.create({
   player: '#firstLottie',
   autoplay: false,
   loop: false,
-  //container: "#lottieTriggerFirst",
   actions: [
     {
       visibility: [0, 0.9],
@@ -153,7 +152,6 @@ LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie2',
   autoplay: "true",
-  //container: "#lottieTriggerFirst",
   actions: [
     {
       visibility: [0, 0.9],
@@ -173,7 +171,6 @@ LottieInteractivity.create({
   mode: 'scroll',
   player: '#firstLottie3',
   autoplay: "true",
-  //container: "#lottieTriggerFirst",
   actions: [
     {
       visibility: [0, 0.9],
@@ -189,19 +186,6 @@ LottieInteractivity.create({
     }
   ]
 });
-// Offsetting:
-/*
-{// stopping the animatio until 25% of the container is visible
-  visibility: [0, 0.25],
-  type: "stop",
-  frames: [0]
-},
-{// Start playing after 25% of the container is visible
-  visibility: [0.25, 1],
-  type: "seek",
-  frames: [0, 100]
-}
-*/
 
 // Fem faser js af Frederikke!!!!!
 
