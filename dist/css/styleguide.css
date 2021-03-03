@@ -1,8 +1,24 @@
 html {
   scroll-behavior: smooth;
+  --bg: #FCFCFC;
+  --bg-panel: #EBEBEB;
+  --color-headings: #0077FF;
+  --color-text: #333333;
+  display: grid;
 }
 
+body {
+  background-color: var(--bg);
 
+}
+
+.container-light {
+  background-color: var(--bg-panel);
+  margin: 5em;
+  padding: 5em;
+  border-radius: 15px;
+   
+}
 
 
 
@@ -427,3 +443,4 @@ xmp {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
+

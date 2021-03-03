@@ -22,8 +22,6 @@ if (vfullName == "Victor Sehested") {
 var vshoppingList = ["Mælk", "Æg", "Ris", "Brød", "Bacon"];
 var vloop
 
-console.log(vloop);
-
 for (vloop = 0; vloop < 4; vloop++) {
     console.log(`The number is ${vloop}`);
 }
@@ -60,7 +58,6 @@ let scrollY = 1250;
 let distance = 765;
 let speed = 600;
 
-
 function autoScrollTo(el) {
   let currentY = window.pageYOffset;
   let targetY = document.getElementById(el).offsetTop;
@@ -68,6 +65,7 @@ function autoScrollTo(el) {
   let yPos = currentY + window.innerHeight;
   let animator = setTimeout('autoScrollTo(\'' + el + '\')', speed);
 
+  console.log(animator)
   if (yPos > bodyHeight) {
     clearTimeout(animator);
   }
@@ -87,17 +85,6 @@ function autoScrollTo(el) {
 // Emelie
 // log, If Else & loop
 
-function resetScroller(el){
-	var currentY = window.pageYOffset;
-    var targetY = document.getElementById(el).offsetTop;
-	var animator = setTimeout('resetScroller(\''+el+'\')',speed);
-	if(currentY > targetY){
-		scrollY = currentY-distance;
-		window.scroll(0, scrollY);
-	} else {
-		clearTimeout(animator);
-	}
-}
 
 
 
