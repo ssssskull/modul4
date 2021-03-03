@@ -59,6 +59,34 @@ for (i = 0; i < 4; i++) {
 // Sara
 // log, If Else & loop
 
+// Smoth scroll
+let scrollY = 1250;
+let distance = 765;
+let speed = 600;
+
+
+function autoScrollTo(el) {
+  let currentY = window.pageYOffset;
+  let targetY = document.getElementById(el).offsetTop;
+  let bodyHeight = document.body.offsetHeight;
+  let yPos = currentY + window.innerHeight;
+  let animator = setTimeout('autoScrollTo(\'' + el + '\')', speed);
+
+  if (yPos > bodyHeight) {
+    clearTimeout(animator);
+  }
+
+  else {
+    if (currentY < targetY - distance) {
+      scrollY = currentY + distance;
+      window.scroll(0, scrollY);
+    }
+
+    else {
+      clearTimeout(animator);
+    }
+  }
+}
 
 
 
