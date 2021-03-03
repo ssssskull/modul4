@@ -14,17 +14,20 @@ if (vfullName == "Victor Sehested") {
   };
 
 var vshoppingList = ["Mælk", "Æg", "Ris", "Brød", "Bacon"];
-var loop
+var vloop
 
-console.log(loop);
+console.log(vloop);
 
-for (loop = 0; loop < 4; loop++) {
-    console.log(`The number is ${loop}`);
+for (vloop = 0; vloop < 4; vloop++) {
+    console.log(`The number is ${vloop}`);
 }
 
-console.log(loop);
+console.log(vloop);
 
 // Emelie
+// log, If Else & loop 
+
+
 
 
 
@@ -32,6 +35,11 @@ console.log(loop);
 
 
 // Sara
+// log, If Else & loop 
+
+
+
+
 
 
 
