@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/styleguide.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- Decide what fonts to use and remember to combine them so you dont call them multiple times -->
+    <title>Style Guide</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="flex flex-jc-st flex-ai-st flex-dr-col">
+            <a id="logoHome" class="header__logo" href="#" tabindex="0"></a>
+            <ul class="header__menu">
+                <li><a href="#farver" tabindex="0">Farver</a></li>
+                <li><a href="#typografi" tabindex="0">Typografi</a></li>
+                <li><a href="#knapper" tabindex="0">Knapper</a></li>
+                <li><a href="#karrusel" tabindex="0">Karrusel</a></li>
+                <li><a href="#formular" tabindex="0">Formular</a></li>
+                <li><a href="#navigation" tabindex="0">Navigation</a></li>
+                <li><a href="#ikoner" tabindex="0">Ikoner</a></li>
+                
+            </ul>
+        </nav>
+        <a id="mobileLogo" class="header__mobile-logo" href="#" title="House of Code"></a>
+        <div class="header__toggle">
+            <div class="mobile-lines">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+                <div class="line5"></div>
+                <div class="line6"></div>
+                <div class="line7"></div>
+            </div>
+            <a id="btnHamburger" href="#" class="header__burger" title="Menu icon">
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <section class="hero">
+        <!--TODO fix padding on mob ile - forgot container class on parent-->
+        <div class="hero__wrapper flex flex-jc-c flex-ai-c flex-dr-col">
+            <div class="container hero__text flex flex-dr-col container--ptb">
+                <h1 class="container__elem ">Style Guide</h1>
+                <p class="container__elem ">House of Code</p>
+            </div>
+            <a href="#" id="scrollToContent" class="hero__scroll" title="Scroll to main content" onclick="return false;"
+            onmousedown="autoScrollTo('mainContainer');">scroll<span>View.</span>
+        </a>
+    </div>
+</section>
+<main>
+    <div>
+        <p class="nav-headings" id="farver">01 FARVE.</p>
+        <section class="farver">
+            <div class="farve-1">
+                <h2>
+                    Raw Sienna
+                </h2>
+                <p>
+                    RGB: 203901293
+                </p>
+                <p>
+                    #D67249
+                </p>
+            </div>
+            <div class="farve-2">
+                <h2>
+                    New York Pink
+                </h2>
+                <p>
+                    RGB: 211, 109, 117
+                </p>
+                <p>
+                    #D36D75
+                </p>
+            </div>
+            <div class="farve-3">
+                <h2>
+                    Olivine
+                </h2>
+                <p>
+                    RGB: 165, 186, 116
+                </p>
+                <p>
+                    #A5BA74
+                </p>
+            </div>
+            <div class="farve-4">
+                <h2>
+                    Hippie Blue
+                </h2>
+                <p>
+                    RGB: 102, 150, 173
+                </p>
+                <p>
+                    #6696AD
+                </p>
+            </div>
+            <div class="farve-5">
+                <h2>
+                    Di Serria
+                </h2>
+                <p>
+                    RGB: 216, 165, 91
+                </p>
+                <p>
+                    #D8A55B
+                </p>
+            </div>
+            <div class="farve-6">
+                <h2>
+                    Cotton Seed
+                </h2>
+                <p>
+                    RGB: 191, 188, 186
+                </p>
+                <p>
+                    #BFBCBA
+                </p>
+            </div>  <div class="farve-7">
+                <h2>
+                    Shuttle Gray
+                </h2>
+                <p>
+                    RGB: 81, 94, 109
+                </p>
+                <p>
+                    #515E6D
+                </p>
+            </div>
+            <div class="farve-8">
+                <h2>
+                    Amethyst Smoke
+                </h2>
+                <p>
+                    RGB: 170, 130, 173
+                </p>
+                <p>
+                    #AA82AD
+                </p>
+            </div>
+        </section>
+        
+        <div class="section-line"></div>
+        <p class="nav-headings" id="typografi">02 TYPOGRAFI.</p>
+        
+        <section class="typografi">
+            <div class="typo-container">
+                
+                
+                <div class="knapper-elem">
+                    <p class="nav-overskrifter">SKRIFTTYPE</p>
+                    <div class="heading-1"><h3>‘Roboto’, sans-serif - medium </h3>
+                    </div>
+                    
+                    <div class="knapper-elem">
+                        <p class="nav-overskrifter">BESKRIVELSE</p>
+                        <h5 class="typo-beskrivende">‘Roboto' er en Google Font. Den bliver brugt til al tekst i
+                            produktet.
+                        </h5>
+                    </div>
+                    
+                    <div class="knapper-elem">
+                        <p class="nav-overskrifter">CODE SNIPPETS</p>
+                        <div class="boxed" id="typo-code-div">
+                            <xmp>
+                                <p class="main__bodytext">paragraf eksempel</p>
+                            </xmp>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="heading-2"><h3>EKSEMPEL PÅ OVERSKRIFT - H1 - (50px) </h3>
+                        <h5 class="typo-beskrivende">DETTE ER ET EKSEMPEL PÅ EN OVERSKRIFT.</h5>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="heading-4"><h3>EKSEMPEL PÅ BRØDTEKST (15px) </h3>
+                        <h5 class="typo-beskrivende">Dette er et eksempel på en brødtekst.</h5>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="boxed" id="typo-code-div">
+                        <xmp>
+                            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+                            rel="stylesheet">
+                        </xmp>
+                    </div>
+                    <div class="boxed" id="typo-code-div">
+                        <xmp>font-family: 'Roboto Mono', monospace;</xmp>
+                    </div>
+                    
+                    
+                    <div><a class="button" target="blank_"
+                        href="https://fonts.google.com/specimen/Roboto+Mono?preview.text_type=custom">DOWNLOAD
+                        'ROBOTO MONO'</a>
+                    </div>
+                    
+                </section>
+                
+                <div class="section-line"></div>
+                <p class="nav-headings" id="knapper">03 KNAPPER.</p>
+                
+                <div class="knapper-container">
+                    
+                    <div class="knapper-elem">
+                        <p class="nav-overskrifter">KNAP</p>
+                        <img src="images/icons/femfaser.png" alt="KNAPPER">
+                    </div>
+                    
+                    
+                    <div class="knapper-elem">
+                        <p class="nav-overskrifter">BESKRIVELSE</p>
+                        <h4 class="typo-beskrivelse">Knappen kan findes midt på siden og bliver brugt til at guide de
+                            besøgende hen til de fem faser.</h4>
+                        </div>
+                        
+                        
+                        
+                        <div class="knapper-elem noheight">
+                            <p class="nav-overskrifter">CODE SNIPPETS</p>
+                            <div class="boxed"
+                            <code><xmp><a href=“#” tabindex=“0” class=“button” type=“button” title=“Hør mere om afklaringsforløbet”>”Hør mere om afklaringsforløbet”</a></xmp></code>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="knapper-elem">
+                        <p class="nav-overskrifter">KNAP</p>
+                        <img src="images/icons/scrollup.png" alt="SCROLL UP">
+                        <img src="images/icons/scrollned.png" alt="SCROLL NED">  
+                    </div>
+                    
+                    
+                    
+                    <div class="knapper-elem">
+                        <p class="nav-overskrifter">BESKRIVELSE</p>
+                        <h4 class="typo-beskrivelse">Disse scroll knapper bliver brugt til at henvise brugeren videre
+                            ned på siden for at opdage nyt content</h4>
+                        </div>
+                        
+                        
+                        
+                        <div class="knapper-elem">
+                            <p class="nav-overskrifter">CODE SNIPPETS</p>
+                            <div class="boxed">
+                                <xmp><a href="#" id="scrollToContent" class="hero__scroll" title="Scroll to main content"
+                                    onclick="return false;"
+                                    onmousedown="autoScrollTo('mainContainer');">scroll<span>View.</span>
+                                </a></xmp>
+                            </div>
+                        </div>
+                        
+                        <div class="knapper-elem">
+                            <p class="nav-overskrifter">KNAP</p>
+                            <img src="images/icons/pil.png" alt="KNAPPER">
+                            <img src="images/icons/pil1.png" alt="KNAPPER">
+                        </div>
+                        
+                        <div class="knapper-elem">
+                            <p class="nav-overskrifter">BESKRIVELSE</p>
+                            <h4 class="typo-beskrivelse">Disse pile har til hensigt at gøre siden mere interaktiv for
+                                brugeren, således at denne nemt og problemløst kan navigere rundt i de forskellige fem
+                                faser.</h4>
+                            </div>
+                            
+                            
+                            <div class="knapper-elem">
+                                <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                <div class="boxed">
+                                    <xmp><button type="button" name="button" class="arrowleft">&#8249;</button>
+                                        <button type="button" name="button" class="arrowright">&#8250;</button>
+                                    </xmp>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="knapper-elem">
+                                <p class="nav-overskrifter">KNAP</p>
+                                <img src="images/icons/contact.png" alt="KNAPPER">
+                            </div>
+                            
+                            <div class="knapper-elem">
+                                <p class="nav-overskrifter">BESKRIVELSE</p>
+                                <h4 class="typo-beskrivelse">Disse knapper bliver brugt hyppigt på siden, så det er nemt for
+                                    brugerne at komme i kontakt med os!</h4>
+                                </div>
+                                
+                                <div class="knapper-elem">
+                                    <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                    <div class="boxed">
+                                        <xmp><a href=“#” tabindex=“0” class=“button2” type=“button” title=“Ring til os”>"Ring til
+                                            os"</a>
+                                        </xmp>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="knapper-elem">
+                                    <p class="nav-overskrifter">KNAP</p>
+                                    <img src="images/icons/indsend.png" alt="KNAPPER">
+                                    
+                                </div>
+                                
+                                <div class="knapper-elem">
+                                    <p class="nav-overskrifter">BESKRIVELSE</p>
+                                    <h4 class="typo-beskrivelse">Denne knap bliver brugt på vores formulare.</h4>
+                                </div>
+                                
+                                <div class="knapper-elem">
+                                    <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                    <div class="boxed">
+                                        <xmp><input type=“submit” value=“Indsend” class="wpcf7-form-control"></xmp>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <section>
+                                <div class="section-line"></div>
+                                <p class=" nav-headings" id="karrusel">04 KARRUSEL.</p>
+                                <div class="karrusel-container">
+                                    
+                                    
+                                    
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">KARRUSEL</p>
+                                        <img src="images/icons/karrusel.png" alt="KARRUSEL" style="width: 380px;">
+                                    </div>
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">BESKRIVELSE</p>
+                                        <h4>
+                                            Denne karrusel er at finde ved de fem faser. Den har til formål at gøre siden mere brugervenlig,
+                                            da brugeren nemt kan navigere rundt i de forskellige faser ved hjælp af pilene til højre og
+                                            venstre. Der opstår et farveskift når brugeren når en ny fase for at indikere at brugeren læser
+                                            om denne nye fase.
+                                        </h4>
+                                    </div>
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                        <div class="boxed">
+                                            <code><xmp><input class="wpcf7-form-control-wrap"></input> </xmp></code>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </section> 
+                            
+                            
+                            <div class="section-line"></div>
+                            <p class="nav-headings" id="formular">05 FORMULAR.</p>
+                            
+                            <section class="formular">
+                                <div class="formular-container">
+                                    
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">FORMULAR</p>
+                                        <class class="formular-col1">
+                                            <div class="karrusel-desc">
+                                            </div>
+                                            <p class="form-text" name="Basic Form" placeholder="Basic Form">Basic Form</p>
+                                            <input type="text" class="basic-form">
+                                            <p class="form-text">Message form</p>
+                                            <input type="text" class="message-form"> 
+                                        </class>
+                                    </div>
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">BESKRIVELSE</p>
+                                        <p>Der bliver anvendt en pop-up formular som kommer op fra højre hjørne.</p>
+                                        
+                                    </div>
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                        <div class="boxed">
+                                            <xmp><input type="text" name="Basic Form" class="wpcf7-form-control" placeholder="Basic Form">
+                                            </xmp>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </section>
+                            
+                            <div class="section-line"></div>
+                            <p class=" nav-headings" id="karrusel">06 NAVIGATION.</p>
+                            <div class="navigation-container">
+                                <div class="knapper-elem">
+                                    <p class="nav-overskrifter">NAVIGATION</p>
+                                    <img src="images/icons/nav.png" alt="Navigation">
+                                </div>
+                                
+                                
+                                
+                                <div class="knapper-elem">
+                                    <p class="nav-overskrifter">BESKRIVELSE</p>
+                                    <h4>
+                                        Navigationen er placeret ude til højre i viewporten.</h4>
+                                    </div>
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                        <div class="navigation-col2">
+                                            <div class="boxed">
+                                                <code><xmp><li><a href="#" tabindex="0" class="start">Projekter</a></li></xmp></code>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                                
+                            </section>
+                            
+                            <div class="section-line"></div>
+                            <p class="nav-headings" id="ikoner">07 IKONER.</p>
+                            <section> 
+                                <div class="ikon-container">
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">IKON</p>
+                                        <img src="images/icons/hamnav.png" alt="Hamburger Nav Icon">
+                                        
+                                    </div>
+                                    
+                                    <div class="knapper-elem">
+                                        <p class="nav-overskrifter">BESKRIVELSE</p>
+                                        <h4 class="typo-beskrivelse">Dette ikon bliver brugt på mobil enheder, og når
+                                            der trykkes på dette ikon, så vil navigationen komme frem.</h4>
+                                            
+                                        </div>
+                                        
+                                        <div class="knapper-elem">
+                                            <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                            <div class="boxed">
+                                                <xmp><a id="btnHamburger" href="#" class="header__burger" title="Menu icon">
+                                                </xmp>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        
+                                        <div class="knapper-elem">
+                                            <p class="nav-overskrifter">IKON</p>
+                                            <img src="images/icons/kryds.png" alt="Hamburger Nav Exit">
+                                        </div>
+                                        
+                                        <div class="knapper-elem">
+                                            <p class="nav-overskrifter">BESKRIVELSE</p>
+                                            <h4 class="typo-beskrivelse">Dette ikon bliver brugt på mobil enheder når
+                                                navigationen er åben, kan man trykke på dette kryds for at lukke den igen.
+                                            </h4>
+                                        </div>
+                                        
+                                        
+                                        <div class="knapper-elem">
+                                            <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                            <div class="boxed">
+                                                <xmp>
+                                                    <div class="header__toggle">
+                                                        <div class="mobile-lines">
+                                                        </div>
+                                                    </div>
+                                                </xmp>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="knapper-elem">
+                                            <p class="nav-overskrifter">IKON</p>
+                                            <img src="images/icons/pil.png" alt="Arrows to scroll through 5 phases">
+                                            <img src="images/icons/pil1.png" alt="Arrows to scroll through 5 phases">
+                                        </div>
+                                        
+                                        <div class="knapper-elem">
+                                            <p class="nav-overskrifter">BESKRIVELSE</p>
+                                            <h4 class="typo-beskrivelse">Disse pile bliver brugt ved de fem faser og gør det
+                                                muligt at bladre igennem dem.</h4>
+                                            </div>
+                                            
+                                            <div class="knapper-elem">
+                                                <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                                <div class="boxed">
+                                                    <code> <xmp><button type="button" name="button" class="arrowleft">&#8249;</button>
+                                                        <button type="button" name="button" class="arrowright">&#8250;</button></xmp></code>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="knapper-elem">
+                                                    <p class="nav-overskrifter">IKON</p>
+                                                    <img src="images/icons/phone.png" alt="Telephone Icon">
+                                                </div>
+                                                
+                                                <div class="knapper-elem">
+                                                    <p class="nav-overskrifter">BESKRIVELSE</p>
+                                                    <h4 class="typo-beskrivelse">Dette ikon gør det let for brugerne at finde vores
+                                                        telefon nr.</h4>
+                                                    </div>
+                                                    
+                                                    <div class="knapper-elem">
+                                                        <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                                        <div class="boxed">
+                                                            <code> <xmp><div class="flex flex-ai-c contact__cta">
+                                                                <a href="tel:4570848538" tabindex="0" title="Telefonnummer">+45 70 84 85 38</a>
+                                                            </div></xmp></code>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="knapper-elem">
+                                                        <p class="nav-overskrifter">IKON</p>
+                                                        <img src="images/icons/mail.png" alt="E-mail Icon">
+                                                    </div>
+                                                    
+                                                    <div class="knapper-elem">
+                                                        <p class="nav-overskrifter">BESKRIVELSE</p>
+                                                        <h4 class="typo-beskrivelse">Dette ikon gør det let for brugerne at finde vores
+                                                            E-mail.
+                                                        </h4>
+                                                    </div>
+                                                    
+                                                    <div class="knapper-elem">
+                                                        <p class="nav-overskrifter">CODE SNIPPETS</p>
+                                                        <div class="boxed">
+                                                            <code> <xmp><div class="flex flex-ai-c contact__cta">
+                                                                <a href="mailto:info@houseofcode.io" tabindex="0" title="Mail">info@houseofcode.io</a>
+                                                            </div></xmp></code>
+                                                        </div>
+                                                        
+                                                    </div>  
+                                                </div>
+                                                
+                                            </section>
+                                        </main>
+                                        <script src="app/js/script.js" async></script>
+                                    </body>
+                                    
+                                    </html>
