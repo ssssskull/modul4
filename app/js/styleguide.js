@@ -36,6 +36,16 @@ for (fbm = 0; fbm < 4; fbm++) {
     console.log("Burde nok have brugt et loop til min js :)");
 }
 
+
+// Simone 
+
+let i; 
+let simone = ["solskin", "regn", "sne"];
+console.log(simone[2])
+for (i = 0; i < 4; i++) {
+  console.log("Smoth scroll")
+}
+
 // Emelie
 // log, If Else & loop
 
