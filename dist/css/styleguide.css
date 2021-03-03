@@ -191,12 +191,11 @@ p {
 
 .typo-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 380px));
   justify-content: center;
+  align-items: start;
   gap: 2rem;
-  place-content: start space-evenly;
-  padding-left: 8%;
-  padding-right: 8%;
 }
 
 #typo-code-div{
@@ -325,13 +324,14 @@ xmp {
 }
 
 .knapper-elem {
-    display: grid;
+  display: grid;
   width: 100%;
   height: 100%;
   align-items: start;
   background: rgb(243, 243, 243);
   color: #515F6D;
 }
+
 .knapper-elem > img {
   justify-self: center;
 }
