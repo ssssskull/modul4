@@ -37,11 +37,6 @@ let scrollY = 0;
 let distance = 10;
 let speed = 0.4;
 
-let i;
-for (i = 0; i < 4; i++) {
-  console.log("Smoth scroll")
-}
-
 function autoScrollTo(el) {
   let currentY = window.pageYOffset;
   let targetY = document.getElementById(el).offsetTop;
