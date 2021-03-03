@@ -2,14 +2,14 @@
     orientation: portrait;
 }
 ::-moz-selection {
-    color: #6696ac;
-    background: #fff;
-}
-
-::selection {
-    color: #6696ac;
-    background: #fff;
-}
+    color: $white;
+    background: $lightblue;
+  }
+  
+  ::selection {
+    color: $white;
+    background: $lightblue;
+  }
 html {
     height: -webkit-fill-available;
     font-size: 62.5%;

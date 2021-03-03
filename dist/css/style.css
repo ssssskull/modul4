@@ -11,13 +11,13 @@
 }
 
 ::-moz-selection {
-  color: #6696ac;
-  background: #fff;
+  color: #FBFBFB;
+  background: #6696ac;
 }
 
 ::selection {
-  color: #6696ac;
-  background: #fff;
+  color: #FBFBFB;
+  background: #6696ac;
 }
 
 html {
