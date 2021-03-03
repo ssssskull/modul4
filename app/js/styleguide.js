@@ -46,16 +46,6 @@ for (i = 0; i < 4; i++) {
   console.log("Smoth scroll")
 }
 
-// Emelie
-// log, If Else & loop
-
-
-
-
-
-
-
-
 // Sara
 
 let indkøbsKurv = ["Bacon","Coca Cola"];
@@ -92,6 +82,21 @@ function autoScrollTo(el) {
       clearTimeout(animator);
     }
   }
+}
+
+// Emelie
+// log, If Else & loop
+
+function resetScroller(el){
+	var currentY = window.pageYOffset;
+    var targetY = document.getElementById(el).offsetTop;
+	var animator = setTimeout('resetScroller(\''+el+'\')',speed);
+	if(currentY > targetY){
+		scrollY = currentY-distance;
+		window.scroll(0, scrollY);
+	} else {
+		clearTimeout(animator);
+	}
 }
 
 
