@@ -57,9 +57,15 @@ for (i = 0; i < 4; i++) {
 
 
 // Sara
-// log, If Else & loop
 
-// Smoth scroll
+let indkøbsKurv = ["Bacon","Coca Cola"];
+let arrayLength = indkøbsKurv.length;
+for (let u = 1; u < arrayLength; u++) {
+    console.log(indkøbsKurv[u]);
+}
+
+
+// Smooth scroll
 let scrollY = 1250;
 let distance = 765;
 let speed = 600;
@@ -87,6 +93,8 @@ function autoScrollTo(el) {
     }
   }
 }
+
+
 
 
 
