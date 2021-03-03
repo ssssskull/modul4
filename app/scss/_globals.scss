@@ -1,7 +1,15 @@
 @viewport {
     orientation: portrait;
 }
+::-moz-selection {
+    color: #6696ac;
+    background: #fff;
+}
 
+::selection {
+    color: #6696ac;
+    background: #fff;
+}
 html {
     height: -webkit-fill-available;
     font-size: 62.5%;
@@ -48,18 +56,18 @@ a, a:visited, a:hover {
 // Flexbox
 .flex {
     display: flex;
-
+    
     &-dr-col {
         flex-direction: column;
     }
     &-jc-sb {
         justify-content: space-between;
     }
-
+    
     &-jc-c {
         justify-content: center;
     }
-
+    
     &-jc-e {
         justify-content: end;
     }
@@ -75,7 +83,7 @@ a, a:visited, a:hover {
 }
 
 // Typography
-p, h1, h2, h3, h4 {
+p, h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
@@ -98,16 +106,11 @@ h3 {
     font-size: $font-sm;
 }
 
-h4 {
-    font-size: $font-xs-fallback;
-    font-size: $font-xs;
-}
-
 .overskrift {
     font-weight: 400;
     color: inherit;
     line-height: normal;
-
+    
     @include breakpoint-down(iphone) {
         font-size: $font-med-fallback;
         font-size: $font-med;
@@ -125,7 +128,7 @@ h4 {
     font-weight: 700;
     position: relative;
     transition: $transition-200ms;
-
+    
     &::after {
         display: inline;
         padding-left: 1rem;
@@ -137,10 +140,10 @@ h4 {
         font-size: $font-xs-fallback;
         font-size: $font-xs;
     }
-
+    
     &:hover {
         color: $green;
-
+        
         &::after {
             padding-left: 2rem;
         }
@@ -151,7 +154,7 @@ h4 {
 .container {
     padding-left: 2rem;
     padding-right: 2rem;
-
+    
     @include breakpoint-up(ipad) {
         padding-left: 5rem;
         padding-right: 5rem;
@@ -164,66 +167,66 @@ h4 {
         padding-left: 20rem;
         padding-right: 35rem;
     }
-
+    
     @include breakpoint-up(xlargeComputer) {
         //padding-left: 50rem;
         //padding-right: 50rem;
     }
-
+    
     &__elem {
         margin: 0 auto;
         width: 100%;
         max-width: 1200px;
-
+        
         @include breakpoint-up(xlargeComputer) {
             max-width: unset;
         }
     }
-
+    
     &--ptb {
         padding-top: 8rem;
         padding-bottom: 8rem;
-
+        
         @include breakpoint-up(computer) {
             padding-top: 10rem;
             padding-bottom: 10rem;
         }
     }
-
+    
     &--ptbhero {
         padding-top: 4rem;
         padding-bottom: 4rem;
-
+        
         @include breakpoint-up(ipad) {
             padding-top: 6rem;
             padding-bottom: 6rem;
         }
-
+        
         @include breakpoint-up(computer) {
             padding-top: 10rem;
             padding-bottom: 10rem;
         }
     }
-
+    
     &--ptbfooter {
         padding-top: 5rem;
         padding-bottom: 5rem;
-
+        
         @include breakpoint-up(ipad) {
             padding-top: 6rem;
             padding-bottom: 6rem;
         }
-
+        
         @include breakpoint-up(computer) {
             padding-top: 15rem;
             padding-bottom: 15rem;
         }
     }
-
+    
     .visible {
         animation: fade .2s ease-in-out;
     }
-
+    
     .hidden {
         display: none;
         animation: fade .2s ease-in-out;
@@ -240,16 +243,16 @@ h4 {
     width: 100%;
     margin: 8rem auto;
     transform: scale(2);
-
+    
     @include breakpoint-up(ipad) {
         margin: 10rem auto;
         transform: unset;
     }
-
+    
     @include breakpoint-up(computer) {
         margin: 13rem auto;
     }
-
+    
     @include breakpoint-up(largeComputer) {
         margin: 16rem auto;
         max-width: 80%;

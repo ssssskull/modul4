@@ -10,6 +10,16 @@
   orientation: portrait;
 }
 
+::-moz-selection {
+  color: #6696ac;
+  background: #fff;
+}
+
+::selection {
+  color: #6696ac;
+  background: #fff;
+}
+
 html {
   height: -webkit-fill-available;
   font-size: 62.5%;
@@ -109,7 +119,7 @@ a, a:visited, a:hover {
           align-items: start;
 }
 
-p, h1, h2, h3, h4 {
+p, h1, h2, h3 {
   margin: 0;
   padding: 0;
 }
@@ -132,11 +142,6 @@ h2 {
 h3 {
   font-size: 18px;
   font-size: 1.8rem;
-}
-
-h4 {
-  font-size: 15px;
-  font-size: 1.5rem;
 }
 
 .overskrift {
@@ -1520,22 +1525,22 @@ footer {
   }
 }
 
-.footer__container:first-child p:last-of-type {
+.footer__container p:first-of-type {
+  margin-bottom: 1.7rem;
+}
+
+.footer__container:first-child p:nth-child(5) {
   margin-top: 1.7rem;
 }
 
-.footer__container:not(:first-child) {
+.footer__container:not(:last-child) {
   margin-top: 3rem;
 }
 
 @media (min-width: 40em) {
-  .footer__container:not(:first-child) {
+  .footer__container:not(:last-child) {
     margin-top: 0;
   }
-}
-
-.footer__container h4 ~ p:nth-of-type(3) {
-  margin-top: 1.7rem;
 }
 
 .footer__container p:last-of-type {
@@ -1566,9 +1571,6 @@ footer {
   .footer__container:not(:last-child) {
     margin-bottom: 5.5rem;
     margin-right: 6rem;
-  }
-  .footer__container h4 {
-    margin-bottom: 1.7rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
