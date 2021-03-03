@@ -406,9 +406,10 @@ xmp {
     gap: 2rem;
 }
 
-.ikon-beskrivelse {
-    width: 380px;
+.ikoner {
+   justify-content: center;
 }
+
 
 .nav-headings {
     padding-left: 60px;
