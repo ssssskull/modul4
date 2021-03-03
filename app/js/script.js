@@ -28,7 +28,7 @@ let speed = 0.4;
 
 let i;
 for (i = 0; i < 4; i++) {
-  console.log("Smoth scroll er lavet af Simone")
+  console.log("Smoth scroll")
 }
 
 function autoScrollTo(el) {
@@ -53,6 +53,58 @@ function autoScrollTo(el) {
     }
   }
 }
+
+
+function autoScrollToFem(el) {
+  let distance = 10;
+  let currentY = window.pageYOffset;
+  let targetY = document.getElementById(el).offsetTop;
+  let bodyHeight = document.body.offsetHeight;
+  let yPos = currentY + window.innerHeight;
+  let animator = setTimeout('autoScrollToFem(\'' + el + '\')', 0.4);
+
+  if (yPos > bodyHeight) {
+    clearTimeout(animator);
+  }
+
+  else {
+    if (currentY < targetY - distance) {
+      scrollY = currentY + distance;
+      window.scroll(0, scrollY);
+    }
+
+    else {
+      clearTimeout(animator);
+    }
+  }
+}
+
+function autoScrollToAfklaring(el) {
+  let distance = 10;
+  let currentY = window.pageYOffset;
+  let targetY = document.getElementById(el).offsetTop;
+  let bodyHeight = document.body.offsetHeight;
+  let yPos = currentY + window.innerHeight;
+  let animator = setTimeout('autoScrollToAfklaring(\'' + el + '\')', 0.4);
+
+  if (yPos > bodyHeight) {
+    clearTimeout(animator);
+  }
+
+  else {
+    if (currentY < targetY - distance) {
+      scrollY = currentY + distance;
+      window.scroll(0, scrollY);
+    }
+
+    else {
+      clearTimeout(animator);
+    }
+  }
+}
+
+
+
 
 // Clickable div af Daniel!!!!!
 
