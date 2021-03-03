@@ -30,6 +30,7 @@ const btnToggle = document.querySelectorAll(".header__burger");
 btnHamburger.addEventListener('click', function () {
   if (header.classList.contains('open')) { // Close Hamburger Menu
     header.classList.remove('open');
+    bodyTarget.style.overflow = "unset";
 
   }
   else { // Open Hamburger Menu
