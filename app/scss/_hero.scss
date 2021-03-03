@@ -12,7 +12,7 @@
     @include breakpoint-up(computer) {
         background-image: url("../../images/hero-bg.jpg");
     }
-    
+
     &__wrapper {
         position: absolute;
         z-index: 1;
@@ -22,28 +22,29 @@
         //background-color: transparentize($black, 0.6);
         background-color: rgba(5, 3, 19, 0.81);// Komplimentær farve til teksten
     }
-    
+
     &__text {
         color: $white;
         width: 100%;
         margin-top: auto;
-        
+        letter-spacing: -0.013em;
+
         // Todo: turn these paddings into a helper class and reuse them
-        
+
         h1, p {
             line-height: normal;
-            
+
             @include breakpoint-up(ipad) {
                 font-size: $font-xl-fallback;
                 font-size: $font-xl;
             }
         }
-        
+
         p {
             font-weight: 400;
             font-size: 2.5rem;
             margin-top: 1rem;
-            
+
             @include breakpoint-up(computer) {
                 font-size: 40px;
                 font-size: 4rem;
@@ -51,7 +52,7 @@
             }
         }
     }
-    
+
     &__scroll {
         display: block;
         text-align: center;
@@ -68,13 +69,13 @@
         @include breakpoint-up(computer) {
             margin-bottom: 4rem;
         }
-        
+
         span {
             display: inline-block;
             color: $gray;
             padding-bottom: 0.5rem;
         }
-        
+
         &::after {
             content: "";
             display: block;

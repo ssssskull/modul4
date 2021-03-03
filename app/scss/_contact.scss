@@ -1,7 +1,7 @@
 .contact {
     background: $lightblue;
     color: $white;
-    
+
     // @include breakpoint-up(ipad) {
     //     margin-top: 4rem;
     // }
@@ -25,6 +25,7 @@
 
         .main__col1 {
             align-self: end;
+            letter-spacing: -0.013em;
 
             h1 {
                 @include breakpoint-down(iphone) {
@@ -108,12 +109,12 @@
 
         &:last-of-type {
             margin-bottom: 6rem;
-            
+
             a:before {
              background-image: url("../../images/icons/mail-icon.svg");
              }
          }
- 
+
          &:first-of-type > a:before {
              background-image: url("../../images/icons/phone-icon.svg");
          }

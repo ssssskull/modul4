@@ -751,6 +751,7 @@ h4 {
   color: #FBFBFB;
   width: 100%;
   margin-top: auto;
+  letter-spacing: -0.013em;
 }
 
 .hero__text h1, .hero__text p {
@@ -1018,6 +1019,7 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  letter-spacing: -0.013em;
 }
 
 @media (max-width: 39.9375em) {
