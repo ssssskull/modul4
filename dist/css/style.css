@@ -1549,6 +1549,9 @@ footer {
   font-size: inherit;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .footer__container a:hover {
