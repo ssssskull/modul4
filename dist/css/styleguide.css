@@ -436,9 +436,7 @@ xmp {
   padding-left: 60px;
 }
 
-.noheight {
-  height: unset;
-}
+
 
 .typo-beskrivelse,h1,h2,h3,h4,h5,p {
   font-family: 'Roboto', sans-serif;
