@@ -1,1 +1,4 @@
+# json settings#
 .vscode/settings.json
+# Mac files#
+.DS_Store
