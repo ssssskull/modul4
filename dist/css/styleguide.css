@@ -553,3 +553,8 @@ a::before{
   border: 4px solid #515F6D;
   border-radius: 50%;
 }
+
+.knapper-elem > .header__toggle{
+  display: block;
+  visibility: visible;
+}
