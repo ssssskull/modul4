@@ -7,7 +7,7 @@
     // }
 
     .container__elem > .main__col1 > p {
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-bottom: 6rem;
 
         @include breakpoint-up(computer) {
@@ -41,8 +41,8 @@
                 }
 
                 @include breakpoint-up(largeComputer) {
-                    font-size: $font-xl-fallback;
-                    font-size: $font-xl;
+                    font-size: 40;
+                    font-size: 4rem;
                 }
             }
 

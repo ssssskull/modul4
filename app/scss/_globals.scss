@@ -198,11 +198,6 @@ h3 {
     &--ptb {
         padding-top: 8rem;
         padding-bottom: 8rem;
-        
-        @include breakpoint-up(computer) {
-            padding-top: 10rem;
-            padding-bottom: 10rem;
-        }
     }
     
     &--ptbhero {

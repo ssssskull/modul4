@@ -19,8 +19,7 @@
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
         width: 100%;
-        //background-color: transparentize($black, 0.6);
-        background: linear-gradient(0deg, #000000a3 50%, #292b3973 100%)
+        background: linear-gradient(0deg, #000000a3 40%, #292b3973 100%)
     }
 
     &__text {

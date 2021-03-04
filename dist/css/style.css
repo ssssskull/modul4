@@ -254,13 +254,6 @@ h3 {
   padding-bottom: 8rem;
 }
 
-@media (min-width: 64em) {
-  .container--ptb {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-}
-
 .container--ptbhero {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -769,8 +762,8 @@ h3 {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #000000a3), to(#292b3973));
-  background: linear-gradient(0deg, #000000a3 50%, #292b3973 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #000000a3), to(#292b3973));
+  background: linear-gradient(0deg, #000000a3 40%, #292b3973 100%);
 }
 
 .hero__text {
@@ -1017,7 +1010,7 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 }
 
 .contact .container__elem > .main__col1 > p {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 6rem;
 }
 
@@ -1069,8 +1062,8 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 
 @media (min-width: 87.5em) {
   .contact__columns .main__col1 h1 {
-    font-size: 50px;
-    font-size: 5rem;
+    font-size: 40;
+    font-size: 4rem;
   }
 }
 
@@ -1416,8 +1409,8 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
     display: -ms-grid;
     display: grid;
     grid-auto-flow: column;
-    -webkit-column-gap: 1.7rem;
-            column-gap: 1.7rem;
+    -webkit-column-gap: 3.4rem;
+            column-gap: 3.4rem;
   }
   .projects .container__elem .main__col1 {
     -ms-grid-column: 2;
