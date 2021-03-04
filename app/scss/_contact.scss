@@ -112,14 +112,7 @@
                 margin-right: 1.7rem;
                 vertical-align: -40%;
             }
-
-            .phone:before {
-                background-image: url("../../images/icons/mail-icon.svg");
-            }
-
-            .mail:before {
-                background-image: url("../../images/icons/phone-icon.svg");
-            }
+            
         }
 
         &:last-of-type {
@@ -130,4 +123,12 @@
     .button {
         color: $white;
     }
+}
+
+.phone:before {
+    background-image: url("../../images/icons/mail-icon.svg");
+}
+
+.mail:before {
+    background-image: url("../../images/icons/phone-icon.svg");
 }
