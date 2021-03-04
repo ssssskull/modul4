@@ -112,19 +112,19 @@
                 margin-right: 1.7rem;
                 vertical-align: -40%;
             }
+
+            .phone:before {
+                background-image: url("../../images/icons/mail-icon.svg");
+            }
+
+            .mail:before {
+                background-image: url("../../images/icons/phone-icon.svg");
+            }
         }
 
         &:last-of-type {
             margin-bottom: 6rem;
-
-            a:before {
-             background-image: url("../../images/icons/mail-icon.svg");
-             }
-         }
-
-         &:first-of-type > a:before {
-             background-image: url("../../images/icons/phone-icon.svg");
-         }
+        }
     }
 
     .button {
