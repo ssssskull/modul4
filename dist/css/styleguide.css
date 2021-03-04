@@ -11,6 +11,7 @@ html[data-theme='dark'] {
   --bg-panel: #434343;
   --color-headings: #6696AD;
   --color-text: #b5b5b5;
+  
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 
 }
 
-p .container__elem {
+.container__elem-under {
   color: white;
 }
 
