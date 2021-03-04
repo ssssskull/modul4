@@ -1148,16 +1148,16 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
   margin-bottom: 6rem;
 }
 
-.contact__cta:last-of-type a:before {
+.contact .button {
+  color: #FBFBFB;
+}
+
+.mail:before {
   background-image: url("../../images/icons/mail-icon.svg");
 }
 
-.contact__cta:first-of-type > a:before {
+.phone:before {
   background-image: url("../../images/icons/phone-icon.svg");
-}
-
-.contact .button {
-  color: #FBFBFB;
 }
 
 .femfaser {

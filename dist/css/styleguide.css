@@ -456,14 +456,14 @@ xmp {
 }
 
 .basic-form {
-  width: 380px;
+  width: 100%;
   height: 53px;
   border: solid 2px;
   border-color: #515E6D;
 }
 
 .message-form {
-  width: 380px;
+  width: 100%;
   height: 200px;
   border: solid 2px;
   border-color: #515E6D;
@@ -522,6 +522,12 @@ xmp {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
+
+h4, .padding{
+  padding: 20px;
+} 
+
+
 
 .mere{
   justify-self: center;
@@ -639,4 +645,6 @@ a::before{
   visibility: visible;
 }
 
-.contact__cta:first-of-type > a.mail::before {}
+.center{
+  justify-content: center;
+}
