@@ -138,15 +138,23 @@
     }
 
     &__tlf {
-        background: #A5BA74;
+        background: $green;
         transition: $transition-200ms;
         height: max-content;
+        
+        &:hover {
+            background: darken($green, 10%);
+        }
     }
 
     &__mail {
-        background: #A5BA74;
+        background: $green;
         transition: $transition-200ms;
         height: max-content;
+
+        &:hover {
+            background: darken($green, 10%);
+        }
     }
 
     .main__col1 {
@@ -184,6 +192,7 @@
                 font-size: $font-xs;
                 color: $white;
                 text-decoration: underline;
+                transition: $transition-200ms;
             }
         }
 

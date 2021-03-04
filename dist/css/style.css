@@ -566,6 +566,7 @@ h3 {
   width: 2em;
   float: left;
   font-weight: 400;
+  line-height: normal;
 }
 
 .header__menu > li:last-of-type {
@@ -1318,7 +1319,7 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 }
 
 .femfaser__tlf {
-  background: #A5BA74;
+  background: #a6bb75;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   height: -webkit-max-content;
@@ -1326,13 +1327,21 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
   height: max-content;
 }
 
+.femfaser__tlf:hover {
+  background: #90a954;
+}
+
 .femfaser__mail {
-  background: #A5BA74;
+  background: #a6bb75;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+.femfaser__mail:hover {
+  background: #90a954;
 }
 
 .femfaser .main__col1 {
@@ -1379,6 +1388,8 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
   font-size: 1.5rem;
   color: #FBFBFB;
   text-decoration: underline;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .femfaser .videmere {

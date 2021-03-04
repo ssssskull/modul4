@@ -1,5 +1,6 @@
 html {
-  --bg: #FCFCFC;
+  scroll-behavior: smooth;
+  --bg: #a8a8a8;
   --bg-panel: #EBEBEB;
   --color-headings: #6696AD;
   --color-text: #333333;
@@ -456,14 +457,14 @@ xmp {
 }
 
 .basic-form {
-  width: 380px;
+  width: 100%;
   height: 53px;
   border: solid 2px;
   border-color: #515E6D;
 }
 
 .message-form {
-  width: 380px;
+  width: 100%;
   height: 200px;
   border: solid 2px;
   border-color: #515E6D;
@@ -522,6 +523,12 @@ xmp {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
+
+h4, .padding{
+  padding: 20px;
+} 
+
+
 
 .mere{
   justify-self: center;
@@ -639,4 +646,26 @@ a::before{
   visibility: visible;
 }
 
-.contact__cta:first-of-type > a.mail::before {}
+.center{
+  justify-content: center;
+}
+#scrollToContent {
+  position: relative;
+}
+.hero__scroll2::after {
+  left: 50%;
+}
+.button::after {
+  line-height: unset;
+}
+.header__menu > li::before {
+  color: white;
+  line-height: normal;
+}
+.hero__text h1 {
+  font-family: 'Roboto Mono', monospace;
+}
+.hero__text p {
+  color: #a1a1a1;
+  font-family: 'Roboto Mono', monospace;
+}
