@@ -638,3 +638,5 @@ a::before{
   display: block;
   visibility: visible;
 }
+
+.contact__cta:first-of-type > a.mail::before {}
