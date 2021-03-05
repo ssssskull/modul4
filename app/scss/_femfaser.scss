@@ -141,9 +141,9 @@
         background: $green;
         transition: $transition-200ms;
         height: max-content;
-        
+
         &:hover {
-            background: darken($green, 10%);
+            opacity: 0.8;
         }
     }
 
@@ -153,7 +153,7 @@
         height: max-content;
 
         &:hover {
-            background: darken($green, 10%);
+            opacity: 0.8;
         }
     }
 

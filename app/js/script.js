@@ -308,6 +308,7 @@ function buttonClickTilbage(t) {
 
     femFaserTekst[4].classList.remove("visible");
     femFaserTekst[4].classList.add("hidden");
+    buttonRight.style.visibility = "hidden";
   }
 }
 

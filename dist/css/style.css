@@ -1328,7 +1328,7 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 }
 
 .femfaser__tlf:hover {
-  background: #90a954;
+  opacity: 0.8;
 }
 
 .femfaser__mail {
@@ -1341,7 +1341,7 @@ main > .main > .main__col2 .lottieContainer:last-of-type {
 }
 
 .femfaser__mail:hover {
-  background: #90a954;
+  opacity: 0.8;
 }
 
 .femfaser .main__col1 {
